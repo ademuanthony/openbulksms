@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <name>Admin</name>
+    <version>1.0.0.0</version>
+    <lincense>Free</lincense>
+    <path>main</path>
+    <enabled>Yes</enabled>
+    <app_cast></app_cast><!-- the app cast is an xml file that shows if an update is available
+                            for the module and give detail of how to get the update-->
+
+    <payments>
+
+    </payments>
+
+    <routes>
+        <!--install-->
+
+        <route>
+            <uri>admin/install</uri>
+            <filePath>main/admin/install.php</filePath>
+            <controller>install</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>admin/install/save</uri>
+            <filePath>main/admin/install.php</filePath>
+            <controller>install</controller>
+            <action>save</action>
+        </route>
+        <route>
+            <uri>admin/install/complete</uri>
+            <filePath>main/admin/install.php</filePath>
+            <controller>install</controller>
+            <action>complete</action>
+        </route>
+
+        <!--/install-->
+
+
+        <!--dashboard-->
+        <route>
+            <uri>admin/dashboard</uri>
+            <filePath>main/admin/dashboard.php</filePath>
+            <controller>dashboard</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>*</uri>
+            <filePath>main/admin/dashboard.php</filePath>
+            <controller>dashboard</controller>
+            <action>index</action>
+        </route>
+        <!--/dashboard-->
+
+
+        <!--user-->
+        <route>
+            <uri>admin/users</uri>
+            <filePath>main/admin/users.php</filePath>
+            <controller>users</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>admin/users/index</uri>
+            <filePath>main/admin/users.php</filePath>
+            <controller>users</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>admin/users/manage</uri>
+            <filePath>main/admin/users.php</filePath>
+            <controller>users</controller>
+            <action>manage</action>
+        </route>
+        <route>
+            <uri>admin/users/add</uri>
+            <filePath>main/admin/users.php</filePath>
+            <controller>users</controller>
+            <action>add</action>
+        </route>
+        <route>
+            <uri>admin/users/update</uri>
+            <filePath>main/admin/users.php</filePath>
+            <controller>users</controller>
+            <action>update</action>
+        </route>
+
+        <!--/user-->
+
+
+        <!--voucher -->
+        <route>
+            <uri>admin/voucher</uri>
+            <filePath>main/admin/voucher.php</filePath>
+            <controller>voucher</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>admin/voucher/add</uri>
+            <filePath>main/admin/voucher.php</filePath>
+            <controller>themes</controller>
+            <action>add</action>
+        </route>
+        <route>
+            <uri>admin/voucher/detail</uri>
+            <filePath>main/admin/voucher.php</filePath>
+            <controller>themes</controller>
+            <action>detail</action>
+        </route>
+        <!--/voucher -->
+
+        <!--transaction-->
+        <route>
+            <uri>admin/transactions</uri>
+            <filePath>main/admin/transactions.php</filePath>
+            <controller>transactions</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>admin/transactions/index</uri>
+            <filePath>main/admin/transactions.php</filePath>
+            <controller>transactions</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>admin/transactions/add</uri>
+            <filePath>main/admin/transactions.php</filePath>
+            <controller>transactions</controller>
+            <action>add</action>
+        </route>
+        <route>
+            <uri>admin/transactions/manage</uri>
+            <filePath>main/admin/transactions.php</filePath>
+            <controller>transactions</controller>
+            <action>manage</action>
+        </route>
+        <route>
+            <uri>admin/transactions/update</uri>
+            <filePath>main/admin/transactions.php</filePath>
+            <controller>transactions</controller>
+            <action>update</action>
+        </route>
+        <route>
+            <uri>admin/transactions/delete</uri>
+            <filePath>main/admin/transactions.php</filePath>
+            <controller>transactions</controller>
+            <action>delete</action>
+        </route>
+
+        <!--/transaction-->
+
+
+        <!--settings -->
+        <route>
+            <uri>admin/settings</uri>
+            <filePath>main/admin/settings.php</filePath>
+            <controller>settings</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>admin/settings/save</uri>
+            <filePath>main/admin/settings.php</filePath>
+            <controller>settings</controller>
+            <action>save</action>
+        </route>
+        <!--/settings -->
+
+
+        <!--module -->
+        <route>
+            <uri>admin/modules</uri>
+            <filePath>main/admin/module.php</filePath>
+            <controller>modules</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>admin/modules/add</uri>
+            <filePath>main/admin/module.php</filePath>
+            <controller>modules</controller>
+            <action>add</action>
+        </route>
+        <route>
+            <uri>admin/modules/detail</uri>
+            <filePath>main/admin/module.php</filePath>
+            <controller>modules</controller>
+            <action>detail</action>
+        </route>
+        <route>
+            <uri>admin/modules/update</uri>
+            <filePath>main/admin/module.php</filePath>
+            <controller>modules</controller>
+            <action>update</action>
+        </route>
+        <!--/module -->
+
+        <!--theme -->
+        <route>
+            <uri>admin/themes</uri>
+            <filePath>main/admin/theme.php</filePath>
+            <controller>themes</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>admin/themes/add</uri>
+            <filePath>main/admin/theme.php</filePath>
+            <controller>themes</controller>
+            <action>add</action>
+        </route>
+        <route>
+            <uri>admin/themes/detail</uri>
+            <filePath>main/admin/theme.php</filePath>
+            <controller>themes</controller>
+            <action>detail</action>
+        </route>
+        <route>
+            <uri>admin/themes/update</uri>
+            <filePath>main/admin/theme.php</filePath>
+            <controller>themes</controller>
+            <action>update</action>
+        </route>
+        <!--/theme -->
+
+
+        <route>
+            <uri>admin/uba/finish</uri>
+            <filePath>main/admin/uba.php</filePath>
+            <controller>Admin_UBA_Bank_Controller</controller>
+            <action>finish</action>
+        </route>
+
+    </routes>
+
+    <fields>
+        <field>
+            <label>Merchant Key</label>
+            <key>Admin_Merchant_Key</key>
+            <type>String</type>
+            <sort_order>2</sort_order>
+            <value>2019</value>
+        </field>
+    </fields>
+
+    <model_register>
+        <model>
+            <key>OpenSms_Model_User</key>
+            <class_name>OpenSms_Model_User</class_name>
+            <file_path>app/code/opensms/model/core/user.php</file_path>
+        </model>
+        <model>
+            <key>OpenSms_Model_Login</key>
+            <class_name>OpenSms_Model_Login</class_name>
+            <file_path>app/code/opensms/model/core/login.php</file_path>
+        </model>
+    </model_register>
+</module>

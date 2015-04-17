@@ -1,0 +1,23 @@
+/*t-palace*/
+.tmenuDiv{
+    background: #EEEEEE;
+    padding: 10px; 
+     border-top: 1px solid black;
+}
+
+.tmenuDiv a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.tmenuDiv a:hover{
+    background: #cccccc;
+}
+
+.tlastMenuDiv {    
+     border-bottom: 1px solid black;
+}
+.cursor-pointer{
+    cursor: pointer;
+}

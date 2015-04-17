@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<window>
+    <head>
+        <addStyle href="css/tstyle.css"/>
+        <addStyle href="css/bootstrap.css"/>
+        <addStyle href="css/home.css"/>
+        <addStyle href="css/index.css"/>
+        <addStyle href="css/site.css"/>
+
+        <addScript src="js/jquery.min.js"/>
+    </head>
+
+    <body template="shared/page.php"/>
+    <banner template="shared/ws/banner.php"/>
+    <globalNotification template=""/>
+    <content template="home/home_index.php"/>
+
+    <footer template="shared/ws/footer.php">
+        <addScript src="js/bootstrap.js"/>
+    </footer>
+
+    <priceList template="shared/ws/priceList.php"/>
+    <registrationform template="shared/ws/registrationform.php"/>
+    <signinform template="shared/ws/signinform.php"/>
+</window>

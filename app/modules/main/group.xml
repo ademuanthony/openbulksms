@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<module>
+    <name>Group</name>
+    <version>1.0.0.0</version>
+    <lincense>Free</lincense>
+    <path>main</path>
+
+    <payments>
+
+    </payments>
+
+    <routes>
+        <route>
+            <uri>group/index</uri>
+            <filePath>main/group/group.php</filePath>
+            <controller>group</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>*/add</uri>
+            <filePath>main/group/group.php</filePath>
+            <controller>group</controller>
+            <action>add</action>
+        </route>
+        <route>
+            <uri>*/update</uri>
+            <filePath>main/group/group.php</filePath>
+            <controller>group</controller>
+            <action>update</action>
+        </route>
+        <route>
+            <uri>*/detail</uri>
+            <filePath>main/group/group.php</filePath>
+            <controller>group</controller>
+            <action>detail</action>
+        </route>
+        <route>
+            <uri>*/addContact</uri>
+            <filePath>main/group/group.php</filePath>
+            <controller>group</controller>
+            <action>addContact</action>
+        </route>
+        <route>
+            <uri>*/deleteContact</uri>
+            <filePath>main/group/group.php</filePath>
+            <controller>group</controller>
+            <action>deleteContact</action>
+        </route>
+        <route>
+            <uri>*/delete</uri>
+            <filePath>main/group/group.php</filePath>
+            <controller>group</controller>
+            <action>delete</action>
+        </route>
+        <route>
+            <uri>*</uri>
+            <filePath>main/group/group.php</filePath>
+            <controller>group</controller>
+            <action>index</action>
+        </route>
+    </routes>
+
+    <fields>
+        <field>
+            <label></label>
+            <type></type>
+            <sort_order></sort_order>
+            <show_in_website></show_in_website>
+        </field>
+    </fields>
+
+    <model_register>
+
+    </model_register>
+</module>

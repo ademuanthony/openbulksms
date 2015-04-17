@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<window>
+    <head>
+        <addStyle src=""/>
+        <addIcon uri=""/>
+        <addScript src=""/>
+        <addMetaData tag="" content=""/>
+    </head>
+
+    <body template="shared/page.php"/>
+    <globalNotification template=""/>
+    <header template="shared/header.php"/>
+    <content template="home/home_index.php"/>
+    <footer template="shared/footer.php"/>
+</window>

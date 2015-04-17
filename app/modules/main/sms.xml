@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <name>Sms</name>
+    <version>1.0.0.0</version>
+    <lincense>Free</lincense>
+    <path>main</path>
+
+    <payments>
+
+    </payments>
+
+    <routes>
+        <route>
+            <uri>sms/compose</uri>
+            <filePath>main/sms/compose.php</filePath>
+            <controller>compose</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>sms/compose/send</uri>
+            <filePath>main/sms/compose.php</filePath>
+            <controller>compose</controller>
+            <action>send</action>
+        </route>
+
+        <route>
+            <uri>sms/sent</uri>
+            <filePath>main/sms/sent.php</filePath>
+            <controller>sent</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>sms/sent/detail</uri>
+            <filePath>main/sms/sent.php</filePath>
+            <controller>sent</controller>
+            <action>detail</action>
+        </route>
+
+
+        <route>
+            <uri>*</uri>
+            <filePath>main/sms/compose.php</filePath>
+            <controller>compose</controller>
+            <action>index</action>
+        </route>
+    </routes>
+
+    <fields>
+        <field>
+            <label>Send API</label>
+            <key>Sms_Send_Api</key>
+            <type>String</type>
+            <sort_order>0</sort_order>
+            <value>http://smssite.crusoex.com/api/SAPI/sendMessage?returnDetails=1&amp;loginId=@username@&amp;password=@password@&amp;senderId=@senderId@&amp;message=@message@&amp;Recipients=@recipients@&amp;sendOnDate=@sendOnDate@</value>
+        </field>
+
+        <field>
+            <label>Balance API</label>
+            <key>Sms_Balance_Api</key>
+            <type>String</type>
+            <sort_order>0</sort_order>
+            <value>http://smssite.crusoex.com/api/SAPI/checkBalance?returnDetails=1&amp;loginId=@loginId@&amp;password=@password@</value>
+        </field>
+
+        <field>
+            <label>Api Username</label>
+            <key>Sms_Api_Username</key>
+            <type>String</type>
+            <sort_order>0</sort_order>
+            <value>demo</value>
+        </field>
+
+        <field>
+            <label>Api Password</label>
+            <key>Sms_Api_Password</key>
+            <type>String</type>
+            <sort_order>0</sort_order>
+            <value>demo</value>
+        </field>
+
+        <field>
+            <label>Success Keyword</label>
+            <key>Sms_Api_Success_Keyword</key>
+            <type>String</type>
+            <sort_order>0</sort_order>
+            <value>1701</value>
+        </field>
+
+    </fields>
+
+    <model_register>
+
+    </model_register>
+<enabled>Yes</enabled></module>

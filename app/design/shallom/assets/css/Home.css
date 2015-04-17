@@ -1,0 +1,37 @@
+* {
+    margin: 0 auto;
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+}
+.menu{
+    line-height: 50px;
+    background: black;
+}
+
+.brand{
+        font-size: 50px;
+        font-family: Tahoma, Geneva, sans-serif;
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 1px 1px 1px #960, 3px 3px 5px black;
+}
+
+
+.brand:hover{
+	color:rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.menu>ul{
+	margin: 0px;
+	padding: 0px;
+	border: 2px solid #330033;
+	line-height: 40px;
+    background: #595f64;
+        
+}
+
+.menu>ul>li{
+	display: inline;
+	margin: 0;
+    padding: 0;
+    color: white;
+}

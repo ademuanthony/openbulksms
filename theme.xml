@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<theme>
+    <name>Gold</name>
+    <key>gold</key>
+    <version>1.0</version>
+    <author>Ademu Anthony</author>
+    <url></url>
+    <email></email>
+    <app_cast></app_cast><!-- the themeName app cast is an xml file that shows if an update is available
+                            for the themeName and give detail of how to get the update-->
+    <fields>
+        <field>
+            <label></label>
+            <key></key>
+            <type></type>
+            <value></value>
+            <readonly></readonly>
+        </field>
+    </fields>
+</theme>

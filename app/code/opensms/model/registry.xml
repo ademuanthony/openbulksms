@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<model_register>
+    <model>
+        <key>OpenSms_Model_User</key>
+        <class_name>OpenSms_Model_User</class_name>
+        <file_path>app/code/opensms/model/core/user.php</file_path>
+    </model>
+    <model>
+        <key>OpenSms_Model_Login</key>
+        <class_name>OpenSms_Model_Login</class_name>
+        <file_path>app/code/opensms/model/core/login.php</file_path>
+    </model>
+    <model>
+        <key>OpenSms_Model_Group</key>
+        <class_name>OpenSms_Model_Group</class_name>
+        <file_path>app/code/opensms/model/core/group.php</file_path>
+    </model>
+    <model>
+        <key>OpenSms_Model_Contact</key>
+        <class_name>OpenSms_Model_Contact</class_name>
+        <file_path>app/code/opensms/model/core/contact.php</file_path>
+    </model>
+    <model>
+        <key>OpenSms_Model_Transaction</key>
+        <class_name>OpenSms_Model_Transaction</class_name>
+        <file_path>app/code/opensms/model/core/transaction.php</file_path>
+    </model>
+    <model>
+        <key>OpenSms_Model_BulkSms</key>
+        <class_name>OpenSms_Model_BulkSms</class_name>
+        <file_path>app/code/opensms/model/core/bulksms.php</file_path>
+    </model>
+    <model>
+        <key>OpenSms_Model_Message</key>
+        <class_name>OpenSms_Model_Message</class_name>
+        <file_path>app/code/opensms/model/core/message.php</file_path>
+    </model>
+    <model>
+        <key>OpenSms_Model_Card</key>
+        <class_name>OpenSms_Model_Card</class_name>
+        <file_path>app/code/opensms/model/core/card.php</file_path>
+    </model>
+
+
+
+</model_register>

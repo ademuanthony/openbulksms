@@ -1,0 +1,37 @@
+body {
+    background: #a1b9e3;
+    margin: 0 auto;
+}
+
+a:link{
+    color: #736288;
+}
+a:hover{
+    text-decoration: none;
+    color: #6c2bbd;
+}
+
+.container{
+    background: #fff;
+    padding-top: 20px;
+}
+
+.navbar{
+    margin-bottom: 0;
+    padding-right: 50px;
+    padding-left: 40px;
+}
+
+.navbar-default{
+    padding-left: 250px;
+}
+.footer-image{
+    margin-left: 80px;
+}
+
+
+@media(max-width:550px){
+    .footer-image{
+        width:150px;
+    }    
+}

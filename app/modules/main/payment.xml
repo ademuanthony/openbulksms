@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <name>Payment</name>
+    <version>1.0.0.0</version>
+    <lincense>Free</lincense>
+    <path>main</path>
+    <enabled>No</enabled>
+    <app_cast/><!-- the app cast is an xml file that shows if an update is available
+                            for the module and give detail of how to get the update-->
+
+    <payments>
+        <payment>
+            <key>Payment_Load_Voucher</key>
+            <label>Load Voucher</label>
+            <enable>Yes</enable>
+            <sort_order>9</sort_order>
+            <order_status>Processing</order_status>
+            <controller>Voucher</controller>
+            <action>Pay</action>
+            <filePath>main/payment/voucher.php</filePath>
+        </payment>
+        <payment>
+            <key>Admin_UBA_Bank</key>
+            <label>UBA Bank</label>
+            <enable>Yes</enable>
+            <sort_order>9</sort_order>
+            <order_status>Awaiting Payment</order_status>
+            <controller>UBA</controller>
+            <action>Pay</action>
+            <filePath>main/payment/uba.php</filePath>
+        </payment>
+        <payment>
+            <key>Admin_FBN_Bank</key>
+            <label>First Bank</label>
+            <enable>Yes</enable>
+            <sort_order>9</sort_order>
+            <order_status>Awaiting Payment</order_status>
+            <controller>FBN</controller>
+            <action>Pay</action>
+            <filePath>main/payment/fbn.php</filePath>
+        </payment>
+    </payments>
+
+    <routes>
+        <!--install-->
+
+        <route>
+            <uri>payment/voucher</uri>
+            <filePath>main/payment/voucher.php</filePath>
+            <controller>voucher</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>payment/uba</uri>
+            <filePath>main/payment/uba.php</filePath>
+            <controller>UBA</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>payment/fbn</uri>
+            <filePath>main/payment/fbn.php</filePath>
+            <controller>FBN</controller>
+            <action>index</action>
+        </route>
+
+        <!--/install-->
+
+
+
+    </routes>
+
+    <fields>
+        <field>
+            <label>UBA Account Name</label>
+            <key>Payment_UBA_Account_Name</key>
+            <type>String</type>
+            <sort_order>2</sort_order>
+            <value>Ademu Anthony</value>
+        </field>
+        <field>
+            <label>UBA Account Number</label>
+            <key>Payment_UBA_Account_Number</key>
+            <type>String</type>
+            <sort_order>2</sort_order>
+            <value>2019</value>
+        </field>
+        <field>
+            <label>UBA Notification Number</label>
+            <key>Payment_UBA_Notification_Number</key>
+            <type>String</type>
+            <sort_order>2</sort_order>
+            <value>08035146243</value>
+        </field>
+
+        <field>
+            <label>FBN Account Name</label>
+            <key>Payment_FBN_Account_Name</key>
+            <type>String</type>
+            <sort_order>2</sort_order>
+            <value>Ademu Anthony</value>
+        </field>
+        <field>
+            <label>FBN Account Number</label>
+            <key>Payment_FBN_Account_Number</key>
+            <type>String</type>
+            <sort_order>2</sort_order>
+            <value>08035146243</value>
+        </field>
+        <field>
+            <label>FBN Notification Number</label>
+            <key>Payment_FBN_Notification_Number</key>
+            <type>String</type>
+            <sort_order>2</sort_order>
+            <value>2019</value>
+        </field>
+    </fields>
+
+    <model_register>
+
+    </model_register>
+</module>

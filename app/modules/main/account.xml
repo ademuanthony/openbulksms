@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <name>Account</name>
+    <version>1.0.0.0</version>
+    <lincense>Free</lincense>
+    <path>main</path>
+
+    <payments>
+
+    </payments>
+
+    <routes>
+        <!--registration-->
+        <route>
+            <uri>account/register</uri>
+            <filePath>main/account/account.php</filePath>
+            <controller>account</controller>
+            <action>register</action>
+        </route>
+        <route>
+            <uri>account/login</uri>
+            <filePath>main/account/account.php</filePath>
+            <controller>account</controller>
+            <action>login</action>
+        </route>
+        <route>
+            <uri>account/logout</uri>
+            <filePath>main/account/account.php</filePath>
+            <controller>account</controller>
+            <action>logout</action>
+        </route>
+
+        <!--transaction-->
+        <route>
+            <uri>account/transactions</uri>
+            <filePath>main/account/transactions.php</filePath>
+            <controller>transactions</controller>
+            <action>Index</action>
+        </route>
+
+
+        <!--recharge-->
+        <route>
+            <uri>account/recharge</uri>
+            <filePath>main/account/recharge.php</filePath>
+            <controller>recharge</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>account/recharge/save</uri>
+            <filePath>main/account/recharge.php</filePath>
+            <controller>recharge</controller>
+            <action>save</action>
+        </route>
+        <route>
+            <uri>account/recharge/success</uri>
+            <filePath>main/account/recharge.php</filePath>
+            <controller>recharge</controller>
+            <action>success</action>
+        </route>
+        <route>
+            <uri>account/recharge/failure</uri>
+            <filePath>main/account/recharge.php</filePath>
+            <controller>recharge</controller>
+            <action>failure</action>
+        </route>
+
+        <route>
+            <uri>*</uri>
+            <filePath>main/account/account.php</filePath>
+            <controller>account</controller>
+            <action>index</action>
+        </route>
+    </routes>
+
+    <fields>
+        <field>
+            <label/>
+            <type/>
+            <sort_order/>
+            <show_in_website/>
+        <value/></field>
+    </fields>
+
+    <model_register>
+
+    </model_register>
+<enabled>No</enabled></module>

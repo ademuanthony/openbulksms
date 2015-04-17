@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<module>
+    <name>Error</name>
+    <version>1.0.0.0</version>
+    <lincense>Free</lincense>
+    <path>main</path>
+
+    <payments>
+
+    </payments>
+
+    <routes>
+        <route>
+            <uri>notfound</uri>
+            <filePath>main/error/notfound.php</filePath>
+            <controller>notfound</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>*</uri>
+            <filePath>main/error/notfound.php</filePath>
+            <controller>notfound</controller>
+            <action>index</action>
+        </route>
+    </routes>
+
+    <fields>
+        <field>
+            <label></label>
+            <type></type>
+            <sort_order></sort_order>
+            <show_in_website></show_in_website>
+        </field>
+    </fields>
+
+    <model_register>
+        <model>
+            <key>OpenSms_Model_Group</key>
+            <class_name>OpenSms_Model_Group</class_name>
+            <file_path>app/code/overwrites/model/group.php</file_path>
+        </model>
+    </model_register>
+</module>
