@@ -28,9 +28,11 @@
                     <div class="col-lg-6">
                         <h4>Open Bulk SMS</h4>
                         <p class="text-center" style="text-align: center !important;">
+                            <a href="https://github.com/ademuanthony/openbulksms/archive/master.zip">
                             <img class="img-responsive" align="middle"
                                  src="<?php echo OpenSms::getBaseUrl() ?>app/skin/system/open_sms_text.png"
                                  style="border: 1px red solid"/>
+                            </a>
                         </p>
 
                         <h2>The Only Free Bulk SMS site creator</h2>

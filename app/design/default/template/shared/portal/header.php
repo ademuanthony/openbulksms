@@ -8,7 +8,7 @@
 ?>
 
 <!-- Logo -->
-<a href="/admin/install" class="logo"><b>Open</b>SMS</a>
+<a href="<?php echo OpenSms::getActionUrl('index', 'dashboard', 'dashboard')?>" class="logo"><b>Open</b>SMS</a>
 <!-- Header Navbar: style can be found in header.less -->
 <nav class="navbar navbar-static-top" role="navigation">
 <!-- Sidebar toggle button-->

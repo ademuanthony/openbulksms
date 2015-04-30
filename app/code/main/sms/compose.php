@@ -183,7 +183,7 @@ class Compose extends OpenSms_Abstract_Module_Controller{
                         //1701
                         //check if message sent and deduct
                         //strpos(strtolower($xml), strtolower(OpenSms::getField('Sms_Api_Success_Keyword'))
-                        if(true){
+                        if(strpos(strtolower($xml), strtolower(OpenSms::getField('Sms_Api_Success_Keyword')->value))){
                             $user->Balance -= ($count * OpenSms::getSystemSetting(OpenSms::OPEN_UNITS_PER_SMS));
                             $user->Save();
                             $notification = "Message sent";

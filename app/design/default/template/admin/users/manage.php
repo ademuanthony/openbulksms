@@ -215,7 +215,7 @@
                             <select class="form-control" name="Type">
                                 <option></option>
                                 <option value="<?php echo OpenSms::OPEN_TRANSACTION_TYPE_CREDIT?>">Credit</option>
-                                <option value="<?php echo OpenSms::OPEN_TRANSACTION_TYPE_DEBIT?>">Credit</option>
+                                <option value="<?php echo OpenSms::OPEN_TRANSACTION_TYPE_DEBIT?>">Debit</option>
                             </select>
                         </div>
                         <div class="form-group">

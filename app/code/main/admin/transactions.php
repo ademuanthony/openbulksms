@@ -71,6 +71,7 @@ class Transactions extends  OpenSms_Abstract_Module_Controller{
                     OpenSms::redirect($_REQUEST['returnUrl']);
                 }
             }else{
+                $this->setNotification('Transaction saved', 'add_transaction');
                 if(empty($_REQUEST['returnUrl'])) OpenSms::redirectToAction('Index');
                 OpenSms::redirect($_REQUEST['returnUrl']);
             }
