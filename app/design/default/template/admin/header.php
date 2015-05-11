@@ -8,7 +8,7 @@
 ?>
 
 <!-- Logo -->
-<a href="/admin/install" class="logo"><b>Open</b>SMS</a>
+<a href="/admin/install" class="logo"><?php echo OpenSms::getSystemSetting(OpenSms::SITE_NAME)?></a>
 <!-- Header Navbar: style can be found in header.less -->
 <nav class="navbar navbar-static-top" role="navigation">
 <!-- Sidebar toggle button-->

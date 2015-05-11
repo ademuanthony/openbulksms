@@ -49,7 +49,7 @@ class OpenSms{
     const OPEN_TRANSACTION_TYPE_DEBIT = 'DEBIT';
 
     public static function getTransactionTypeArray(){
-        return [OpenSms::OPEN_TRANSACTION_TYPE_CREDIT, OpenSms::OPEN_TRANSACTION_TYPE_DEBIT];
+        return [self::OPEN_TRANSACTION_TYPE_CREDIT, self::OPEN_TRANSACTION_TYPE_DEBIT];
     }
 
     const OPEN_TRANSACTION_STATUS_PENDING = 'Pending';
@@ -59,9 +59,9 @@ class OpenSms{
     const OPEN_TRANSACTION_STATUS_COMPLETED = 'Completed';
 
     public static function getTransactionStatusArray(){
-        return [OpenSms::OPEN_TRANSACTION_STATUS_PENDING, OpenSms::OPEN_TRANSACTION_STATUS_AWAITING_PAYMENT,
-            OpenSms::OPEN_TRANSACTION_STATUS_NOTIFICATION_SENT,
-            OpenSms::OPEN_TRANSACTION_STATUS_PROCESSING, OpenSms::OPEN_TRANSACTION_STATUS_COMPLETED];
+        return [self::OPEN_TRANSACTION_STATUS_PENDING, self::OPEN_TRANSACTION_STATUS_AWAITING_PAYMENT,
+            self::OPEN_TRANSACTION_STATUS_NOTIFICATION_SENT,
+            self::OPEN_TRANSACTION_STATUS_PROCESSING, self::OPEN_TRANSACTION_STATUS_COMPLETED];
     }
 
     //SMS
@@ -113,7 +113,7 @@ class OpenSms{
 
     private static $systemSettings = array();
     public static function getSystemSetting($key){
-        if(!file_exists(OpenSms::SETTINGS_FILE_PATH)) return '';
+        if(!file_exists(self::SETTINGS_FILE_PATH)) return '';
         if(isset(self::$systemSettings[$key])) return (string)self::$systemSettings[$key];
         //load and set
         self::loadSystemSettings();
@@ -121,7 +121,7 @@ class OpenSms{
     }
 
     public static function  loadSystemSettings(){
-        $xml=simplexml_load_file(OpenSms::SETTINGS_FILE_PATH);
+        $xml=simplexml_load_file(self::SETTINGS_FILE_PATH);
 
         foreach($xml as $key=>$value){
             self::$systemSettings[$key] = $value;
@@ -131,7 +131,7 @@ class OpenSms{
     private static $tablePrefix;
     public static function getTablePrefix(){
         if(self::$tablePrefix != NULL) return self::$tablePrefix;
-        self::$tablePrefix = self::getSystemSetting(OpenSms::DB_TABLE_PREFIX);
+        self::$tablePrefix = self::getSystemSetting(self::DB_TABLE_PREFIX);
         return self::$tablePrefix;
     }
 
@@ -427,7 +427,7 @@ class OpenSms{
         $this->splitUrl();
 
         //if not installed and the url is not of install goto install
-        if($this->getSystemSetting(OpenSms::INSTALLATION_STATUS) != 'installed' && (strtolower($this->url_controller) != 'install')){
+        if($this->getSystemSetting(self::INSTALLATION_STATUS) != 'installed' && (strtolower($this->url_controller) != 'install')){
             self::redirectToAction('index', 'install', 'admin');
         }
 

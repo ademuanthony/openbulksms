@@ -40,7 +40,7 @@
                     <table class="table">
                         <tr>
                             <td style="width: 140px;"><strong>Bank Name</strong></td>
-                            <td>First Bank Of Nigeria</td>
+                            <td>UBA</td>
                         </tr>
                         <tr>
                             <td><strong>Account Name</strong></td>

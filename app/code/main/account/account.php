@@ -25,6 +25,7 @@ class Account extends OpenSms_Abstract_Module_Controller {
             $result = $user->save();
             if($result === true){
                 $_SESSION['loginId'] = $this->getFormData('loginId');
+                $_SESSION['role'] = $user->Role;
                 OpenSms::redirectToAction('index', 'dashboard', 'dashboard');
             }else{
                 $this->setError($result, 'registration_error');

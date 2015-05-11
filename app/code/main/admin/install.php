@@ -256,8 +256,8 @@ class Install extends OpenSms_Abstract_Module_Controller {
         $this->data['pageTitle'] = 'Install -> Complete | OpenSms';
         $this->data['success'] = $success;
         $this->data['message'] = $success?'Installation of OpenSMS has been successfully carried out':'Error in installing OpenSMS';
-        if($success) $_SESSION['notification'] = $this->data['message'];
-        else $_SESSION['error'] = $this->data['message'];
+        if($success) $this->setNotification($this->data['message'], 'complete_install');
+        else $this->setError($this->data['message'], 'complete_install');
         $this->renderTemplate('body');
     }
 } 
