@@ -73,7 +73,8 @@ class OpenSms{
     const OPEN_OPTION_NO = 'No';
 
     public static function getDocumentRoot(){
-        return $_SERVER['DOCUMENT_ROOT'].'/';
+        return $_SERVER['DOCUMENT_ROOT'].'/openbulksms/';//demo
+        //return $_SERVER['DOCUMENT_ROOT'].'/';//live
     }
 
     /** @var null The module */
@@ -106,7 +107,8 @@ class OpenSms{
 
     public static function getBaseUrl(){
         //"http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-        return "http://$_SERVER[HTTP_HOST]/";
+        return "http://$_SERVER[HTTP_HOST]/openbulksms/";//demo
+        //return "http://$_SERVER[HTTP_HOST]/"; //live
     }
 
     //settings
@@ -598,4 +600,3 @@ class OpenSms{
         }
     }
 }
-
