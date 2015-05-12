@@ -10,7 +10,7 @@ Options -Indexes
 
 # When using the script within a sub-folder, put this path here, like /mysubfolder/
 # If your app is in the root of your web folder, then leave it commented out
-#RewriteBase /openbulksms/
+RewriteBase /openbulksms/
 
 # General rewrite rules
 RewriteCond %{REQUEST_FILENAME} !-d
