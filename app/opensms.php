@@ -106,7 +106,7 @@ class OpenSms{
 
     public static function getBaseUrl(){
         //"http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-        return "http://$_SERVER[HTTP_HOST]/";// 'http://www.openbulksms.com/';//this will be gotten from server variable in production
+        return "http://$_SERVER[HTTP_HOST]/";
     }
 
     //settings
