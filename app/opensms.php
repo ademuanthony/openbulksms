@@ -73,7 +73,7 @@ class OpenSms{
     const OPEN_OPTION_NO = 'No';
 
     public static function getDocumentRoot(){
-        return $_SERVER['DOCUMENT_ROOT'].'/SmsPortalCreator/';
+        return $_SERVER['DOCUMENT_ROOT'].'/';
     }
 
     /** @var null The module */
@@ -106,7 +106,7 @@ class OpenSms{
 
     public static function getBaseUrl(){
         //"http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-        return "http://$_SERVER[HTTP_HOST]/SmsPortalCreator/";// 'http://www.openbulksms.com/';//this will be gotten from server variable in production
+        return "http://$_SERVER[HTTP_HOST]/";// 'http://www.openbulksms.com/';//this will be gotten from server variable in production
     }
 
     //settings
