@@ -64,12 +64,7 @@ class Install extends OpenSms_Abstract_Module_Controller {
     }
 
     private function getDbScript(){
-        $sql = "CREATE TABLE IF NOT EXISTS `". $this->getTableName('admins')."` (
-          `userName` varchar(128) NOT NULL,
-          `password` varchar(265) NOT NULL
-        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-        CREATE TABLE IF NOT EXISTS `". $this->getTableName('bulksms')."` (
+        $sql = "CREATE TABLE IF NOT EXISTS `". $this->getTableName('bulksms')."` (
           `id` int(11) NOT NULL,
           `loginId` varchar(50) NOT NULL,
           `sender` varchar(18) NOT NULL,
