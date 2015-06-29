@@ -7,4 +7,5 @@ abstract class OpenSms_Model_Abstract_ModelBase{
     }
 
     public abstract function getById($id);
+    public abstract function getTableName();
 }

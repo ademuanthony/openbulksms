@@ -12,7 +12,7 @@
                 $this->Id = $id;
                 $this->Committed = false;
                 if ($id != -1) {
-                    $sql = "select * from " . OpenSms::getTableName('transactions') . " where id = '$id';";
+                    $sql = "select * from " . $this->getTableName() . " where id = '$id';";
                     $result = OpenSms_Helper_Db::executeReader($sql);
                     foreach ($result as $r) {
                         $this->Amount = $r->amount;
@@ -28,6 +28,10 @@
                         $this->Committed = $r->committed;
                     }
                 }
+            }
+
+            public function getTableName(){
+                return OpenSms::getTableName('transactions');
             }
 
             public $Id;
@@ -84,18 +88,18 @@
             public function Save()
             {
                 if ($this->Id != -1) {
-                    $sql = "update " . OpenSms::getTableName('transactions') . " set amount = '" .
+                    $sql = "update " . $this->getTableName() . " set amount = '" .
                         $this->Amount . "', unit = '" . $this->Unit . "', committed = '" . $this->Committed .
                         "' , status = '" . $this->Status . "' where id = '$this->Id';";
                 } else {
-                    $sql = "insert into " . OpenSms::getTableName('transactions') . "(loginId, amount, unit, description, paymentMethod, `type`, status, committed)
+                    $sql = "insert into " . $this->getTableName() . "(loginId, amount, unit, description, paymentMethod, `type`, status, committed)
 				 value('$this->LoginId', '$this->Amount', '$this->Unit', '$this->Description', '$this->PaymentMethod', '$this->Type', '$this->Status', '$this->Committed');";
                 }
                 //die($sql);
                 $result = OpenSms_Helper_Db::executeNonQuery($sql);
 
                 if($this->Id == -1){
-                    $sql = "select MAX('id') as id from " . OpenSms::getTableName('transactions') . " where loginId = '$this->LoginId'";
+                    $sql = "select MAX('id') as id from " . $this->getTableName() . " where loginId = '$this->LoginId'";
                     $data = OpenSms_Helper_Db::executeReader($sql);
                     foreach($data as $d){
                         $this->Id = $d->id;

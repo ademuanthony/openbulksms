@@ -36,6 +36,10 @@
             }
         }
 
+        public function getTableName(){
+            return OpenSms::getTableName('users');
+        }
+
 		public function __construct(array $param = null){
             $loginId = $param == null || empty($param[0])? "" : $param[0];
             $_password = $param == null || empty($param[1])? "" : $param[1];
@@ -43,7 +47,7 @@
 			$this->IsOld = false;
 			$this->Balance = 0;
 			 if($loginId != ''){
-				$sql = "select * from ".OpenSms::getTableName('users')." where loginId = '".StringMethods::MakeSave($loginId)."' and status = 'active';";
+				$sql = "select * from ".$this->getTableName()." where loginId = '".StringMethods::MakeSave($loginId)."' and status = 'active';";
 						
 				//die($sql);
 				$result = OpenSms_Helper_Db::executeReader($sql);
@@ -102,11 +106,11 @@
 		public function Save(){
 			if($this->IsOld){
 				if($this->Password != '')
-					$sql = "update ".OpenSms::getTableName('users')." set password = '".StringMethods::Encode("$this->Password")."',
+					$sql = "update ".$this->getTableName()." set password = '".StringMethods::Encode("$this->Password")."',
                     role = '".StringMethods::MakeSave("$this->Role")."', balance = '".StringMethods::MakeSave(
 					$this->Balance)."' where loginId = '".StringMethods::MakeSave($this->LoginId)."';";
 				else
-					$sql = "update ".OpenSms::getTableName('users')." set balance = '".StringMethods::MakeSave($this->Balance)."',
+					$sql = "update ".$this->getTableName()." set balance = '".StringMethods::MakeSave($this->Balance)."',
                     role = '".StringMethods::MakeSave("$this->Role")."' 
                     where loginId = '".StringMethods::MakeSave($this->LoginId)."';";
 			}else{
@@ -142,7 +146,7 @@
 		}
 
         public function Delete(){
-			$sql = "update users set status = 'deleted' where loginId = '".StringMethods::MakeSave($this->LoginId)."'";
+			$sql = "update ".$this->getTableName()." set status = 'deleted' where loginId = '".StringMethods::MakeSave($this->LoginId)."'";
 			//die($sql);
             return OpenSms_Helper_Db::executeNonQuery($sql);
 		}

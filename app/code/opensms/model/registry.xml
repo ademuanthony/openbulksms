@@ -40,6 +40,11 @@
         <class_name>OpenSms_Model_Card</class_name>
         <file_path>app/code/opensms/model/core/card.php</file_path>
     </model>
+    <model>
+        <key>OpenSms_Model_Content</key>
+        <class_name>OpenSms_Model_Content</class_name>
+        <file_path>app/code/opensms/model/core/content.php</file_path>
+    </model>
 
 
 

@@ -24,6 +24,10 @@
             }
         }
 
+        public function getTableName(){
+            return OpenSms::getTableName('sms');
+        }
+
         public $Id;
         public $BulkSMSId;
         public $Number;

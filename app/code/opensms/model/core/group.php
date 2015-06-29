@@ -18,6 +18,10 @@
 				}
 			}
 		}
+
+        public function getTableName(){
+            return OpenSms::getTableName('group');
+        }
 		
 		public $Id;
 		

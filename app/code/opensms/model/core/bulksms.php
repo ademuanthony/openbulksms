@@ -25,6 +25,10 @@
             }
         }
 
+        public function getTableName(){
+            return OpenSms::getTableName('bulksms');
+        }
+
         public $Id;
         public $LoginId;
         public $Sender;

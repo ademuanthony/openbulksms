@@ -13,9 +13,9 @@
             <div class="col-lg-10 col-lg-offset-1">
                 <div class="row">
                     <div class="col-lg-6">
-                        <h2>Send Bulk SMS @ <b>1.50</b></h2>
+                        <?php $this->renderContent('home_header_send_price'); ?>
                         <br/>
-                        <h2 class="text-danger" style="color: red !important;">1 Unit = 1 SMS for all network</h2>
+                        <?php $this->renderContent('home_header_1_unit_1_sms', ['class'=>'text-danger', 'style' => 'color: red !important;']); ?>
                         <br/>
                         <h2>No Hidden charges</h2>
                         <br/><br/>

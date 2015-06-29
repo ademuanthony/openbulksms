@@ -18,4 +18,18 @@
             <readonly>false</readonly>
         </field>
     </fields>
+    <cms>
+        <content>
+            <key>home_header_send_price</key>
+            <type>raw</type>
+            <host>h2</host>
+            <body>SEND BULK SMS @ 1.50</body>
+        </content>
+        <content>
+            <key>home_header_1_unit_1_sms</key>
+            <type>raw</type>
+            <host>h2</host>
+            <body>1 Unit = 1 SMS for all network</body>
+        </content>
+    </cms>
 </theme>

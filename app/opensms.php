@@ -111,6 +111,10 @@ class OpenSms{
         //return "http://$_SERVER[HTTP_HOST]/"; //live
     }
 
+    public static function getCurrentUrl(){
+        return "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    }
+
     //settings
 
     private static $systemSettings = array();
@@ -128,6 +132,11 @@ class OpenSms{
         foreach($xml as $key=>$value){
             self::$systemSettings[$key] = $value;
         }
+    }
+
+    //theme
+    public static function getCurrentTheme(){
+        return new OpenSms_Model_System_Theme(self::getSystemSetting(OpenSms::CURRENT_THEME));
     }
 
     private static $tablePrefix;
@@ -440,6 +449,33 @@ class OpenSms{
 
     }
 
+    //cms
+    //when a request is made for a content. try getting it from the db via the content model. If not found
+    //load from file(if not already loaded) and try getting again
+    private static $contentLoaded = false;
+    private static function loadContent($key){
+        $content = self::loadModel("OpenSms_Model_Content");
+        if(self::$contentLoaded) return $content;
+        $theme = self::getCurrentTheme();
+        if($theme->cms)
+        foreach ($theme->cms->content as $c) {
+            $con = self::loadModel("OpenSms_Model_Content");
+            $con->Key = (string)$c->key;
+            $con->Type = (string)$c->type;
+            $con->Host = (string)$c->host;
+            $con->Body = (string)$c->body;
+            $con->Save();
+            if($con->Key == $key) $content = $con;
+        }
+        self::$contentLoaded = true;
+        return $content;
+    }
+
+    public static function getContent($key){
+        $content = self::loadModel("OpenSms_Model_Content", [0=>$key]);
+        if(!isset($content->Id)) $content = self::loadContent($key);
+        return $content;
+    }
 
     //instance members
     /** @var null The module_name */

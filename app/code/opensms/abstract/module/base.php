@@ -5,7 +5,7 @@ class OpenSms_Abstract_Module_Base extends OpenSms_Helper_Db{
             session_start();
         }
         $this->module = OpenSms::getCurrentModule();
-        $this->data['currentTheme'] = new OpenSms_Model_System_Theme($this->getSystemSetting(OpenSms::CURRENT_THEME));
+        $this->data['currentTheme'] = OpenSms::getCurrentTheme();
     }
 
     protected $module = NULL;

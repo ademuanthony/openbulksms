@@ -316,6 +316,7 @@ class OpenSms_Model_System_Theme{
             $this->exists = !empty($this->name);
 
             $this->fields = $theme->fields;
+            $this->cms = $theme->cms;
         }else {
             $this->load($key);
         }
@@ -331,6 +332,7 @@ class OpenSms_Model_System_Theme{
     public $appCast;
 
     public $fields;
+    public $cms;
 
     private function load($key){
         $fileName = OpenSms::DESIGN_PATH.$key.'/theme.xml';
@@ -355,6 +357,8 @@ class OpenSms_Model_System_Theme{
                     (string)$field->value, (string)$field->readonly);
                 $this->fields[] = $field_model;
             }
+
+        $this->cms = $theme_xml->cms;
 
         self::$collection[$this->key] = $this;
     }

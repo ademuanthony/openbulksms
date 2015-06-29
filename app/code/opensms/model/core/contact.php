@@ -19,7 +19,11 @@
                 }
             }
         }
-		
+
+        public function getTableName(){
+            return OpenSms::getTableName('contact');
+        }
+
 		public $Id;
 		
 		public $GroupId;

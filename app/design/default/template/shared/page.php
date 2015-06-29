@@ -206,5 +206,6 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="<?php echo OpenSms::getBaseUrl()?>app/design/default/assets/frontend/js/bootstrap.min.js"></script>
+<?php $this->renderSpecialView(OpenSms::VIEW_POSITION_FOOTER);?>
 </body>
 </html>

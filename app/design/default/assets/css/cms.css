@@ -1,0 +1,33 @@
+div.editable
+{
+    border: solid 1px transparent;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+div.editable:hover
+{
+    border-color: darkred;
+}
+
+div.raw_editable
+{
+    border: solid 1px transparent;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+div.raw_editable:hover
+{
+    border-color: darkred;
+}
+
+div.cms-submitter{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 50px 20px;
+    border-radius: 50%;
+    background: rgba(200, 230, 150, 0.7);
+    z-index: 20000;
+}

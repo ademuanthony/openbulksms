@@ -92,14 +92,12 @@ class Install extends OpenSms_Abstract_Module_Controller {
         ) ENGINE=InnoDB AUTO_INCREMENT=187 DEFAULT CHARSET=utf8;
 
 
-        CREATE TABLE IF NOT EXISTS `". $this->getTableName('contents')."` (
+        CREATE TABLE IF NOT EXISTS `". $this->getTableName('content')."` (
           `id` int(11) NOT NULL,
-          `name` varchar(265) NOT NULL,
-          `secured` varchar(4) NOT NULL,
-          `body` text NOT NULL,
-          `imageSrc` varchar(265) NOT NULL,
-          `lastModificationDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-          `status` varchar(50) NOT NULL DEFAULT 'Pending'
+          `key` varchar(265) NOT NULL,
+          `type` varchar(128) NOT NULL,
+          `host` varchar(128) NOT NULL,
+          `body` text NOT NULL
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
@@ -199,6 +197,10 @@ class Install extends OpenSms_Abstract_Module_Controller {
           ADD PRIMARY KEY (`id`);
 
 
+        ALTER TABLE `". $this->getTableName('content')."`
+          ADD PRIMARY KEY (`id`);
+
+
         ALTER TABLE `". $this->getTableName('draft')."`
           ADD PRIMARY KEY (`id`);
 
@@ -229,6 +231,9 @@ class Install extends OpenSms_Abstract_Module_Controller {
 
         ALTER TABLE `". $this->getTableName('contact')."`
           MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=187;
+
+        ALTER TABLE `". $this->getTableName('content')."`
+          MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=147;
 
         ALTER TABLE `". $this->getTableName('group')."`
           MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;

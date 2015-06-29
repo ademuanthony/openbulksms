@@ -179,6 +179,29 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
         }
     }
 
+    protected function renderContent($key, array $htmlAttributes = array()){
+        $content = OpenSms::getContent($key);
+        if($content->Key){
+            $attributes = "";
+            $class_added = false;
+            $content->Host = $content->Type == OpenSms::VIEW_TYPE_HTML? 'div': $content->Host;
+            $edit_class = $content->Type == OpenSms::VIEW_TYPE_HTML? 'editable':'raw_editable';
+
+            foreach($htmlAttributes as $att=>$value){
+                if(strtolower(trim($att)) == 'class')
+                { $value .= " $edit_class"; $class_added = true;}
+
+                $attributes .= "$att='$value' ";
+            }
+            if(!$class_added){
+                $attributes .= " class='$edit_class'";
+            }
+            $html = "<$content->Host $attributes data-cms='content' data-cms-type='$content->Type' data-cms-id='$content->Id'>
+                    $content->Body</$content->Host>";
+            echo ($html);
+        }
+    }
+
    protected function filter($filterName, $content = ''){
        throw new ErrorException();
    }

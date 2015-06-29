@@ -24,7 +24,11 @@
                 }
             }
         }
-		
+
+        public function getTableName(){
+            return OpenSms::getTableName('cards');
+        }
+
         public $Id;
 
         public $SerialNumber;
