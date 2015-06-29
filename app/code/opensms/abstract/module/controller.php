@@ -85,9 +85,10 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
    }
 
    protected function renderTemplate($block_name = 'body', $required = true){
+       if($block_name == 'body') OpenSms::runAction(OpenSms::BEFORE_RENDER_ACTION);
        $file_name = $this->getTemplatePath($block_name);
        if(!$required && !file_exists($file_name)) return;
-       include $file_name;
+       require_once $file_name;
    }
 
     protected function getCurrentUri(){
@@ -120,10 +121,10 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
         //var_dump($scripts); die();
         if(is_array($scripts)) {
             foreach ($scripts as $sFile) {
-                echo html_entity_decode("<link href='".OpenSms::getBaseUrl().$sFile."' rel='stylesheet'></script>");
+                echo html_entity_decode("<link href='".OpenSms::getBaseUrl().$sFile."' rel='stylesheet'/>");
             }
         }else {
-            echo html_entity_decode("<link href='".OpenSms::getBaseUrl().$scripts."' rel='stylesheet'></script>");
+            echo html_entity_decode("<link href='".OpenSms::getBaseUrl().$scripts."' rel='stylesheet'/>");
         }
 
     }
@@ -150,6 +151,31 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
             }
         }else {
             echo html_entity_decode("<script src='".OpenSms::getBaseUrl().$scripts."' type='text/javascript'></script>");
+        }
+    }
+
+    protected function registerView($key, $content, $type, $position, $isFile = true){
+        OpenSms::registerView($key, $content, $type, $position, $isFile);
+    }
+
+    protected function renderSpecialView($position){
+        $views = OpenSms::getViews($position);
+        foreach($views as $view){
+            switch($view->type){
+                case OpenSms::VIEW_TYPE_STYLE:
+                    echo html_entity_decode("<link href='".OpenSms::getBaseUrl().OpenSms::DESIGN_PATH.
+                        $view->content."' rel='stylesheet'/>");
+                    break;
+                case OpenSms::VIEW_TYPE_SCRIPT:
+                    echo html_entity_decode("<script src='".OpenSms::getBaseUrl().OpenSms::DESIGN_PATH.
+                        $view->content."' type='text/javascript'></script>");
+                    break;
+                case OpenSms::VIEW_TYPE_HTML:
+                case OpenSms::VIEW_TYPE_RAW:
+                    if($view->isFile) require_once(OpenSms::DESIGN_PATH.$view->content);
+                    else echo (($view->type==OpenSms::VIEW_TYPE_HTML)?html_entity_decode($view->content):$view->content);
+                    break;
+            }
         }
     }
 

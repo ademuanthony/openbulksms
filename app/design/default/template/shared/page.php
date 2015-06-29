@@ -31,10 +31,12 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+    <?php $this->renderSpecialView(OpenSms::VIEW_POSITION_TOP);?>
 </head>
 
 <body>
-
+<?php $this->renderSpecialView(OpenSms::VIEW_POSITION_BODY);?>
 <?php $this->renderTemplate('header');?>
 
 

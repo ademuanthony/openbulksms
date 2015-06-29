@@ -150,6 +150,8 @@ class OpenSms_Model_System_Module{
 
     public $modelRegistry;
 
+    public $actions;
+
     public $exists;
 
     public $appCast;
@@ -194,17 +196,26 @@ class OpenSms_Model_System_Module{
                 (string)$payment->controller, (string)$payment->action, (string)$payment->filePath);
             $this->payments[] = $payment_model;
         }
-        
-        //model metas
+
+        //model meta
         $this->modelRegistry = array();
         if(isset($module_xml->model_register->model))
-        foreach($module_xml->model_register->model as $modelMeta){
-            $model_meta = new OpenSms_Model_System_ModelMeta((string)$modelMeta->key,
-                (string)$modelMeta->class_name, (string)$modelMeta->file_path);
-            $this->modelRegistry[] = $model_meta;
-        }
+            foreach($module_xml->model_register->model as $modelMeta){
+                $model_meta = new OpenSms_Model_System_ModelMeta((string)$modelMeta->key,
+                    (string)$modelMeta->class_name, (string)$modelMeta->file_path);
+                $this->modelRegistry[] = $model_meta;
+            }
 
-        //catche
+        //model actions
+        $this->actions = array();
+        if(isset($module_xml->actions->action))
+            foreach($module_xml->actions->action as $action_xml){
+                $action = new OpenSms_Model_System_Action((string)$action_xml->key, (string)$action_xml->method,
+                    (string)$action_xml->class, (string)$action_xml->fileName, (string)$action_xml->module);
+                $this->actions[] = $action;
+            }
+
+        //save
         self::$modules[(string)$this->name] = $this;
     }
 
@@ -241,6 +252,35 @@ class OpenSms_Model_System_Module{
             closedir($handle);
         }
         return $modules;
+    }
+}
+
+class OpenSms_Model_System_Action{
+    public function __construct($key, $method, $class, $fileName, $module){
+        $this->key = $key;
+        $this->method = $method;
+        $this->moduleName = $module;
+        $this->fileName = $fileName;
+        $this->class = $class;
+    }
+
+    public $key;
+    public $method;
+    public $class;
+    public $fileName;
+    public $moduleName;
+
+    private static $actions = array();
+    public static function getAll(){
+        if(count(self::$actions) > 0)  return selft::$actions;
+
+        $modules = OpenSms_Model_System_Module::getModules();
+        foreach ($modules as $module) {
+            foreach ($module->actions as $action) {
+                $actions[] = $action;
+            }
+        }
+        return $actions;
     }
 }
 
@@ -342,4 +382,20 @@ class OpenSms_Model_System_Theme{
         }
         return self::$collection;
     }
+}
+
+class OpenSms_Model_System_View{
+    public function __construct($key, $content, $type, $isFile, $position){
+        $this->key = $key;
+        $this->content = $content;
+        $this->type = $type;
+        $this->isFile = $isFile;
+        $this->position = $position;
+    }
+
+    public $key;
+    public $content;
+    public $type;
+    public $isFile;
+    public $position;
 }

@@ -397,6 +397,50 @@ class OpenSms{
         return self::getCurrentUser()->Role == $role;
     }
 
+
+    //rendering views, script and styles from action
+    const VIEW_POSITION_TOP = 'top';
+    const VIEW_POSITION_BODY = 'body';
+    const VIEW_POSITION_FOOTER = 'footer';
+
+    const VIEW_TYPE_RAW = 'raw';
+    const VIEW_TYPE_HTML = 'html';
+    const VIEW_TYPE_STYLE = 'style';
+    const VIEW_TYPE_SCRIPT = 'script';
+
+    static $viewCollection = array();
+    public static function registerView($key, $content, $type, $position, $isFile = true){
+        $view = new OpenSms_Model_System_View($key, $content, $type, $isFile, $position);
+        self::$viewCollection[$key] = $view;
+    }
+
+    public static function getViews($position){
+        $views = array();
+        foreach(self::$viewCollection as $v){
+            if($v->position == $position)
+                $views[] = $v;
+        }
+        return $views;
+    }
+
+
+    //actions
+    const BEFORE_RENDER_ACTION = 'before_render';
+    public static function runAction($key){
+        foreach (OpenSms_Model_System_Action::getAll() as $action) {
+            if($action->key == $key){
+                try{
+                    if(!class_exists($action->class)) require_once('app/code/'.$action->fileName);
+                    call_user_func($action->class.'::'. $action->method);
+                }catch (ErrorException $ex){
+                    die('Error while calling action: '.$action->toString(). $ex->getMessage());
+                }
+            }
+        }
+
+    }
+
+
     //instance members
     /** @var null The module_name */
     private $module_name = null;
