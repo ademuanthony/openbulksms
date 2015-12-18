@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<module>
+    <name>Contact</name>
+    <version>1.0.0.0</version>
+    <lincense>Free</lincense>
+    <path>main</path>
+
+    <payments>
+
+    </payments>
+
+    <routes>
+        <route>
+            <uri>contact</uri>
+            <filePath>main/contact/contact.php</filePath>
+            <controller>contact</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>contact/index</uri>
+            <filePath>main/contact/contact.php</filePath>
+            <controller>contact</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>*</uri>
+            <filePath>main/contact/contact.php</filePath>
+            <controller>contact</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>contact/send</uri>
+            <filePath>main/contact/contact.php</filePath>
+            <controller>contact</controller>
+            <action>send</action>
+        </route>
+    </routes>
+
+    <fields>
+        <field>
+            <label></label>
+            <type></type>
+            <sort_order></sort_order>
+            <show_in_website></show_in_website>
+        </field>
+    </fields>
+
+    <model_register>
+
+    </model_register>
+</module>

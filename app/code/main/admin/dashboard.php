@@ -8,7 +8,7 @@
 
 class dashboard extends OpenSms_Abstract_Module_Controller{
     public function index(){
-        $this->data['user'] = $this->checkLogin();
+        $this->data['user'] = $this->checkLogin(OpenSms::OPEN_ROLE_ADMIN);
         $this->data['pageTitle'] = 'Dashboard | OpenSMS';
         $this->renderTemplate('body');
     }

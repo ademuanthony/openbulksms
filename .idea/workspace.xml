@@ -2,296 +2,222 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dabfef3b-7579-40c4-9115-841462ee6496" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/magicline/images/icon-rtl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/assets/inlineall/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/assets/sample.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/ajax.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/api.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/appendto.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/css/cms.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/template/cms/content_editor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/datafiltering.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/plugins/dialog/dialog.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/divreplace.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/plugins/enterkey/enterkey.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/plugins/wysiwygarea/fullpage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/inlineall.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/inlinebycode.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/inlinetextarea.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/jquery.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/assets/uilanguages/languages.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/plugins/magicline/magicline.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/plugins/dialog/assets/my_dialog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/plugins/htmlwriter/outputforflash.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/plugins/htmlwriter/outputhtml.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/assets/outputxhtml/outputxhtml.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/assets/posteddata.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/readonly.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/replacebyclass.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/replacebycode.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/sample.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/sample.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/sample_posteddata.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/tabindex.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/plugins/toolbar/toolbar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/tt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/tt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/uicolor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/uilanguages.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/samples/xhtmlstyle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/link/images/anchor.png" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/link/images/anchor.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/link/images/hidpi/anchor.png" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/link/images/hidpi/anchor.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/arrow.png" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/arrow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/close.png" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/close.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/hidpi/close.png" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/hidpi/close.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/magicline/images/icon.png" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/magicline/images/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/magicline/images/hidpi/icon.png" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/magicline/images/hidpi/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/icons.png" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/icons.png" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/lock-open.png" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/lock-open.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/hidpi/lock-open.png" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/hidpi/lock-open.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/lock.png" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/lock.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/hidpi/lock.png" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/hidpi/lock.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/refresh.png" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/refresh.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/hidpi/refresh.png" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/images/hidpi/refresh.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/CHANGES.md" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/CHANGES.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/LICENSE.md" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/README.md" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/scayt/README.md" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/scayt/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/about/dialogs/about.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/about/dialogs/about.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/overlays/01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/overlays/02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/overlays/03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/overlays/04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/overlays/05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/overlays/06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/overlays/07.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/overlays/08.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/overlays/09.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/img/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/smile/assets/images/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/overlays/10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/overlays/11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/overlays/12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/overlays/13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/overlays/14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/overlays/15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/img/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/smile/assets/images/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/img/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/smile/assets/images/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/img/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/smile/assets/images/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/Educational-Support.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/Geographical-Coverage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/smile/assets/images/Gum-Treatment.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/smile/assets/images/IMG_0887.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/PHC-Strengthening.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/Skills-Acquisition.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/Untitled-6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/accordion1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/bg1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/slider/bg1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/bg2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/slider/bg2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/bg3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/slider/bg3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/bg_services.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/bg_services.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/contact.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/main/cms/assets/images/ebs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/main/cms/assets/images/ebs1.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/main/cms/assets/images/ebs2.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/main/cms/assets/images/ebs3.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/fonts/fontawesome-webfontba72.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/fonts/fontawesome-webfontba72.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/fonts/fontawesome-webfontba72.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/fonts/fontawesome-webfontd41d.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/fonts/glyphicons-halflings-regulard41d.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/smile/assets/images/green-background--dental--cleaning--toothbrushes_3315205.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/demo/image.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/smile/assets/images/image3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/image_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/img1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/slider/img1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/img2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/slider/img2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/img3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/slider/img3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/smile/assets/images/kavo-unik-chair1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/img/loading.GIF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/smile/assets/images/logo-lowered.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/logo-mini.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/smile/assets/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/man1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/man2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/man3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/man4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/map.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/smile/assets/images/mzl.nmkheuzz.1024x1024-65.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/ribon_one.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/ribon_two.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/search_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/services1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/services2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/services3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/services4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/services5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/services6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/demo/slide.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/slider-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/slider_one.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/tab1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/tab2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/team-member.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/testimonials1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/smile/assets/images/tooth-suitcase-dentistry_737925.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/smile/assets/images/toothbrush.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/whoWeAre.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/skin/clap/assets/images/youngMenAndWomen.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/corlate/404.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Tony.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/corlate/about-us.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/main/about/about.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/main/about.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/template/about/about_index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/layout/about/about_index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/css/animate.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/template/shared/blank.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/corlate/blog-item.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/corlate/blog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/template/shared/bottom.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/main/cms/cms.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/layout/cms/cms_images.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/layout/cms/cms_index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/corlate/contact-us.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/main/contact/contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/main/contact.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/template/contact/contact_index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/layout/contact/contact_index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/js/countdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/js/custom-image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/js/custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/template/cms/page/default.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/demo/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/main/donate/donate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/main/donate.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/template/donate/donate_index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/layout/donate/donate_index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/fonts/fontawesome-webfontba72.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/template/shared/footer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/template/shared/footer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/template/shared/header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/template/home/home_index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/layout/home/home_index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/layout/home/home_index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/js/html5shiv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/template/cms/images.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/index-image.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/index-slideshow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/corlate/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/template/cms/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/template/home/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/jquery-1.10.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/jquery.countdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/js/jquery.isotope.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/js/jquery.prettyPhoto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/jquery.vegas.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/jquery.vegas.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/plugins/vegas/images/loading.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/template/shared/notification.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/opensms/model/core/page.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/template/shared/page.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/template/shared/page.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/layout/cms/page_default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/layout/cms/page_default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/layout/cms/page_default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/main/cms/pages.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/template/cms/pages_add.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/layout/cms/pages_add.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/template/cms/pages_index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/layout/cms/pages_index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/template/cms/pages_manage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/default/layout/cms/pages_manage.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/corlate/portfolio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/css/prettyPhoto.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/corlate/pricing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/js/respond.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/css/responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/corlate/sendemail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/corlate/services.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/corlate/shortcodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/assets/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/theme.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/smile/theme.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/clap/assets/js/wow.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/main/account/account.php" afterPath="$PROJECT_DIR$/app/code/main/account/account.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/layout/account/account_login.xml" afterPath="$PROJECT_DIR$/app/design/default/layout/account/account_login.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/main/cms/actions.php" afterPath="$PROJECT_DIR$/app/code/main/cms/actions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/af.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/af.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/link/dialogs/anchor.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/link/dialogs/anchor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ar.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/opensms/abstract/module/base.php" afterPath="$PROJECT_DIR$/app/code/opensms/abstract/module/base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/opensms/model/system/base.php" afterPath="$PROJECT_DIR$/app/code/opensms/model/system/base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/bg.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/bg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/bg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/bn.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/bn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/bs.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/bs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/build-config.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/build-config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/opensms/model/core/bulksms.php" afterPath="$PROJECT_DIR$/app/code/opensms/model/core/bulksms.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ca.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/opensms/model/core/card.php" afterPath="$PROJECT_DIR$/app/code/opensms/model/core/card.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/ckeditor.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/js/cms.js" afterPath="$PROJECT_DIR$/app/design/default/assets/js/cms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/main/cms.xml" afterPath="$PROJECT_DIR$/app/modules/main/cms.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/config.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/opensms/model/core/contact.php" afterPath="$PROJECT_DIR$/app/code/opensms/model/core/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/opensms/model/core/content.php" afterPath="$PROJECT_DIR$/app/code/opensms/model/core/content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/contents.css" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/contents.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/template/cms/content_editor.php" afterPath="$PROJECT_DIR$/app/design/default/template/cms/content_editor.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/opensms/abstract/module/controller.php" afterPath="$PROJECT_DIR$/app/code/opensms/abstract/module/controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/cs.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/cs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/cs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/cy.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/cy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/cy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/da.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/da.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/de.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/pastefromword/filter/default.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/pastefromword/filter/default.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/dialog.css" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/dialog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/dialog/dialogDefinition.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/dialog/dialogDefinition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/dialog_ie.css" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/dialog_ie.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/dialog_ie7.css" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/dialog_ie7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/dialog_ie8.css" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/dialog_ie8.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/dialog_iequirks.css" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/dialog_iequirks.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/editor.css" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/editor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/editor_gecko.css" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/editor_gecko.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/editor_ie.css" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/editor_ie.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/editor_ie7.css" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/editor_ie7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/editor_ie8.css" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/editor_ie8.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/editor_iequirks.css" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/editor_iequirks.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/el.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/en-au.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/en-au.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/en-ca.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/en-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/en-gb.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/en-gb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/en.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/eo.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/eo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/eo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/es.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/es.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/es.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/et.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/et.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/et.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/eu.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/eu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/fa.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/fa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/fa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/fi.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/fi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/fi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/fo.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/fo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/fr-ca.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/fr-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/fr.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/gl.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/gl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/gl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/opensms/model/core/group.php" afterPath="$PROJECT_DIR$/app/code/opensms/model/core/group.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/gu.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/gu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/he.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/he.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/he.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/hi.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/hi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/template/home/home_index.php" afterPath="$PROJECT_DIR$/app/design/default/template/home/home_index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/hr.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/hr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/hr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/hu.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/hu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/hu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/id.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/id.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/id.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/image/dialogs/image.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/image/dialogs/image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/main/admin/dashboard.php" afterPath="$PROJECT_DIR$/app/code/main/admin/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/template/payment/fbn_index.php" afterPath="$PROJECT_DIR$/app/design/default/template/payment/fbn_index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/main/home/home.php" afterPath="$PROJECT_DIR$/app/code/main/home/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/layout/home/home_index.xml" afterPath="$PROJECT_DIR$/app/design/default/layout/home/home_index.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/main/admin/install.php" afterPath="$PROJECT_DIR$/app/code/main/admin/install.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/is.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/is.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/it.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/it.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/it.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ja.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ja.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ja.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/adapters/jquery.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/adapters/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ka.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ka.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/km.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/km.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/km.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/km.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ko.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ko.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ku.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ku.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ku.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/link/dialogs/link.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/link/dialogs/link.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/lt.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/lt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/lv.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/lv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/lv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/opensms/model/core/message.php" afterPath="$PROJECT_DIR$/app/code/opensms/model/core/message.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/mk.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/mk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/mn.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/mn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/opensms/model/abstract/modelBase.php" afterPath="$PROJECT_DIR$/app/code/opensms/model/abstract/modelBase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ms.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/nb.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/nb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/nb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/nl.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/no.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/no.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/no.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/layout/admin/install_index.xml" afterPath="$PROJECT_DIR$/app/design/default/layout/admin/install_index.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/layout/main.xml" afterPath="$PROJECT_DIR$/app/design/default/layout/main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/opensms.php" afterPath="$PROJECT_DIR$/app/opensms.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/scayt/dialogs/options.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/scayt/dialogs/options.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/template/shared/page.php" afterPath="$PROJECT_DIR$/app/design/default/template/shared/page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/clipboard/dialogs/paste.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/clipboard/dialogs/paste.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/pl.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/pt-br.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/pt-br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/pt.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/readme.md" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/skins/moono/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/template/shared/portal/page.php" afterPath="$PROJECT_DIR$/app/design/default/template/shared/portal/page.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/opensms/model/registry.xml" afterPath="$PROJECT_DIR$/app/code/opensms/model/registry.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ro.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ru.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/si.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/si.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/si.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/sk.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/sk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/sl.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/sl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/specialchar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/sq.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/sq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/sr-latn.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/sr-latn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/sr.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/sr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/styles.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/styles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/sv.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/sv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/sv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/table/dialogs/table.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/table/dialogs/table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/tabletools/dialogs/tableCell.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/th.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/th.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/th.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/theme.xml" afterPath="$PROJECT_DIR$/app/design/default/theme.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/scayt/dialogs/toolbar.css" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/scayt/dialogs/toolbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/tr.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/opensms/model/core/transaction.php" afterPath="$PROJECT_DIR$/app/code/opensms/model/core/transaction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ug.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/ug.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/ug.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/uk.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/uk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/uk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/opensms/model/core/user.php" afterPath="$PROJECT_DIR$/app/code/opensms/model/core/user.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/vi.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/vi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/main/admin/settings.php" afterPath="$PROJECT_DIR$/app/code/main/admin/settings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/opensms/settings.xml" afterPath="$PROJECT_DIR$/app/code/opensms/settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/template/shared/portal/sidebar.php" afterPath="$PROJECT_DIR$/app/design/default/template/shared/portal/sidebar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/main/admin/theme.php" afterPath="$PROJECT_DIR$/app/code/main/admin/theme.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc.css" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/wsc/dialogs/wsc_ie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/zh-cn.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/zh-cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/zh.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/zh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterPath="$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh.js" />
     </list>
     <ignored path="SmsPortalCreator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -316,82 +242,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="opensms.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/opensms.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.9615383" vertical-offset="3474" max-vertical-offset="4658">
-              <caret line="420" column="27" selection-start-line="420" selection-start-column="27" selection-end-line="420" selection-end-column="27" />
-              <folding>
-                <element signature="n#getSystemSetting#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#loadSystemSettings#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#getTablePrefix#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#getTableName#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#loadModelRegistry#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#getModelRegistry#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#getModelMeta#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#loadModel#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#callModelStaticMethod#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#getActionUrl#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#splitUriString#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#getCurrentUser#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#checkLogin#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#setError#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#setNotification#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#requestIsAuthenticated#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#isUserInRole#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#getViews#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#runAction#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#loadContent#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#getContent#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#__construct#0;n#OpenSms#0;n#!!top" expanded="false" />
-                <element signature="n#splitUrl#0;n#OpenSms#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/opensms/model/system/base.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="544" max-vertical-offset="799">
-              <caret line="336" column="32" selection-start-line="336" selection-start-column="32" selection-end-line="336" selection-end-column="32" />
-              <folding>
-                <element signature="n#OpenSms_Model_System_Module_Field#0;n#!!top" expanded="false" />
-                <element signature="n#OpenSms_Model_System_ModelMeta#0;n#!!top" expanded="false" />
-                <element signature="n#OpenSms_Model_System_Payment#0;n#!!top" expanded="false" />
-                <element signature="n#OpenSms_Model_System_Route#0;n#!!top" expanded="false" />
-                <element signature="n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-                <element signature="n#__construct#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-                <element signature="n#load#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-                <element signature="n#getField#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-                <element signature="e#6614#6646#0#PHP" expanded="false" />
-                <element signature="n#getModule#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-                <element signature="n#getModules#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-                <element signature="n#OpenSms_Model_System_Action#0;n#!!top" expanded="false" />
-                <element signature="n#OpenSms_Model_System_Theme_Field#0;n#!!top" expanded="false" />
-                <element signature="n#__construct#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-                <element signature="n#load#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-                <element signature="e#10233#10545#0#PHP" expanded="false" />
-                <element signature="n#getSettingsFile#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-                <element signature="n#getField#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-                <element signature="n#getAll#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-                <element signature="n#OpenSms_Model_System_View#0;n#!!top" expanded="false" />
-                <element signature="n#__construct#0;n#OpenSms_Model_System_View#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/code/opensms/abstract/module/controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.6153846" vertical-offset="559" max-vertical-offset="5117">
-              <caret line="188" column="0" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="4998">
+              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
               <folding>
                 <element signature="n#printData#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
                 <element signature="n#getFormData#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
                 <element signature="n#getThemeName#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-                <element signature="n#getLayout#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+                <element signature="n#getLayoutFileKey#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+                <element signature="e#1258#2066#0#PHP" expanded="false" />
                 <element signature="n#getTemplatePath#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
                 <element signature="n#renderTemplate#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
                 <element signature="n#getCurrentUri#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
@@ -401,89 +262,52 @@
                 <element signature="n#renderScript#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
                 <element signature="n#registerView#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
                 <element signature="n#renderSpecialView#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+                <element signature="n#renderContent#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+                <element signature="n#getImage#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
                 <element signature="n#filter#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+                <element signature="n#redirect#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+                <element signature="n#redirectToAction#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+                <element signature="n#setError#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+                <element signature="n#setNotification#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+                <element signature="n#printError#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+                <element signature="n#getCurrentUser#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+                <element signature="n#requestIsAuthenticated#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+                <element signature="n#checkLogin#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+                <element signature="n#isUserInRole#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content_editor.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/design/default/template/cms/content_editor.php">
+      <file leaf-file-name="page.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51792115" vertical-offset="0" max-vertical-offset="558">
-              <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.2512909" vertical-offset="109" max-vertical-offset="782">
+              <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
               <folding>
-                <element signature="e#6#88#0#PHP" expanded="true" />
-                <element signature="tag#div#0" expanded="false" />
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#__construct#0;n#OpenSms_Model_Page#0;n#!!top" expanded="false" />
+                <element signature="n#getById#0;n#OpenSms_Model_Page#0;n#!!top" expanded="false" />
+                <element signature="n#copy#0;n#OpenSms_Model_Page#0;n#!!top" expanded="false" />
+                <element signature="n#getTableName#0;n#OpenSms_Model_Page#0;n#!!top" expanded="false" />
+                <element signature="n#Delete#0;n#OpenSms_Model_Page#0;n#!!top" expanded="false" />
+                <element signature="n#GetAll#0;n#OpenSms_Model_Page#0;n#!!top" expanded="false" />
+                <marker date="1436940323546" expanded="true" signature="423:489" placeholder="select * fro.._this_getTableName_ where..." />
+                <marker date="1436940323546" expanded="true" signature="1459:1834" placeholder="insert into ..." />
+                <marker date="1436940323546" expanded="true" signature="2591:2605" placeholder="select * fro..tableName..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="theme.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/default/theme.xml">
+      <file leaf-file-name="pages.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/main/cms/pages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="697">
-              <caret line="28" column="41" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home_index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/default/template/home/home_index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="1054">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cms.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/default/assets/css/cms.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/main/cms/actions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="323">
-              <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/default/template/shared/page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.0" vertical-offset="645" max-vertical-offset="1292">
-              <caret line="208" column="60" selection-start-line="208" selection-start-column="60" selection-end-line="208" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="697">
+              <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
               <folding>
-                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cms.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/default/assets/js/cms.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="884">
-              <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#40#0" expanded="false" />
-                <element signature="e#181#438#0" expanded="false" />
+                <element signature="n#Index#0;n#Pages#0;n#!!top" expanded="false" />
+                <element signature="n#Add#0;n#Pages#0;n#!!top" expanded="false" />
+                <element signature="n#Delete#0;n#Pages#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -502,33 +326,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/code/main/cms/design/default/assets/js/cms.js" />
-        <option value="$PROJECT_DIR$/app/design/default/assets/js/js.js" />
-        <option value="$PROJECT_DIR$/app/modules/main/cms.xml" />
-        <option value="$PROJECT_DIR$/app/code/main/home/home.php" />
-        <option value="$PROJECT_DIR$/app/code/opensms/model/registry.xml" />
-        <option value="$PROJECT_DIR$/app/code/opensms/model/abstract/modelBase.php" />
-        <option value="$PROJECT_DIR$/app/code/opensms/model/core/bulksms.php" />
-        <option value="$PROJECT_DIR$/app/code/opensms/model/core/card.php" />
-        <option value="$PROJECT_DIR$/app/code/opensms/model/core/contact.php" />
-        <option value="$PROJECT_DIR$/app/code/opensms/model/core/group.php" />
-        <option value="$PROJECT_DIR$/app/code/opensms/model/core/transaction.php" />
-        <option value="$PROJECT_DIR$/app/code/opensms/model/core/user.php" />
-        <option value="$PROJECT_DIR$/app/code/opensms/model/core/message.php" />
-        <option value="$PROJECT_DIR$/app/code/opensms/model/system/base.php" />
-        <option value="$PROJECT_DIR$/app/code/opensms/abstract/module/base.php" />
+        <option value="$PROJECT_DIR$/app/code/main/about/about.php" />
+        <option value="$PROJECT_DIR$/app/design/clap/template/about/about_index.php" />
+        <option value="$PROJECT_DIR$/app/design/clap/layout/donate/donate_index.xml" />
+        <option value="$PROJECT_DIR$/app/code/main/donate/donate.php" />
+        <option value="$PROJECT_DIR$/app/design/clap/layout/main.xml" />
+        <option value="$PROJECT_DIR$/app/design/clap/template/shared/blank.php" />
+        <option value="$PROJECT_DIR$/app/modules/main/donate.xml" />
+        <option value="$PROJECT_DIR$/app/design/clap/template/donate/donate_index.php" />
+        <option value="$PROJECT_DIR$/app/design/clap/template/shared/page.php" />
+        <option value="$PROJECT_DIR$/app/design/clap/layout/contact/contact_index.xml" />
         <option value="$PROJECT_DIR$/app/code/main/admin/install.php" />
-        <option value="$PROJECT_DIR$/app/design/default/theme.xml" />
-        <option value="$PROJECT_DIR$/app/code/opensms/model/core/content.php" />
-        <option value="$PROJECT_DIR$/app/design/default/template/shared/page.php" />
-        <option value="$PROJECT_DIR$/app/design/default/template/home/home_index.php" />
-        <option value="$PROJECT_DIR$/app/code/opensms/abstract/module/controller.php" />
+        <option value="$PROJECT_DIR$/app/design/default/layout/admin/install_index.xml" />
+        <option value="$PROJECT_DIR$/app/code/opensms/settings.xml" />
+        <option value="$PROJECT_DIR$/app/code/main/contact/contact.php" />
+        <option value="$PROJECT_DIR$/app/code/main/account/account.php" />
+        <option value="$PROJECT_DIR$/app/design/default/layout/main.xml" />
+        <option value="$PROJECT_DIR$/app/design/default/layout/account/account_login.xml" />
+        <option value="$PROJECT_DIR$/app/design/default/template/shared/portal/notification.php" />
+        <option value="$PROJECT_DIR$/app/design/clap/template/home/home_index.php" />
+        <option value="$PROJECT_DIR$/app/design/clap/template/contact/contact_index.php" />
+        <option value="$PROJECT_DIR$/app/design/smile/index-slideshow.html" />
+        <option value="$PROJECT_DIR$/app/design/smile/template/page.php" />
+        <option value="$PROJECT_DIR$/app/design/smile/template/shared/footer.php" />
+        <option value="$PROJECT_DIR$/app/design/smile/theme.xml" />
+        <option value="$PROJECT_DIR$/app/design/smile/layout/home/home_index.xml" />
+        <option value="$PROJECT_DIR$/app/design/smile/assets/js/custom.js" />
+        <option value="$PROJECT_DIR$/app/design/smile/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/app/design/smile/template/home/index.php" />
+        <option value="$PROJECT_DIR$/app/code/opensms/model/registry.xml" />
+        <option value="$PROJECT_DIR$/app/modules/main/page.xml" />
+        <option value="$PROJECT_DIR$/app/code/main/cms/page.php" />
+        <option value="$PROJECT_DIR$/app/modules/main/cms.xml" />
+        <option value="$PROJECT_DIR$/app/design/default/layout/cms/page_index.xml" />
+        <option value="$PROJECT_DIR$/app/design/default/template/cms/pages_indes.php" />
+        <option value="$PROJECT_DIR$/app/design/default/template/cms/pages_manage.php" />
+        <option value="$PROJECT_DIR$/app/design/default/layout/cms/pages_index.xml" />
+        <option value="$PROJECT_DIR$/app/design/default/layout/cms/pages_add.xml" />
+        <option value="$PROJECT_DIR$/app/design/default/layout/cms/pages_manage.xml" />
+        <option value="$PROJECT_DIR$/app/design/default/template/shared/portal/sidebar.php" />
+        <option value="$PROJECT_DIR$/app/design/default/template/cms/pages_index.php" />
+        <option value="$PROJECT_DIR$/app/design/default/template/cms/pages_add.php" />
+        <option value="$PROJECT_DIR$/app/design/default/template/shared/portal/page.php" />
         <option value="$PROJECT_DIR$/app/opensms.php" />
-        <option value="$PROJECT_DIR$/app/design/default/template/cms/raw_content_editor.php" />
         <option value="$PROJECT_DIR$/app/code/main/cms/actions.php" />
-        <option value="$PROJECT_DIR$/app/design/default/assets/js/cms.js" />
-        <option value="$PROJECT_DIR$/app/design/default/assets/css/cms.css" />
-        <option value="$PROJECT_DIR$/app/design/default/template/cms/content_editor.php" />
+        <option value="$PROJECT_DIR$/app/design/default/layout/cms/page_default.xml" />
+        <option value="$PROJECT_DIR$/app/design/smile/layout/cms/page_default.xml" />
+        <option value="$PROJECT_DIR$/app/code/opensms/abstract/module/controller.php" />
+        <option value="$PROJECT_DIR$/app/design/smile/template/shared/page.php" />
+        <option value="$PROJECT_DIR$/app/design/smile/template/cms/page/default.php" />
+        <option value="$PROJECT_DIR$/app/code/opensms/model/core/page.php" />
+        <option value="$PROJECT_DIR$/app/code/main/cms/pages.php" />
       </list>
     </option>
   </component>
@@ -612,7 +460,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
+              <option name="myItemId" value="code" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -630,11 +478,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
+              <option name="myItemId" value="code" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -652,15 +500,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
+              <option name="myItemId" value="code" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
+              <option name="myItemId" value="cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -671,10 +519,22 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Blog" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\openbulksms\app\design\default\assets\plugins" />
+      <recent name="C:\xampp\htdocs\openbulksms\app\design\clap\layout" />
+      <recent name="C:\xampp\htdocs\openbulksms\app\design\smile\template\cms" />
+      <recent name="C:\xampp\htdocs\openbulksms\app\skin\smile\assets\images" />
+      <recent name="C:\xampp\htdocs\openbulksms\app\design\smile" />
+      <recent name="C:\xampp\htdocs\openbulksms\app\skin\clap\assets\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\openbulksms\app\design\smile\layout" />
+      <recent name="C:\xampp\htdocs\openbulksms\app\design\smile\template\shared" />
+      <recent name="C:\xampp\htdocs\openbulksms\app\design\default\layout" />
+      <recent name="C:\xampp\htdocs\openbulksms\app\design\clap\template" />
+      <recent name="C:\xampp\htdocs\openbulksms\app\skin\clap\assets" />
     </key>
   </component>
   <component name="RunManager">
@@ -720,7 +580,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -728,7 +588,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -742,6 +602,27 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -761,593 +642,371 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/opensms.php">
+    <entry file="file://$PROJECT_DIR$/app/design/smile/template/shared/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3228" max-vertical-offset="7769">
-          <caret line="406" column="10" selection-start-line="406" selection-start-column="10" selection-end-line="406" selection-end-column="10" />
-          <folding>
-            <element signature="n#getSystemSetting#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadSystemSettings#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getTablePrefix#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getTableName#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadModelRegistry#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getModelRegistry#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getModelMeta#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadModel#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#callModelStaticMethod#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getActionUrl#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#splitUriString#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getCurrentUser#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#checkLogin#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#setError#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#setNotification#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#requestIsAuthenticated#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#isUserInRole#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getViews#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#runAction#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadContent#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getContent#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#splitUrl#0;n#OpenSms#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.20481928" vertical-offset="0" max-vertical-offset="581">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/system/base.php">
+    <entry file="file://$PROJECT_DIR$/app/design/default/template/shared/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="799">
-          <caret line="336" column="32" selection-start-line="336" selection-start-column="32" selection-end-line="336" selection-end-column="32" />
-          <folding>
-            <element signature="n#OpenSms_Model_System_Module_Field#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_ModelMeta#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Payment#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Route#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#load#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#getField#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="e#6614#6646#0#PHP" expanded="false" />
-            <element signature="n#getModule#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#getModules#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Action#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Theme_Field#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#load#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="e#10233#10545#0#PHP" expanded="false" />
-            <element signature="n#getSettingsFile#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#getField#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#getAll#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_View#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms_Model_System_View#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/abstract/module/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="4981">
-          <caret line="188" column="67" selection-start-line="188" selection-start-column="49" selection-end-line="188" selection-end-column="67" />
-          <folding>
-            <element signature="n#printData#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-            <element signature="n#getFormData#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-            <element signature="n#getThemeName#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-            <element signature="n#getLayout#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-            <element signature="n#getTemplatePath#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-            <element signature="n#renderTemplate#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-            <element signature="n#getCurrentUri#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-            <element signature="n#isCurrentUri#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-            <element signature="n#jsonp#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-            <element signature="n#renderStyle#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-            <element signature="n#renderScript#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-            <element signature="n#registerView#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-            <element signature="n#renderSpecialView#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-            <element signature="n#filter#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/default/theme.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="697">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/default/template/home/home_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1054">
-          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/default/assets/css/cms.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="204">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/main/cms/actions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="680">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="n#__construct#0;n#OpenSms_Model_Content#0;n#!!top" expanded="false" />
-            <element signature="n#getById#0;n#OpenSms_Model_Content#0;n#!!top" expanded="false" />
-            <element signature="n#copy#0;n#OpenSms_Model_Content#0;n#!!top" expanded="false" />
-            <marker date="1435602669343" expanded="true" signature="-1:-1" placeholder="select * fro.._this_getTableName_ where..." />
-            <marker date="1435602669343" expanded="true" signature="-1:-1" placeholder="select * fro.._this_getTableName_ where..." />
-            <marker date="1435602669343" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1819">
-          <caret line="147" column="33" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
-          <folding>
-            <element signature="n#getUSerFromJ#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#getTableName#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#getById#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#Save#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#Delete#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#GetTransactions#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#GetLastTransaction#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#GetGroups#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#GetDrafts#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#GetSentMessages#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#GetScheduledMessages#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#copyFromPDO#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#GetAllUsers#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#Count#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#Validate#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..users..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..this_getTableName_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..this_getTableName..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="update :_thi..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="update :_thi..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="update :_thi..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..OpenSms_getTableName_transactions_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..OpenSms_getTableName_transactions_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select MAX(i..OpenSms_getTableName_transactions_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..OpenSms_getTableName_users_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select count..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select count..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..OpenSms_getTableName_users_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..OpenSms_getTableName_users_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..OpenSms_getTableName_users_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select mobil..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/opensms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9690">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#getSystemSetting#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadSystemSettings#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getTablePrefix#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getTableName#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadModelRegistry#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getModelRegistry#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getModelMeta#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadModel#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#callModelStaticMethod#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getActionUrl#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#splitUriString#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getCurrentUser#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#checkLogin#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#setError#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#setNotification#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#requestIsAuthenticated#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#isUserInRole#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getViews#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#runAction#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadContent#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getContent#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#splitUrl#0;n#OpenSms#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/system/base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="612">
-          <caret line="347" column="73" selection-start-line="347" selection-start-column="32" selection-end-line="347" selection-end-column="73" />
-          <folding>
-            <element signature="n#OpenSms_Model_System_Module_Field#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_ModelMeta#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Payment#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Route#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#load#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#getField#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="e#6614#6646#0#PHP" expanded="false" />
-            <element signature="n#getModule#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#getModules#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Action#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Theme_Field#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#load#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="e#10233#10545#0#PHP" expanded="false" />
-            <element signature="n#getSettingsFile#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#getField#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#getAll#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_View#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms_Model_System_View#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/opensms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5708" max-vertical-offset="9690">
-          <caret line="401" column="37" selection-start-line="401" selection-start-column="37" selection-end-line="401" selection-end-column="37" />
-          <folding>
-            <element signature="n#getSystemSetting#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadSystemSettings#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getTablePrefix#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getTableName#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadModelRegistry#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getModelRegistry#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getModelMeta#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadModel#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#callModelStaticMethod#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getActionUrl#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#splitUriString#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getCurrentUser#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#checkLogin#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#setError#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#setNotification#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#requestIsAuthenticated#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#isUserInRole#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getViews#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#runAction#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadContent#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getContent#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#splitUrl#0;n#OpenSms#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/system/base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#OpenSms_Model_System_Module_Field#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_ModelMeta#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Payment#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Route#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#load#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#getField#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="e#6614#6646#0#PHP" expanded="false" />
-            <element signature="n#getModule#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#getModules#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Action#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Theme_Field#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#load#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="e#10233#10545#0#PHP" expanded="false" />
-            <element signature="n#getSettingsFile#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#getField#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#getAll#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_View#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms_Model_System_View#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/main/account.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1598">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/main/home.xml">
+    <entry file="file://$PROJECT_DIR$/app/design/smile/theme.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.112026356" vertical-offset="0" max-vertical-offset="850">
-          <caret line="4" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.08585858" vertical-offset="0" max-vertical-offset="697">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/default/assets/js/app.js">
+    <entry file="file://$PROJECT_DIR$/app/design/smile/index-slideshow.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
+        <state vertical-scroll-proportion="0.43889844" vertical-offset="0" max-vertical-offset="697">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/smile/assets/img/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/smile/index-image.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="15.648149" vertical-offset="845" max-vertical-offset="4182">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/main/cms.xml">
+    <entry file="file://$PROJECT_DIR$/app/design/default/assets/frontend/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <caret line="49" column="33" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="33" />
+        <state vertical-scroll-proportion="2.3013468" vertical-offset="12216" max-vertical-offset="120088">
+          <caret line="799" column="0" selection-start-line="799" selection-start-column="0" selection-end-line="799" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/main/home/home.php">
+    <entry file="file://$PROJECT_DIR$/app/design/smile/assets/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="238">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1292">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/smile/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="4522">
+          <caret line="48" column="23" selection-start-line="45" selection-start-column="4" selection-end-line="48" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/opensms/model/registry.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="952">
-          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="1037">
+          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/opensms/model/abstract/modelBase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="272">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="272">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/bulksms.php">
+    <entry file="file://$PROJECT_DIR$/app/modules/main/home.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="2091">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="29" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/option.php">
+    <entry file="file://$PROJECT_DIR$/app/code/opensms/abstract/module/base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="544">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/layout/cms/cms_images.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/login.php">
+    <entry file="file://$PROJECT_DIR$/app/code/main/admin/users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0051635113" vertical-offset="3" max-vertical-offset="629">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#__construct#0;n#OpenSms_Model_Login#0;n#!!top" expanded="false" />
-            <element signature="n#Save#0;n#OpenSms_Model_Login#0;n#!!top" expanded="false" />
-            <element signature="n#Delete#0;n#OpenSms_Model_Login#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59859157" vertical-offset="0" max-vertical-offset="2465">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/draft.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
+        <state vertical-scroll-proportion="27.384615" vertical-offset="712" max-vertical-offset="3196">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/contact.php">
+    <entry file="file://$PROJECT_DIR$/app/code/main/cms/cms.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32922536" vertical-offset="0" max-vertical-offset="1173">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/card.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50880283" vertical-offset="0" max-vertical-offset="2074">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1153846" vertical-offset="2" max-vertical-offset="816">
-          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/notification.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/transaction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0528169" vertical-offset="30" max-vertical-offset="1683">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1819">
-          <caret line="147" column="33" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
-          <folding>
-            <element signature="n#getUSerFromJ#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#getTableName#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#getById#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#Save#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#Delete#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#GetTransactions#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#GetLastTransaction#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#GetGroups#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#GetDrafts#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#GetSentMessages#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#GetScheduledMessages#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#copyFromPDO#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#GetAllUsers#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#Count#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <element signature="n#Validate#0;n#OpenSms_Model_User#0;n#!!top" expanded="false" />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..users..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..this_getTableName_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..this_getTableName..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="update :_thi..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="update :_thi..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="update :_thi..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..OpenSms_getTableName_transactions_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..OpenSms_getTableName_transactions_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select MAX(i..OpenSms_getTableName_transactions_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..OpenSms_getTableName_users_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select count..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select count..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..OpenSms_getTableName_users_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..OpenSms_getTableName_users_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select * fro..OpenSms_getTableName_users_..." />
-            <marker date="1435599008273" expanded="true" signature="-1:-1" placeholder="select mobil..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/system/base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="799">
-          <caret line="336" column="32" selection-start-line="336" selection-start-column="32" selection-end-line="336" selection-end-column="32" />
-          <folding>
-            <element signature="n#OpenSms_Model_System_Module_Field#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_ModelMeta#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Payment#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Route#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#load#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#getField#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="e#6614#6646#0#PHP" expanded="false" />
-            <element signature="n#getModule#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#getModules#0;n#OpenSms_Model_System_Module#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Action#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_Theme_Field#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#load#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="e#10233#10545#0#PHP" expanded="false" />
-            <element signature="n#getSettingsFile#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#getField#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#getAll#0;n#OpenSms_Model_System_Theme#0;n#!!top" expanded="false" />
-            <element signature="n#OpenSms_Model_System_View#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms_Model_System_View#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/opensms/abstract/module/base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="544">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/default/theme.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="697">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="41" />
-          <folding />
+        <state vertical-scroll-proportion="0.49913943" vertical-offset="135" max-vertical-offset="1224">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="680">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="n#__construct#0;n#OpenSms_Model_Content#0;n#!!top" expanded="false" />
-            <element signature="n#getById#0;n#OpenSms_Model_Content#0;n#!!top" expanded="false" />
-            <element signature="n#copy#0;n#OpenSms_Model_Content#0;n#!!top" expanded="false" />
-            <marker date="1435602669343" expanded="true" signature="-1:-1" placeholder="select * fro.._this_getTableName_ where..." />
-            <marker date="1435602669343" expanded="true" signature="-1:-1" placeholder="select * fro.._this_getTableName_ where..." />
-            <marker date="1435602669343" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-          </folding>
+        <state vertical-scroll-proportion="-12.346154" vertical-offset="2" max-vertical-offset="646">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/main/admin/install.php">
+    <entry file="file://$PROJECT_DIR$/app/code/main/account/account.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8502582" vertical-offset="2532" max-vertical-offset="3604">
-          <caret line="235" column="71" selection-start-line="235" selection-start-column="71" selection-end-line="235" selection-end-column="71" />
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="153" max-vertical-offset="1258">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/default/assets/plugins/ckeditor/lang/en.js">
+    <entry file="file://$PROJECT_DIR$/app/design/default/layout/cms/cms_index.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="571">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/template/cms/pages_manage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/layout/cms/pages_index.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/layout/cms/pages_add.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36408567" vertical-offset="0" max-vertical-offset="607">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/layout/cms/pages_manage.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/template/shared/portal/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.846154" vertical-offset="1283" max-vertical-offset="3808">
+          <caret line="94" column="77" selection-start-line="94" selection-start-column="77" selection-end-line="94" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/main/cms.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="498" max-vertical-offset="1938">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/template/admin/users/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="2142">
+          <caret line="14" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="125" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/template/sms/compose_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="3842">
+          <caret line="21" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="225" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/shallom/template/shared/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.609319" vertical-offset="0" max-vertical-offset="663">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/default/template/shared/page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.0" vertical-offset="645" max-vertical-offset="1292">
-          <caret line="208" column="60" selection-start-line="208" selection-start-column="60" selection-end-line="208" selection-end-column="60" />
+        <state vertical-scroll-proportion="-18.653847" vertical-offset="59" max-vertical-offset="3604">
+          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/template/shared/portal/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.461538" vertical-offset="382" max-vertical-offset="2040">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/template/admin/users/manage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="15.384615" vertical-offset="400" max-vertical-offset="4250">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/template/admin/transactions/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.75880283" vertical-offset="431" max-vertical-offset="1530">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/template/admin/transactions/manage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.47007042" vertical-offset="267" max-vertical-offset="1479">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/opensms/helper/html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="272">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/template/cms/pages_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="1207">
+          <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/template/account/recharge/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1637324" vertical-offset="417" max-vertical-offset="1734">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/template/cms/pages_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1224">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/layout/home/home_index.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/system/base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.1923075" vertical-offset="1" max-vertical-offset="5559">
+          <caret line="91" column="32" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/opensms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.538462" vertical-offset="2804" max-vertical-offset="10336">
+          <caret line="248" column="34" selection-start-line="248" selection-start-column="34" selection-end-line="248" selection-end-column="34" />
           <folding>
-            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#getIsAdminPage#0;n#OpenSms#0;n#!!top" expanded="false" />
+            <element signature="n#getDocumentRoot#0;n#OpenSms#0;n#!!top" expanded="false" />
+            <element signature="n#getBaseUrl#0;n#OpenSms#0;n#!!top" expanded="false" />
+            <element signature="n#getCurrentUrl#0;n#OpenSms#0;n#!!top" expanded="false" />
+            <element signature="n#getSystemSetting#0;n#OpenSms#0;n#!!top" expanded="false" />
+            <element signature="n#loadSystemSettings#0;n#OpenSms#0;n#!!top" expanded="false" />
+            <element signature="n#getCurrentTheme#0;n#OpenSms#0;n#!!top" expanded="false" />
+            <element signature="n#getModelMeta#0;n#OpenSms#0;n#!!top" expanded="false" />
+            <element signature="n#loadModel#0;n#OpenSms#0;n#!!top" expanded="false" />
+            <element signature="n#callModelStaticMethod#0;n#OpenSms#0;n#!!top" expanded="false" />
+            <element signature="n#runAction#0;n#OpenSms#0;n#!!top" expanded="false" />
+            <element signature="n#loadContent#0;n#OpenSms#0;n#!!top" expanded="false" />
+            <element signature="n#getImages#0;n#OpenSms#0;n#!!top" expanded="false" />
+            <element signature="n#getImage#0;n#OpenSms#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/default/template/home/home_index.php">
+    <entry file="file://$PROJECT_DIR$/app/code/main/cms/actions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="1054">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="612">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/smile/layout/home/home_index.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/default/layout/cms/page_default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/smile/layout/cms/page_default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/smile/template/home/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="2261">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/clap/template/shared/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.538462" vertical-offset="573" max-vertical-offset="1173">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="65" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/smile/template/cms/page/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="357">
+          <caret line="11" column="108" selection-start-line="11" selection-start-column="108" selection-end-line="11" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/smile/template/shared/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7306338" vertical-offset="2628" max-vertical-offset="3196">
+          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/opensms/abstract/module/controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6153846" vertical-offset="559" max-vertical-offset="5117">
-          <caret line="188" column="0" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="4998">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
           <folding>
             <element signature="n#printData#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
             <element signature="n#getFormData#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
             <element signature="n#getThemeName#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
-            <element signature="n#getLayout#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+            <element signature="n#getLayoutFileKey#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+            <element signature="e#1258#2066#0#PHP" expanded="false" />
             <element signature="n#getTemplatePath#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
             <element signature="n#renderTemplate#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
             <element signature="n#getCurrentUri#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
@@ -1357,78 +1016,48 @@
             <element signature="n#renderScript#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
             <element signature="n#registerView#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
             <element signature="n#renderSpecialView#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+            <element signature="n#renderContent#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+            <element signature="n#getImage#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
             <element signature="n#filter#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+            <element signature="n#redirect#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+            <element signature="n#redirectToAction#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+            <element signature="n#setError#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+            <element signature="n#setNotification#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+            <element signature="n#printError#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+            <element signature="n#getCurrentUser#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+            <element signature="n#requestIsAuthenticated#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+            <element signature="n#checkLogin#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
+            <element signature="n#isUserInRole#0;n#OpenSms_Abstract_Module_Controller#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/opensms.php">
+    <entry file="file://$PROJECT_DIR$/app/code/main/cms/pages.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.9615383" vertical-offset="3474" max-vertical-offset="4658">
-          <caret line="420" column="27" selection-start-line="420" selection-start-column="27" selection-end-line="420" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="697">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
           <folding>
-            <element signature="n#getSystemSetting#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadSystemSettings#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getTablePrefix#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getTableName#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadModelRegistry#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getModelRegistry#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getModelMeta#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadModel#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#callModelStaticMethod#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getActionUrl#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#splitUriString#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getCurrentUser#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#checkLogin#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#setError#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#setNotification#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#requestIsAuthenticated#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#isUserInRole#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getViews#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#runAction#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#loadContent#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#getContent#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#OpenSms#0;n#!!top" expanded="false" />
-            <element signature="n#splitUrl#0;n#OpenSms#0;n#!!top" expanded="false" />
+            <element signature="n#Index#0;n#Pages#0;n#!!top" expanded="false" />
+            <element signature="n#Add#0;n#Pages#0;n#!!top" expanded="false" />
+            <element signature="n#Delete#0;n#Pages#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/main/cms/actions.php">
+    <entry file="file://$PROJECT_DIR$/app/code/opensms/model/core/page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="323">
-          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/default/assets/js/cms.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="884">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.2512909" vertical-offset="109" max-vertical-offset="782">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
           <folding>
-            <element signature="e#0#40#0" expanded="false" />
-            <element signature="e#181#438#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/default/assets/css/cms.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/default/template/cms/content_editor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51792115" vertical-offset="0" max-vertical-offset="558">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
-            <element signature="tag#div#0" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#__construct#0;n#OpenSms_Model_Page#0;n#!!top" expanded="false" />
+            <element signature="n#getById#0;n#OpenSms_Model_Page#0;n#!!top" expanded="false" />
+            <element signature="n#copy#0;n#OpenSms_Model_Page#0;n#!!top" expanded="false" />
+            <element signature="n#getTableName#0;n#OpenSms_Model_Page#0;n#!!top" expanded="false" />
+            <element signature="n#Delete#0;n#OpenSms_Model_Page#0;n#!!top" expanded="false" />
+            <element signature="n#GetAll#0;n#OpenSms_Model_Page#0;n#!!top" expanded="false" />
+            <marker date="1436940323546" expanded="true" signature="423:489" placeholder="select * fro.._this_getTableName_ where..." />
+            <marker date="1436940323546" expanded="true" signature="1459:1834" placeholder="insert into ..." />
+            <marker date="1436940323546" expanded="true" signature="2591:2605" placeholder="select * fro..tableName..." />
           </folding>
         </state>
       </provider>

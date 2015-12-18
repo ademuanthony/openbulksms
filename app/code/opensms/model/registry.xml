@@ -45,6 +45,11 @@
         <class_name>OpenSms_Model_Content</class_name>
         <file_path>app/code/opensms/model/core/content.php</file_path>
     </model>
+    <model>
+        <key>OpenSms_Model_Page</key>
+        <class_name>OpenSms_Model_Page</class_name>
+        <file_path>app/code/opensms/model/core/page.php</file_path>
+    </model>
 
 
 

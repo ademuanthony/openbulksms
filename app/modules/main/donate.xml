@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<module>
+    <name>Donate</name>
+    <version>1.0.0.0</version>
+    <lincense>Free</lincense>
+    <path>main</path>
+
+    <payments>
+
+    </payments>
+
+    <routes>
+        <route>
+            <uri>donate</uri>
+            <filePath>main/donate/donate.php</filePath>
+            <controller>donate</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>donate/index</uri>
+            <filePath>main/donate/donate.php</filePath>
+            <controller>donate</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>*</uri>
+            <filePath>main/donate/donate.php</filePath>
+            <controller>donate</controller>
+            <action>index</action>
+        </route>
+    </routes>
+
+    <fields>
+        <field>
+            <label></label>
+            <type></type>
+            <sort_order></sort_order>
+            <show_in_website></show_in_website>
+        </field>
+    </fields>
+
+    <model_register>
+
+    </model_register>
+</module>

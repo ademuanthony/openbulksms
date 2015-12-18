@@ -11,7 +11,7 @@
         <form role="form" action="<?php echo OpenSms::getActionUrl('save', '*', 'cms')?>" method="post">
             <input type="hidden" id="raw_editor_id" name="id">
             <input type="hidden" id="raw_editor_key" name="key">
-            <input type="hidden" value="<?OpenSms::getCurrentUrl()?>" name="returnUrl">
+            <input type="hidden" value="<?php echo OpenSms::getCurrentUrl(); ?>?action=cms" name="returnUrl">
             <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -30,13 +30,13 @@
 </div><!-- /.modal -->
 
 <div class="cms-submitter" style="display: none;">
-    <form role="form" action="<?php echo OpenSms::getActionUrl('save', '*', 'cms')?>" method="post">
+    <form role="form" action="<?php echo OpenSms::getActionUrl('save', '*', 'cms')?>?action=cms" method="post">
         <input type="hidden" id="html_editor_id" name="id">
         <input type="hidden" id="html_editor_key" name="key">
-        <input type="hidden" id="html_editor_key" name="key">
         <input type="hidden" id="html_editor_body" name="body">
-        <input type="hidden" value="<?OpenSms::getCurrentUrl()?>" name="returnUrl">
-        <button class="btn-lg btn-danger" type="submit">Save Changes</button>
+        <input type="hidden" value="<?php echo OpenSms::getCurrentUrl(); ?>" name="returnUrl">
+        <button id="html_editor_btn_save" class="btn-lg btn-primary" type="submit">Save Changes</button>
+        <button id="html_editor_btn_cancel" class="btn-lg btn-danger" type="button">Cancel</button>
     </form>
 
 

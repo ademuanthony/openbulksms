@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<window>
+    <head>
+    </head>
+
+    <body template="shared/portal/page.php"/>
+    <globalNotification template="shared/portal/notification.php"/>
+    <header template="shared/portal/header.php"/>
+    <sidebar template="shared/portal/sidebar.php"/>
+    <content template="cms/pages_manage.php"/>
+    <footer template="shared/portal/footer.php"/>
+</window>

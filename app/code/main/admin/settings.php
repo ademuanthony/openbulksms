@@ -36,7 +36,7 @@ class Settings extends OpenSms_Abstract_Module_Controller {
         $config->{OpenSms::DB_PASSWORD} = $this->getFormData(OpenSms::DB_PASSWORD);
         $config->{OpenSms::DB_PASSWORD} = $this->getFormData(OpenSms::DB_PASSWORD);
 
-        $config->{OpenSms::CURRENT_THEME} = $this->getFormData(OpenSms::CURRENT_THEME);
+        $config->{OpenSms::CURRENT_THEME_KEY} = $this->getFormData(OpenSms::CURRENT_THEME_KEY);
 
         $config->{OpenSms::OPEN_PRICE_PER_UNIT} = $this->getFormData(OpenSms::OPEN_PRICE_PER_UNIT);
         $config->{OpenSms::OPEN_UNITS_PER_SMS} = $this->getFormData(OpenSms::OPEN_UNITS_PER_SMS);

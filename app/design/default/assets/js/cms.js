@@ -43,14 +43,33 @@ function replaceDiv( div ) {
 }
 
 function prepareSubmitter(div){
+    console.log(jQuery(div));
+    var jDiv = jQuery(div);
+    $('#html_editor_id').val(jDiv.attr('data-cms-id'));
+    $('#html_editor_key').val(jDiv.attr('data-cms-key'));
     jQuery('div.cms-submitter').show();
 }
-
-jQuery('.raw_editable').dblclick(function(){
+function hideEditor(){
     if(editor && (editor != undefined)) {
         editor.destroy();
         editor = null;
         jQuery('div.cms-submitter').hide();
     }
+}
+jQuery('.raw_editable').dblclick(function(){
+    hideEditor();
+    $('#raw_editor_id').val($(this).attr('data-cms-id'));
+    $('#raw_editor_key').val($(this).attr('data-cms-key'));
+    $('#raw_editor_body').val($(this).text().trim());
     jQuery('#raw_content_editor').modal('show');
+});
+
+jQuery('#html_editor_btn_cancel').click(function () {
+    hideEditor();
+});
+
+jQuery('#html_editor_btn_save').click(function () {
+    $('#html_editor_body').val(encodeURIComponent(editor.getData()));
+    hideEditor();
+    return true;
 });

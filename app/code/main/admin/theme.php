@@ -88,7 +88,7 @@ class Themes extends OpenSms_Abstract_Module_Controller{
 
             if (isset($_POST['Activate'])) {
                 $config = simplexml_load_file(OpenSms::SETTINGS_FILE_PATH);
-                $config->{OpenSms::CURRENT_THEME} = $this->getFormData('key');
+                $config->{OpenSms::CURRENT_THEME_KEY} = $this->getFormData('key');
                 $config->saveXML(OpenSms::SETTINGS_FILE_PATH);
             }
 

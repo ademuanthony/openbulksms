@@ -16,7 +16,7 @@ class OpenSms{
     const NO_IMAGE = 'app/skin/system/no_image.png';
     const SETTINGS_FILE_PATH = 'app/code/opensms/settings.xml';
 
-    const CURRENT_THEME = 'opensms_current_theme';//theme is saved in the option table with this key
+    const CURRENT_THEME_KEY = 'opensms_current_theme';//theme is saved in the option table with this key
 
 
     //general
@@ -49,7 +49,7 @@ class OpenSms{
     const OPEN_TRANSACTION_TYPE_DEBIT = 'DEBIT';
 
     public static function getTransactionTypeArray(){
-        return [self::OPEN_TRANSACTION_TYPE_CREDIT, self::OPEN_TRANSACTION_TYPE_DEBIT];
+        return array(self::OPEN_TRANSACTION_TYPE_CREDIT, self::OPEN_TRANSACTION_TYPE_DEBIT);
     }
 
     const OPEN_TRANSACTION_STATUS_PENDING = 'Pending';
@@ -59,9 +59,9 @@ class OpenSms{
     const OPEN_TRANSACTION_STATUS_COMPLETED = 'Completed';
 
     public static function getTransactionStatusArray(){
-        return [self::OPEN_TRANSACTION_STATUS_PENDING, self::OPEN_TRANSACTION_STATUS_AWAITING_PAYMENT,
+        return array(self::OPEN_TRANSACTION_STATUS_PENDING, self::OPEN_TRANSACTION_STATUS_AWAITING_PAYMENT,
             self::OPEN_TRANSACTION_STATUS_NOTIFICATION_SENT,
-            self::OPEN_TRANSACTION_STATUS_PROCESSING, self::OPEN_TRANSACTION_STATUS_COMPLETED];
+            self::OPEN_TRANSACTION_STATUS_PROCESSING, self::OPEN_TRANSACTION_STATUS_COMPLETED);
     }
 
     //SMS
@@ -72,16 +72,15 @@ class OpenSms{
     const OPEN_OPTION_YES = 'Yes';
     const OPEN_OPTION_NO = 'No';
 
-    public static function getDocumentRoot(){
-        return $_SERVER['DOCUMENT_ROOT'].'/openbulksms/';//demo
-        //return $_SERVER['DOCUMENT_ROOT'].'/';//live
-    }
 
     /** @var null The module */
     private static $module = null;
 
     private static $currentRoute;
 
+    public static function setCurrentRoute(OpenSms_Model_System_Route $route){
+        self::$currentRoute = $route;
+    }
     public function getCurrentRoute(){
         return self::$currentRoute;
     }
@@ -94,6 +93,10 @@ class OpenSms{
         return self::$module;
     }
 
+    public static function setCurrentModule($module){
+        self::$module = $module;
+    }
+
 
     public static function isCurrentModule($module_name)
     {
@@ -104,6 +107,11 @@ class OpenSms{
         return self::$isAdminPage;
     }
 
+
+    public static function getDocumentRoot(){
+        //return $_SERVER['DOCUMENT_ROOT'].'/openbulksms/';//demo
+        return $_SERVER['DOCUMENT_ROOT'].'/';//live
+    }
 
     public static function getBaseUrl(){
         //"http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -136,7 +144,7 @@ class OpenSms{
 
     //theme
     public static function getCurrentTheme(){
-        return new OpenSms_Model_System_Theme(self::getSystemSetting(OpenSms::CURRENT_THEME));
+        return new OpenSms_Model_System_Theme(self::getSystemSetting(OpenSms::CURRENT_THEME_KEY));
     }
 
     private static $tablePrefix;
@@ -177,9 +185,10 @@ class OpenSms{
             if (isset(self::$module->modelRegistry[$model_name]))
                 $model_meta = self::$module->modelRegistry[$model_name];
             else {
-                if(!isset(self::getModelRegistry()[$model_name]))
+                $reg = self::getModelRegistry();
+                if(!isset($reg[$model_name]))
                     die('Error in getting Model Meta: ' . $model_name . '. Model not registered');
-                $model_meta = self::getModelRegistry()[$model_name];
+                $model_meta = $reg[$model_name];
             }
 
             if(!class_exists('OpenSms_Model_Abstract_ModelBase'))
@@ -318,7 +327,8 @@ class OpenSms{
         return $result;
     }
 
-    public static function pageNotFound(){
+    public static function pageNotFound($url){
+        self::runAction('before_page_not_found', [0 => $url]);
         self::redirectToAction('index', 'notfound', 'error');
     }
 
@@ -326,7 +336,7 @@ class OpenSms{
     private static $currentUser = null;
     public static function getCurrentUser(){
         if(isset($_REQUEST['callback'])){
-            $user = self::loadModel('OpenSms_Model_User', [0 => $_REQUEST['LoginId'], 1=> $_REQUEST['Password']]);
+            $user = self::loadModel('OpenSms_Model_User', array(0=>$_REQUEST['LoginId'], 1=>$_REQUEST['Password']));
             return $user->IsValidated? $user : null;
         }
         if(empty($_SESSION) || !isset($_SESSION['loginId'])) return null;
@@ -339,9 +349,9 @@ class OpenSms{
     //if role is specified check if the use is in the role
     public static function checkLogin($role = ''){
         if(isset($_SESSION['loginId'])) {
-            $user = self::loadModel('OpenSms_Model_User', [0 => $_SESSION['loginId']]);
+            $user = self::loadModel('OpenSms_Model_User', array(0 => $_SESSION['loginId']));
         }elseif(isset($_REQUEST['callback'])){
-            $user = self::loadModel('OpenSms_Model_User', [0 => $_REQUEST['LoginId'], 1=> $_REQUEST['Password']]);
+            $user = self::loadModel('OpenSms_Model_User', array(0 => $_REQUEST['LoginId'], 1=> $_REQUEST['Password']));
             if(!$user->IsValidated){
                 echo jsonp(array('error'=>TRUE, 'message'=> 'Invalid Credential'));
                 exit();
@@ -349,7 +359,7 @@ class OpenSms{
         }else{
             $token = self::loadModel('OpenSms_Model_Login');
             if($token->Validated()){
-                $user = self::loadModel('OpenSms_Model_User', [0 => $token->LoginId]);
+                $user = self::loadModel('OpenSms_Model_User', array(0 => $token->LoginId));
 
             }
         }
@@ -390,7 +400,7 @@ class OpenSms{
             return TRUE;
 
         if(isset($_REQUEST['callback'])){
-            $user = self::loadModel('OpenSms_Model_User', [0 => $_REQUEST['LoginId'], 1=> $_REQUEST['Password']]);
+            $user = self::loadModel('OpenSms_Model_User', array(0 => $_REQUEST['LoginId'], 1=> $_REQUEST['Password']));
             return $user->IsValidated;
         }
 
@@ -435,12 +445,12 @@ class OpenSms{
 
     //actions
     const BEFORE_RENDER_ACTION = 'before_render';
-    public static function runAction($key){
+    public static function runAction($key, array $params = []){
         foreach (OpenSms_Model_System_Action::getAll() as $action) {
             if($action->key == $key){
                 try{
                     if(!class_exists($action->class)) require_once('app/code/'.$action->fileName);
-                    call_user_func($action->class.'::'. $action->method);
+                    call_user_func($action->class.'::'. $action->method, $params);
                 }catch (ErrorException $ex){
                     die('Error while calling action: '.$action->toString(). $ex->getMessage());
                 }
@@ -454,7 +464,7 @@ class OpenSms{
     //load from file(if not already loaded) and try getting again
     private static $contentLoaded = false;
     private static function loadContent($key){
-        $content = self::loadModel("OpenSms_Model_Content");
+        $content = self::loadModel("OpenSms_Model_Content", array(0 => $key));
         if(self::$contentLoaded) return $content;
         $theme = self::getCurrentTheme();
         if($theme->cms)
@@ -472,9 +482,55 @@ class OpenSms{
     }
 
     public static function getContent($key){
-        $content = self::loadModel("OpenSms_Model_Content", [0=>$key]);
+        $content = self::loadModel("OpenSms_Model_Content", array(0=>$key));
         if(!isset($content->Id)) $content = self::loadContent($key);
         return $content;
+    }
+
+
+    //images
+    private static $images = array();
+    public static function getImages($fullPart = true){
+        if(count(self::$images)) return self::$images;
+        $images = array();
+        //general
+        $dir = 'app/skin/assets/images';
+        if ($handle = opendir($dir)) {
+            while (false !== ($entry = readdir($handle))) {
+                if ($entry != "." && $entry != "..") {
+                    $names = explode('.', $entry);
+                    $name = $names[0];
+                    $images[$name] = $fullPart? OpenSms::getBaseUrl().$dir.'/'.$entry : $dir.'/'.$entry;
+                }
+            }
+            closedir($handle);
+        }
+
+        //current theme
+        $themeName = self::getCurrentTheme()->name;
+        $dir = "app/skin/$themeName/assets/images";
+        if ($handle = opendir($dir)) {
+            $themeImages = array();
+            while (false !== ($entry = readdir($handle))) {
+                if ($entry != "." && $entry != "..") {
+                    $names = explode('.', $entry);
+                    $name = $names[0];
+                    $themeImages[$name] = $fullPart? OpenSms::getBaseUrl().$dir.'/'.$entry : $dir.'/'.$entry;
+                }
+            }
+            closedir($handle);
+        }
+
+        $images[OpenSms::CURRENT_THEME_KEY] = $themeImages;
+        self::$images = $images;
+        return self::$images;
+    }
+
+    public static function getImage($key, $fullPart = true){
+        $images = self::getImages($fullPart);
+        if(isset($images[OpenSms::CURRENT_THEME_KEY][$key])) return $images[OpenSms::CURRENT_THEME_KEY][$key];
+        if(isset($images[$key])) return $images[$key];
+        return $images['no_images'];
     }
 
     //instance members
@@ -499,6 +555,7 @@ class OpenSms{
     /** @var null Parameter three */
     private $url_parameter_3 = null;
 
+    private $url = null;
     /**
      * "Start" the application:
      * Analyze the URL elements and calls the according controller/method or the fallback
@@ -557,7 +614,7 @@ class OpenSms{
         }
         // invalid URL, so simply show home/index
         if(!empty($this->url_controller)){
-            self::pageNotFound();
+            self::pageNotFound($this->url);
         }
         require './app/code/main/home/home.php';
         $home = new Home(self::$module->name);
@@ -576,7 +633,7 @@ class OpenSms{
             // split URL
             $url = rtrim($_GET['q'], '/');
             $url = filter_var($url, FILTER_SANITIZE_URL);
-            $url_path = $url;
+            $this->url = $url;
             $url = explode('/', $url);
 
             //flag for admin page
@@ -592,7 +649,7 @@ class OpenSms{
             //print_r(self::$module);die();
 
             if(!self::$module->exists) {
-                self::pageNotFound();
+                self::pageNotFound($this->url);
             }
 
             $current_route = null;
@@ -665,7 +722,7 @@ class OpenSms{
 
            // var_dump($current_route);die();
             if(!isset($current_route)){
-                self::pageNotFound();
+                self::pageNotFound($this->url);
             }
 
             self::$currentRoute = $current_route;

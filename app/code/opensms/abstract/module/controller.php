@@ -34,26 +34,33 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
        return $this->data['currentTheme']->key;
    }
 
+    protected function getLayoutFileKey(){
+        return null;
+    }
+
    private function getLayout(){
        if($this->layout != NULL) return $this->layout;
-       $_key = '';
-       $trace=debug_backtrace();
-       $caller=$trace[3];//call traces through (3)action=>(2)renderLayout=>(1)getTemplate=>(0)getLayout
-       if (isset($caller['class']))
-            $_key = $caller['class'].'_';
-        $_key .= $caller['function'];
-            
-       //layout name is in the format module_controller_action
-       //$_key has the value controller_action
-       //use module with the key to get the layout file
-       /*
-        * layout resolution checks for the specified file in the current theme.
-        * if not found; use the main layout in the current theme,
-        * if not found; use the specified layout in the default theme,
-        * if not found use the main layout in the default theme
-       */
+       $_key = $this->getLayoutFileKey();
+       if(empty($_key)) {
+           $trace = debug_backtrace();
+           $caller = $trace[3];//call traces through (3)action=>(2)renderLayout=>(1)getTemplate=>(0)getLayout
+           if (isset($caller['class']))
+               $_key = $caller['class'] . '_';
+           $_key .= $caller['function'];
+
+           //layout name is in the format module_controller_action
+           //$_key has the value controller_action
+           //use module with the key to get the layout file
+           /*
+            * layout resolution checks for the specified file in the current theme.
+            * if not found; use the main layout in the current theme,
+            * if not found; use the specified layout in the default theme,
+            * if not found use the main layout in the default theme
+           */
+       }
 
        $filename = $this->module->name.'/'.$_key.'.xml';
+
 
        $fileFullName = 'app/design/'.$this->getThemeName().'/layout/'.$filename;
        if(!file_exists($fileFullName)){
@@ -67,6 +74,8 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
        }
 
        $this->layout = simplexml_load_file($fileFullName);
+
+       //print_r($this->layout);die();
        return $this->layout;
    }
 
@@ -78,16 +87,17 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
         * else return the requested
         */
        $sFileName = OpenSms::DESIGN_PATH.$this->getThemeName().'/template/'.(string)$this->getLayout()->{$block_name}['template'];
-       if(file_exists($sFileName)) return $sFileName;
-       $fileName = OpenSms::DESIGN_PATH.'default'.'/template/'.(string)$this->getLayout()->{$block_name}['template'];
-       if(file_exists($fileName)) return $fileName;
+       if(!file_exists($sFileName))
+           $sFileName = OpenSms::DESIGN_PATH.'default'.'/template/'.(string)$this->getLayout()->{$block_name}['template'];
        return $sFileName;
    }
 
    protected function renderTemplate($block_name = 'body', $required = true){
        if($block_name == 'body') OpenSms::runAction(OpenSms::BEFORE_RENDER_ACTION);
-       $file_name = $this->getTemplatePath($block_name);
-       if(!$required && !file_exists($file_name)) return;
+
+       $file_name = strtolower($this->getTemplatePath($block_name));
+
+       if(!$required && (!file_exists($file_name) || is_dir($file_name))) return;
        require_once $file_name;
    }
 
@@ -196,19 +206,27 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
             if(!$class_added){
                 $attributes .= " class='$edit_class'";
             }
-            $html = "<$content->Host $attributes data-cms='content' data-cms-type='$content->Type' data-cms-id='$content->Id'>
+            $html = "<$content->Host $attributes data-cms='content' data-cms-type='$content->Type' data-cms-key='$content->Key' data-cms-id='$content->Id'>
                     $content->Body</$content->Host>";
             echo ($html);
         }
+    }
+
+    protected function getImage($key){
+        return OpenSms::getImage($key);
     }
 
    protected function filter($filterName, $content = ''){
        throw new ErrorException();
    }
 
-   protected function redirect($path){
-       throw new ErrorException();
+   protected function redirect($url){
+       OpenSms::redirect($url);
    }
+
+    protected function redirectToAction($action, $controller = '', $module = '', array $routeParam = null){
+        OpenSms::redirectToAction($action, $controller, $module, $routeParam);
+    }
 
     protected function setError($message, $key)
     {
@@ -234,7 +252,9 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
     }
 
     public function checkLogin($role = ''){
-        return OpenSms::checkLogin($role);
+        $user = OpenSms::checkLogin($role);
+        $this->data['user'] = $user;
+        return $user;
     }
 
     protected function isUserInRole($role){
@@ -244,7 +264,7 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
     //image upload
     public function uploadImage($fileKey, $rootFolder, &$img_name){
 
-        require('app/opensms/helper/ImageEditor.php');
+        require('app/code/opensms/helper/ImageEditor.php');
 
         //reads the name of the file the user submitted for uploading
 
@@ -291,6 +311,7 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
 
 	                //compare the size with the maxim size we defined and print error if bigger
 
+                    /*
 	                if ($size > MAX_SIZE*1024)
 
 	                {
@@ -300,6 +321,7 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
 		                $errors=1;
 
 	                }
+                    */
 
 	
 

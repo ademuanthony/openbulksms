@@ -1,0 +1,260 @@
+﻿
+
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+/* =============================================================
+   CUSTOM STYLE SHEET : BY BINERY THEME
+    ============================================================ */
+
+
+
+/* =============================================================
+   GENERAL STYLES
+    ============================================================ */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    font-weight:400;
+}
+
+/* Loading Image Class Style */
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('/app/design/smile/assets/images/loading.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+
+/* Moving Icon Class Style */
+#movingicon {
+    margin-top:60px;
+    text-align:center;
+     vertical-align:central;
+    color:rgb(255, 70, 80);
+    font-weight:900;
+    font-size:40px;
+    letter-spacing:3px;
+}
+
+.red-title{
+    margin-top:60px;
+    text-align:center;
+    vertical-align:central;
+    color:rgb(255, 70, 80);
+    font-weight:900;
+    font-size:40px;
+    letter-spacing:3px;
+}
+
+.icon-color{
+    color:rgba(89, 247, 0, 0.77);
+}
+
+.subscribe-icon{
+    color:white;
+    margin-right:10px;
+}
+
+/* Social Links Class Style */
+.social-links {
+    text-align:center;
+     vertical-align:central;
+     margin-top:40px;
+     margin-bottom:30px;
+}
+.social-links a {
+    color:rgba(89, 247, 0, 0.77);
+    padding-right:10px;
+    text-decoration:none;
+    
+}
+/* Modal Popup Class Style */
+
+.mian-popup-body {
+    padding:5px 20px 20px 20px;
+     font-family: 'Open Sans', sans-serif;
+}
+/* Modal Popup Close Button */
+.back-btn {
+   background-color:#000000;
+}
+
+/* Google Map */
+.mymap {
+    width:100%;
+    height:200px;
+    border:0px;
+
+}
+/* =============================================================
+    BOOTSTRAP COMONETS STYLE CHANGES
+    ============================================================ */
+
+/* Navbar Style Change */
+
+.navbar-inverse {
+    background-color: rgba(52, 152, 219, 0.54);
+    border-color: transparent;
+}
+
+ .navbar-inverse .navbar-nav > li > a {
+        color: #ffffff;
+ }
+
+   .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+            color: #ffffff;
+ }
+
+
+ .navbar-inverse .navbar-brand {
+        color: #fff;
+ }
+.navbar-brand {
+    font-size:30px;
+    font-weight:900;
+}
+
+ /* Modal Popup Style */
+
+ .modal-content {
+    border-radius: 0px;
+    background-color: transparent;
+    background-color: rgba(52, 152, 219, 0.74);
+}
+
+.modal-header {
+    color: white;
+    background-color: rgba(152, 215, 150, 0.30);
+}
+
+    .modal-header h4 {
+        font-weight: 700;
+    }
+
+.modal-body {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.48);
+}
+
+.modal-footer {
+    margin-top: 0px;
+    background-color: rgba(152, 215, 150, 0.30);
+}
+
+
+/* =============================My Own==========================*/
+.mirroredBackground{
+    background: rgba(150, 100, 60, 0.7) !important;
+}
+
+
+/* =============================================================
+   COUNTDOWN STYLES
+    ============================================================ */
+
+#counter {
+   display: none;
+}
+#counter-default {
+    margin: 20px auto;
+}
+#counter-default .inner {
+    text-align: center;
+    border: none;
+    margin: 8px 0;
+    padding: 8px;
+}
+#counter-default .timer-number {
+    font-size: 100px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-family:'Agency FB';
+    color:#fff;
+}
+#counter-default  .timer-text {
+    padding: 10px;
+    font-size:20px;
+    font-weight:800;
+    letter-spacing:5px;
+    color:#fff;
+}
+
+
+/* =============================================================
+    Tiles
+    ============================================================ */
+.tile{
+    height: 200px;
+    width:100%;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size:30px;
+    text-align:center;
+    padding-top:20px;
+    color:white;
+}
+
+.tile a{
+    color:white;
+}
+
+.tile.green{
+    background: rgb(10, 230, 10);
+}
+
+.tile.green:hover{
+    background: rgba(10, 230, 10, 0.8);
+}
+
+.tile.red{
+    background: rgb(230, 10, 10);
+}
+
+.tile.red:hover{
+    background: rgba(230, 10, 10, 0.8);
+}
+
+.tile.blue{
+    background: rgb(10, 10, 230);
+}
+.tile.blue:hover{
+    background: rgba(10, 10, 23, 0.8);
+}
+
+.tile.mid-blue{
+    background: rgb(100, 150, 220);
+}
+
+.tile.mid-blue:hover{
+    background: rgba(100, 150, 220, 0.8);
+}
+
+/* =============================================================
+  MEDIA QUERIES
+    ============================================================ */
+
+
+@media (max-width: 487px) {
+    #headLine {
+       font-size:40px;
+    }
+}
+
+
+

@@ -1,15 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <window>
-    <head>
-        <addStyle src=""/>
-        <addIcon uri=""/>
-        <addScript src=""/>
-        <addMetaData tag="" content=""/>
-    </head>
+<head>
+</head>
 
-    <body template="shared/page.php"/>
-    <globalNotification template="shared/portal/notification.php"/>
-    <header template="shared/header.php"/>
-    <content template="shared/blank.php"/>
-    <footer template="shared/footer.php"/>
+<body template="shared/page.php"/>
+<globalNotification template=""/>
+<header template="shared/header.php"/>
+<content template="shared/blank.php"/>
+    <bottom template="shared/bottom.php"/>
+<footer template="shared/footer.php"/>
 </window>

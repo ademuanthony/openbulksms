@@ -32,7 +32,7 @@ class Account extends OpenSms_Abstract_Module_Controller {
             }
         }
         $this->data['pageTitle'] = "Free Bulk SMS Account | ".$this->getSystemSetting(OpenSms::SITE_NAME);
-        $this->renderTemplate('body');
+        $this->renderTemplate();
     }
 
     public function Login(){
@@ -63,7 +63,7 @@ class Account extends OpenSms_Abstract_Module_Controller {
         }
 
         $this->data['pageTitle'] = 'Login | '.OpenSms::getSystemSetting(OpenSms::SITE_NAME);
-        $this->renderTemplate('body');
+        $this->renderTemplate();
     }
 
     public function Logout(){

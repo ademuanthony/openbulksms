@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<theme>
+    <name>Smile</name>
+    <key>smile</key>
+    <screen_shot>http://www.openbulksms.com/app/design/default/assets/screen/home.png</screen_shot>
+    <version>1.0</version>
+    <author>Ademu Anthony</author>
+    <url>http://www.openbulksms.com</url>
+    <email>blenyo11@gmail.com</email>
+    <app_cast>http://www.openbulksms.com/themes/cast/default.xml</app_cast><!-- the themeName app cast is an xml file that shows if an update is available
+                            for the themeName and give detail of how to get the update-->
+    <fields>
+        <field>
+            <label>About Head</label>
+            <key>about_head</key>
+            <type>text</type>
+            <value>10</value>
+            <readonly>false</readonly>
+        </field>
+    </fields>
+    <cms>
+        <content>
+            <key>home_header_send_price</key>
+            <type>raw</type>
+            <host>h2</host>
+            <body>SEND BULK SMS @ 1.50</body>
+        </content>
+        <content>
+            <key>home_header_1_unit_1_sms</key>
+            <type>raw</type>
+            <host>h2</host>
+            <body>1 Unit = 1 SMS for all network</body>
+        </content>
+    </cms>
+</theme>

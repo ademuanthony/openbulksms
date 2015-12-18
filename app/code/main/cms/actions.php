@@ -16,4 +16,32 @@ class Actions extends OpenSms_Abstract_Module_Controller{
             OpenSms::registerView('cms_editor_css', 'default/assets/css/cms.css', OpenSms::VIEW_TYPE_STYLE, OpenSms::VIEW_POSITION_TOP);
         }
     }
+
+    public static function TriggerDisplayPage(array $param){
+        $action = new Actions();
+        if($action->DisplayPage($param[0])) exit;
+    }
+
+    private $page = null;
+    public function DisplayPage($key){
+        $this->page = $this->loadModel('OpenSms_Model_Page', [0 => $key]);
+
+
+        if(!isset($this->page->Id)) return false;
+
+        $this->module = OpenSms_Model_System_Module::getModule('cms');
+        OpenSms::setCurrentModule($this->module);
+        OpenSms::setCurrentRoute(new OpenSms_Model_System_Route($key, 'Actions', 'main/cms/actions.php', 'DisplayPage'));
+
+
+        $this->data['contentKey'] = 'opensms_page_'.$this->page->Permalink;
+
+        $this->data['pageTitle'] = $this->page->Title;
+        $this->renderTemplate();
+        exit;
+    }
+
+    protected function getLayoutFileKey(){
+        return $this->page->Layout;
+    }
 } 

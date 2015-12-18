@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<theme>
+    <name>Clap</name>
+    <key>clap</key>
+    <screen_shot>http://www.openbulksms.com/app/design/clap/assets/screen/home.png</screen_shot>
+    <version>1.0</version>
+    <author>Ademu Anthony</author>
+    <url>http://www.openbulksms.com</url>
+    <email>blenyo11@gmail.com</email>
+    <app_cast>http://www.openbulksms.com/themes/cast/clap.xml</app_cast><!-- the themeName app cast is an xml file that shows if an update is available
+                            for the themeName and give detail of how to get the update-->
+    <fields>
+
+    </fields>
+
+
+    <cms>
+        <content>
+            <key>home_our_life_touching_service_head</key>
+            <type>html</type>
+            <host>div</host>
+            <body>CLAP as an organisation is blessed with highly talented and enthusiastic individuals.
+                The leadership of CLAP is built on willingness to serve</body>
+        </content>
+        <content>
+            <key>home_touched_by_clap_head</key>
+            <type>html</type>
+            <host>div</host>
+            <body>CLAP as an organisation is blessed with highly talented and enthusiastic individuals.
+                The leadership of CLAP is built on willingness to serve</body>
+        </content>
+        <content>
+            <key>home_who_is_who_in_clap_head</key>
+            <type>html</type>
+            <host>div</host>
+            <body>CLAP as an organisation is blessed with highly talented and enthusiastic individuals.
+                The leadership of CLAP is built on willingness to serve</body>
+        </content>
+        <content>
+            <key>home_have_a_question</key>
+            <type>html</type>
+            <host>div</host>
+            <body>CLAP as an organisation is blessed with highly talented and enthusiastic individuals.
+                The leadership of CLAP is built on willingness to serve</body>
+        </content>
+
+    </cms>
+
+
+
+
+</theme>

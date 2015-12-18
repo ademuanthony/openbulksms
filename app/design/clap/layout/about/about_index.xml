@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<window>
+    <head>
+    </head>
+
+    <body template="shared/page.php"/>
+    <globalNotification template=""/>
+    <header template="shared/header.php"/>
+    <content template="about/about_index.php"/>
+    <bottom template="shared/bottom.php"/>
+    <footer template="shared/footer.php"/>
+</window>

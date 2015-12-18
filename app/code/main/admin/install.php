@@ -7,16 +7,16 @@
  */
 
 class Install extends OpenSms_Abstract_Module_Controller {
-    public function Index(){
+    public function index(){
         //if installed goto dashboard
         if( $this->getSystemSetting(OpenSms::INSTALLATION_STATUS) == 'installed')
             OpenSms::redirectToAction('index', 'dashboard');
 
         $this->data['pageTitle'] = 'Install | OpenSMS';
-        $this->renderTemplate('body');
+        $this->renderTemplate();
     }
 
-    public function Save(){
+    public function save(){
         if(!isset($_POST[OpenSms::DB_HOST])) OpenSms::redirectToAction('index');
         //if installed goto dashboard
         if($this->getSystemSetting(OpenSms::INSTALLATION_STATUS))
@@ -38,7 +38,7 @@ class Install extends OpenSms_Abstract_Module_Controller {
         $config->{OpenSms::DB_PASSWORD} = $this->getFormData(OpenSms::DB_PASSWORD);
         $config->{OpenSms::DB_PASSWORD} = $this->getFormData(OpenSms::DB_PASSWORD);
 
-        $config->{OpenSms::CURRENT_THEME} = 'default';
+        $config->{OpenSms::CURRENT_THEME_KEY} = 'default';
 
         $config->{OpenSms::OPEN_PRICE_PER_UNIT} = $this->getFormData(OpenSms::OPEN_PRICE_PER_UNIT);
         $config->{OpenSms::OPEN_UNITS_PER_SMS} = $this->getFormData(OpenSms::OPEN_UNITS_PER_SMS);

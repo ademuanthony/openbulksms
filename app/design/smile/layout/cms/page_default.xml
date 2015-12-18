@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<window>
+    <head>
+        <addStyle href="css/bootstrap.css"/>
+        <addStyle href="css/bootstrap.min.css"/>
+        <addStyle href="css/font-awesome.min.css"/>
+        <addStyle href="css/style.css"/>
+
+        <addScript src="js/jquery.min.js"/>
+    </head>
+
+    <body template="shared/page.php"/>
+    <content template="cms/page/default.php"/>
+
+    <footer template="shared/footer.php">
+        <addScript src="plugins/jquery-1.10.2.js"/>
+        <addScript src="plugins/bootstrap.js"/>
+        <addScript src="plugins/jquery.countdown.js"/>
+        <addScript src="js/countdown.js"/>
+        <addScript src="plugins/vegas/jquery.vegas.min.js"/>
+        <addScript src="js/custom.js"/>
+    </footer>
+
+</window>

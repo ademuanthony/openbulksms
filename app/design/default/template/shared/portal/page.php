@@ -38,10 +38,12 @@
     <!-- bootstrap wysihtml5 - text editor -->
     <link href="<?php echo OpenSms::getBaseUrl()?>app/design/default/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
 
+
+    <?php $this->renderSpecialView(OpenSms::VIEW_POSITION_TOP);?>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <?php $this->renderScript('head');?>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->

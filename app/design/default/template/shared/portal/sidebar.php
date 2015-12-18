@@ -45,7 +45,7 @@
 
         <?php if($this->isUserInRole(OpenSms::OPEN_ROLE_ADMIN)) {?>
 
-            <li class="treeview<?php echo OpenSms::isCurrentModule('admin') ? ' active':'';?>">
+            <li class="treeview<?php echo OpenSms::isCurrentModule('admin') || OpenSms::isCurrentModule('cms') ? ' active':'';?>">
                 <a href="#">
                     <i class="fa fa-gear"></i> <span>Admin</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
@@ -88,6 +88,30 @@
                         <a href="<?php echo OpenSms::getActionUrl('index', 'settings', 'admin')?>">
                             <i class="fa fa-circle-o"></i> <span>Settings</span>
                             <?php echo $this->isCurrentUri('index', 'settings', 'admin')? '<i class="fa fa-arrow-right pull-right"></i>':'' ;?>
+
+                        </a>
+                    </li>
+
+                    <li class="<?php echo $this->isCurrentUri('index', 'pages', 'cms')? 'active':'';?>">
+                        <a href="<?php echo OpenSms::getActionUrl('index', 'pages', 'cms')?>">
+                            <i class="fa fa-circle-o"></i> <span>CMS</span>
+                            <?php echo $this->isCurrentUri('index', 'pages', 'cms')? '<i class="fa fa-arrow-right pull-right"></i>':'' ;?>
+
+                        </a>
+                    </li>
+
+                    <li class="<?php echo $this->isCurrentUri('add', 'pages', 'cms')? 'active':'';?>">
+                        <a href="<?php echo OpenSms::getActionUrl('add', 'pages', 'cms')?>">
+                            <i class="fa fa-circle-o"></i> <span>New Page</span>
+                            <?php echo $this->isCurrentUri('add', 'pages', 'cms')?
+                                '<i class="fa fa-arrow-right pull-right"></i>':'' ;?>
+                        </a>
+                    </li>
+
+                    <li class="<?php echo $this->isCurrentUri('images', 'cms', 'cms')? 'active':'';?>">
+                        <a href="<?php echo OpenSms::getActionUrl('images', 'cms', 'cms')?>">
+                            <i class="fa fa-circle-o"></i> <span>Images</span>
+                            <?php echo $this->isCurrentUri('images', 'cms', 'cms')? '<i class="fa fa-arrow-right pull-right"></i>':'' ;?>
 
                         </a>
                     </li>

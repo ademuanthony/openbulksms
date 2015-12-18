@@ -36,7 +36,7 @@
                 </div><!-- /.box-header -->
                 <div class="box-body">
                     Please make you payment to the following bank and send your payment detail to
-                    <strong><?php echo OpenSms::getField('Payment_UBA_Notification_Number')->value?></strong>
+                    <strong><?php echo OpenSms::getField('Payment_FBN_Notification_Number')->value?></strong>
                     <table class="table">
                         <tr>
                             <td style="width: 140px;"><strong>Bank Name</strong></td>
@@ -44,11 +44,11 @@
                         </tr>
                         <tr>
                             <td><strong>Account Name</strong></td>
-                            <td><?php echo OpenSms::getField('Payment_UBA_Account_Name')->value?></td>
+                            <td><?php echo OpenSms::getField('Payment_FBN_Account_Name')->value?></td>
                         </tr>
                         <tr>
                             <td><strong>Account Number</strong></td>
-                            <td><?php echo OpenSms::getField('Payment_UBA_Account_Number')->value?></td>
+                            <td><?php echo OpenSms::getField('Payment_FBN_Account_Number')->value?></td>
                         </tr>
                     </table>
 
