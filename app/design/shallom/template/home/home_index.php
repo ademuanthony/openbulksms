@@ -16,9 +16,9 @@
             <div class="panel-body">
                 <form class="form-horizontal" role="form" method="post" action="<?php echo OpenSms::getActionUrl('login', 'account', 'account') ?>">
                     <strong style="color: #b14444;">Username:</strong>
-                    <input type="text" name="loginId" class="form-control" placeholder="Enter your Username"/>
+                    <input type="text" name="LoginId" class="form-control" placeholder="Enter your Username"/>
                     <strong style="color: #b14444;">password:</strong>
-                    <input type="password" name="password" class="form-control" placeholder="Enter your Password"/>
+                    <input type="password" name="Password" class="form-control" placeholder="Enter your Password"/>
                     <button  class="btn btn-danger pull-right" type="submit" name="login" style="margin: 10px 0 10px 0;">Login</button>
                 </form>
                 <div>
@@ -38,7 +38,7 @@
         <h3 style="color: #d9534f;">Our Bulk sms Service can be Used for;</h3>
         <ul>
             <li>Products Advertisement</li>
-            <li>Special seasonâ€™s greetings</li>
+            <li>Special season’s greetings</li>
             <li>Political Awareness / Campaign</li>
             <li>Wedding Invitation</li>
             <li>Birthday party</li>

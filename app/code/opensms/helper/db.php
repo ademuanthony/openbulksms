@@ -29,6 +29,8 @@ class OpenSms_Helper_Db{
 
     public static function getClassDb(){
         if(self::$db != NULL) return self::$db;
+        $db_name = OpenSms::getSystemSetting(OpenSms::DB_NAME);
+        if(empty($db_name)) return null;
         // set the (optional) options of the PDO connection. in this case, we set the fetch mode to
         // "objects", which means all results will be objects, like this: $result->user_name !
         // For example, fetch mode FETCH_ASSOC would return results like this: $result["user_name] !
@@ -52,7 +54,9 @@ class OpenSms_Helper_Db{
     }
 
     public static function executeReader($sql, array $param = null){
-        $query = self::getClassDb()->prepare($sql);
+        $db = self::getClassDb();
+        if(empty($db)) return null;
+        $query = $db->prepare($sql);
         $query->execute();
 
         return $query->fetchAll();

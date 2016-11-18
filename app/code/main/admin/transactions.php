@@ -71,6 +71,10 @@ class Transactions extends  OpenSms_Abstract_Module_Controller{
                     OpenSms::redirect($_REQUEST['returnUrl']);
                 }
             }else{
+                //if completed send notification
+                if(OpenSms::OPEN_TRANSACTION_STATUS_COMPLETED == $tran->Status){
+                    $this->sendSmsAlert($tran);
+                }
                 $this->setNotification('Transaction saved', 'add_transaction');
                 if(empty($_REQUEST['returnUrl'])) OpenSms::redirectToAction('Index');
                 OpenSms::redirect($_REQUEST['returnUrl']);
@@ -116,6 +120,11 @@ class Transactions extends  OpenSms_Abstract_Module_Controller{
             }else{
                 $this->setNotification($tran->Status == OpenSms::OPEN_TRANSACTION_STATUS_COMPLETED?'Transaction saved and committed'
                 :'Transaction saved', 'add_transaction');
+
+                if(OpenSms::OPEN_TRANSACTION_STATUS_COMPLETED == $tran->Status){
+                    $this->sendSmsAlert($tran);
+                }
+
                 if(empty($_REQUEST['returnUrl'])) OpenSms::redirectToAction('Index');
                 OpenSms::redirect($_REQUEST['returnUrl']);
             }
@@ -133,4 +142,5 @@ class Transactions extends  OpenSms_Abstract_Module_Controller{
         if(empty($returnUrl)) OpenSms::redirectToAction('Index');
         OpenSms::redirect($returnUrl);
     }
+
 }

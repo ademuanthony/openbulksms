@@ -20,8 +20,7 @@ class OpenSms_Helper_Html {
         if($htmlAttributes != null)
             foreach($htmlAttributes as $k => $v)
                 $html.= " $k='$v'";
-        $html.">$value</textarea>";
-
+        $html.=">$value</textarea>";
         echo html_entity_decode($html);
     }
 

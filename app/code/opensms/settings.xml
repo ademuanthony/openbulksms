@@ -1,8 +1,3 @@
 <?xml version="1.0"?>
-<settings>
-<open_sms_version/><site_name>CLAP Nigeria</site_name><site_url>http://localhost:82/openbulksms/</site_url>
-<opensms_db_type>mysql</opensms_db_type><opensms_db_host>localhost</opensms_db_host>
-<opensms_db_name>opensms</opensms_db_name><opensms_table_prefix>opensms_</opensms_table_prefix>
-<opensms_username>root</opensms_username><opensms_password/><opensms_current_theme>clap</opensms_current_theme>
-<price_per_unit>1.5</price_per_unit><unit_per_sms>1</unit_per_sms><installation_status>installed</installation_status>
-</settings>
+<settings><open_sms_version></open_sms_version>
+<site_name>Open Bulk SMS</site_name><site_home_keyword>bulk sms in nigeria, bulk sms nigeria, bulk sms, best bulk sms in nigeria, cheapest bulk sms,        bulk sms gateway, bulk sms site</site_home_keyword><site_home_description>ENJOY THE CHEAPEST,    FASTEST AND MOST RELIABLE BULK SMS SERVICE. We have 100% delivery rate for all network in Nigeria.    Get the best price. Send SMS at 1.5 Naira</site_home_description><site_url>http://localhost:81/openbulksms/</site_url><opensms_db_type>mysql</opensms_db_type><opensms_db_host>MYSQL5006.Smarterasp.net</opensms_db_host><opensms_db_name>db_9a9b4e_open</opensms_db_name><opensms_table_prefix>open_</opensms_table_prefix><opensms_username></opensms_username><opensms_password></opensms_password><opensms_current_theme></opensms_current_theme><price_per_unit>1.5</price_per_unit><unit_per_sms>1.35</unit_per_sms><installation_status>-1</installation_status></settings>

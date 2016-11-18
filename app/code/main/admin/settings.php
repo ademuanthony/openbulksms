@@ -17,14 +17,16 @@ class Settings extends OpenSms_Abstract_Module_Controller {
 
     public function Save(){
         //if installed goto dashboard
-        if($this->getSystemSetting(OpenSms::INSTALLATION_STATUS))
-            OpenSms::redirectToAction('index', 'dashboard');
+        //if($this->getSystemSetting(OpenSms::INSTALLATION_STATUS))
+          //  OpenSms::redirectToAction('index', 'dashboard');
         //var_dump($_POST);die();
         // CREATE
         $config = new SimpleXmlElement('<settings/>');
 
         $config->{OpenSms::VERSION} = $this->getSystemSetting(OpenSms::VERSION);
         $config->{OpenSms::SITE_NAME} = $this->getFormData(OpenSms::SITE_NAME);
+        $config->{OpenSms::SITE_HOME_KEYWORD} = $this->getFormData(OpenSms::SITE_HOME_KEYWORD);
+        $config->{OpenSms::SITE_HOME_DESCRIPTION} = $this->getFormData(OpenSms::SITE_HOME_DESCRIPTION);
         $config->{OpenSms::SITE_URL} = $this->getFormData(OpenSms::SITE_URL);
 
 
@@ -41,7 +43,7 @@ class Settings extends OpenSms_Abstract_Module_Controller {
         $config->{OpenSms::OPEN_PRICE_PER_UNIT} = $this->getFormData(OpenSms::OPEN_PRICE_PER_UNIT);
         $config->{OpenSms::OPEN_UNITS_PER_SMS} = $this->getFormData(OpenSms::OPEN_UNITS_PER_SMS);
 
-        $config->{OpenSms::INSTALLATION_STATUS} = false;
+        $config->{OpenSms::INSTALLATION_STATUS} = 'installed';
         //unlink(OpenSms::SETTINGS_FILE_PATH);
         $config->saveXML(OpenSms::SETTINGS_FILE_PATH);
 

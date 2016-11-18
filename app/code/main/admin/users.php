@@ -11,10 +11,10 @@ class Users extends OpenSms_Abstract_Module_Controller {
     public function Index($_page = 0){
         $this->data['user'] = $this->checkLogin(OpenSms::OPEN_ROLE_ADMIN);
         $this->data['pageTitle'] = 'Manage Users | '.OpenSms::getSystemSetting(OpenSms::SITE_NAME);
-
+        $this->data['page'] = $_page;
 
         //########==paging==########//
-        $rec_limit = 100;
+        $rec_limit = 10;
         $count = $this->callModelStaticMethod('OpenSms_Model_User', 'Count');
         $no = ($count/$rec_limit);
 
@@ -32,7 +32,7 @@ class Users extends OpenSms_Abstract_Module_Controller {
             }
             else
             {
-                $link .= '<li><a href="'.OpenSms::getActionUrl('detail', '*', 'group',
+                $link .= '<li><a href="'.OpenSms::getActionUrl('index', 'users', 'admin',
                         ['parameter1'=>($i + 1)]).'">Page '.($i + 1).'</a></li>';
             }
         }
@@ -61,18 +61,39 @@ class Users extends OpenSms_Abstract_Module_Controller {
     }
 
     public function find(){
-        $requestIsAutheticated  = $this->requestIsAutheticated();
+        $this->checkLogin(OpenSms::OPEN_ROLE_ADMIN);
         if(isset($_GET['loginId'])){
-            header('Location: '.URL.'users/manage/'.$_GET['loginId']);
+            $this->redirectToAction('manage', '', '', [0=>urlencode($_GET['loginId'])]);
         }else{
-            header('Location: '.URL.'users?notification=Invalid request param');
+            $this->redirectToAction('index', '', '', ['notification' => 'Invalid request param', 'page' => $_GET['page']]);
         }
         exit();
     }
 
-    public function manage($_loginId){
+    public function login(){
+        $this->checkLogin(OpenSms::OPEN_ROLE_ADMIN);
+
+        $login_id = urldecode($_GET['uid']);
+        $user = $this->loadModel('OpenSms_Model_User', [0 => $login_id]);
+        if(!isset($user) || !isset($user->LoginId)){
+            $this->setError('No user to show', 'manage_users');
+            //$this->data['curUser'] = $this->loadModel('OpenSms_Model_User');
+            $this->redirectToAction('index');
+        }
+
+        $this->data['user'] =  $user;
+
+        $_SESSION['loginId'] = $user->LoginId;
+        $_SESSION['role'] = $user->Role;
+
+        $this->redirectToAction('index', 'account', 'account');
+    }
+
+    public function manage(){
         $this->data['user'] =  $this->checkLogin(OpenSms::OPEN_ROLE_ADMIN);
         $this->data['pageTitle'] = 'Manage user | '.OpenSms::getSystemSetting(OpenSms::SITE_NAME);
+
+        $_loginId = urldecode($_GET['uid']);
 
         if(!empty($_loginId)){
             $this->data['curUser'] = $this->loadModel('OpenSms_Model_User', [0 => $_loginId]);
@@ -80,7 +101,8 @@ class Users extends OpenSms_Abstract_Module_Controller {
 
         if(!isset($this->data['curUser']) || !isset($this->data['curUser']->LoginId)){
             $this->setError('No user to show', 'manage_users');
-            $this->data['curUser'] = $this->loadModel('OpenSms_Model_User');
+            //$this->data['curUser'] = $this->loadModel('OpenSms_Model_User');
+            $this->redirectToAction('index');
         }
 
         $this->data['transactions']  = $this->data['curUser']->GetTransactions();
@@ -90,8 +112,9 @@ class Users extends OpenSms_Abstract_Module_Controller {
 
     }
 
-    public function update($_loginId){
+    public function update(){
         $this->data['user'] =  $this->checkLogin(OpenSms::OPEN_ROLE_ADMIN);
+        $_loginId = $_GET['uid'];
         //editing
         if(isset($_POST['resetPassword'])){
             $errorMsg = '';
@@ -171,18 +194,20 @@ class Users extends OpenSms_Abstract_Module_Controller {
         exit();
     }
 
-    public function delete($loginId){
-        $requestIsAutheticated  = $this->requestIsAutheticated();
-        $user =  $this->checkLogin('enekpani');
+    public function delete(){
+        $this->checkLogin('enekpani');
+
+        $loginId = $_GET['uid'];
 
         //deleting account
         if(!empty($loginId)){
-            $user2d = new User($loginId);
+            $user2d = $this->loadModel('OpenSms_Model_User', [0=>$loginId]);
             $user2d->Delete();
-            $notification = 'Accout Deleted';
+            $notification = 'Account Deleted';
         }
 
-        header('Location: '.URL.'users?notification='.$notification.'&error_code=1');
+        $this->setNotification('user_delete', $notification);
+        $this->redirectToAction('index');
         exit();
     }
 } 

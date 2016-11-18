@@ -51,7 +51,7 @@
             <key>Sms_Send_Api</key>
             <type>String</type>
             <sort_order>0</sort_order>
-            <value>http://smssite.crusoex.com/api/SAPI/sendMessage?returnDetails=1&amp;loginId=@username@&amp;password=@password@&amp;senderId=@senderId@&amp;message=@message@&amp;Recipients=@recipients@&amp;sendOnDate=@sendOnDate@</value>
+            <value>http://smsapi.ademuanthony.com/api/SAPI/sendMessage?returnDetails=1&amp;loginId=@username@&amp;password=@password@&amp;senderId=@senderId@&amp;message=@message@&amp;Recipients=@recipients@&amp;sendOnDate=@sendOnDate@</value>
         </field>
 
         <field>
@@ -59,7 +59,7 @@
             <key>Sms_Balance_Api</key>
             <type>String</type>
             <sort_order>0</sort_order>
-            <value>http://smssite.crusoex.com/api/SAPI/checkBalance?returnDetails=1&amp;loginId=@loginId@&amp;password=@password@</value>
+            <value>http://smsapi.ademuanthony.com/api/SAPI/checkBalance?returnDetails=1&amp;loginId=@loginId@&amp;password=@password@</value>
         </field>
 
         <field>
@@ -67,7 +67,7 @@
             <key>Sms_Api_Username</key>
             <type>String</type>
             <sort_order>0</sort_order>
-            <value>demo</value>
+            <value>opensms</value>
         </field>
 
         <field>
@@ -75,7 +75,7 @@
             <key>Sms_Api_Password</key>
             <type>String</type>
             <sort_order>0</sort_order>
-            <value>demo</value>
+            <value>cDeOpenSms@TOnY</value>
         </field>
 
         <field>

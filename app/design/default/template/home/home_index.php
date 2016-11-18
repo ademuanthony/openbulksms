@@ -28,14 +28,14 @@
                     <div class="col-lg-6">
                         <h4>Open Bulk SMS</h4>
                         <p class="text-center" style="text-align: center !important;">
-                            <a href="https://github.com/ademuanthony/openbulksms/archive/master.zip">
+                            <a data-toggle="modal" data-target="#registerModal" href="#registerModal">
                             <img class="img-responsive" align="middle"
-                                 src="<?php echo OpenSms::getBaseUrl() ?>app/skin/system/open_sms_text.png"
+                                 src="<?php echo OpenSms::getBaseUrl() ?>app/skin/system/open_sms_text-2.png"
                                  style="border: 1px red solid"/>
                             </a>
                         </p>
 
-                        <h2>The Only Free Bulk SMS site creator</h2>
+                        <h2>EXPERIENCE A BETTER SMS SERVICE</h2>
                     </div>
                 </div>
 
@@ -60,3 +60,20 @@
         </div><!-- row -->
     </div><!-- container -->
 </div><!-- r wrap -->
+
+<div class="info-box">
+    <div class="container">
+        <div class="row">
+            <?php $this->renderContent('home_index_how_to_send_bulk_sms'); ?>
+        </div>
+    </div>
+</div>
+
+<hr/>
+<div class="info-box">
+    <div class="container">
+        <div class="row" id="freeSMSSite">
+            <?php $this->renderContent('home_index_free_bulk_sms_site'); ?>
+        </div>
+    </div>
+</div>

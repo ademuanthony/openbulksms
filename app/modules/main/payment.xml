@@ -20,6 +20,16 @@
             <filePath>main/payment/voucher.php</filePath>
         </payment>
         <payment>
+            <key>Payment_Voguepay</key>
+            <label>Online Payment</label>
+            <enable>Yes</enable>
+            <sort_order>8</sort_order>
+            <order_status>Processing</order_status>
+            <controller>Voguepay</controller>
+            <action>Pay</action>
+            <filePath>main/payment/Voguepay.php</filePath>
+        </payment>
+        <payment>
             <key>Admin_UBA_Bank</key>
             <label>UBA Bank</label>
             <enable>Yes</enable>
@@ -44,11 +54,38 @@
     <routes>
         <!--install-->
 
+
+        <route>
+            <uri>payment/success</uri>
+            <filePath>main/payment/payment.php</filePath>
+            <controller>Payment</controller>
+            <action>success</action>
+        </route>
+
+        <route>
+            <uri>payment/failed</uri>
+            <filePath>main/payment/payment.php</filePath>
+            <controller>Payment</controller>
+            <action>failed</action>
+        </route>
+
         <route>
             <uri>payment/voucher</uri>
             <filePath>main/payment/voucher.php</filePath>
             <controller>voucher</controller>
             <action>index</action>
+        </route>
+        <route>
+            <uri>payment/voguepay</uri>
+            <filePath>main/payment/voguepay.php</filePath>
+            <controller>Voguepay</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>payment/voguepay/ping</uri>
+            <filePath>main/payment/voguepay.php</filePath>
+            <controller>Voguepay</controller>
+            <action>ping</action>
         </route>
         <route>
             <uri>payment/uba</uri>
@@ -70,6 +107,13 @@
     </routes>
 
     <fields>
+        <field>
+            <label>Voguepay Merchant Id</label>
+            <key>Payment_Voguepay_MerchantId</key>
+            <type>String</type>
+            <sort_order>2</sort_order>
+            <value>12266-3680</value>
+        </field>
         <field>
             <label>UBA Account Name</label>
             <key>Payment_UBA_Account_Name</key>

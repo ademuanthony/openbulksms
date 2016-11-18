@@ -10,14 +10,36 @@ class Cms extends OpenSms_Abstract_Module_Controller{
     public function index(){
         $this->data['user'] = $this->checkLogin(OpenSms::OPEN_ROLE_ADMIN);
         $this->data['pageTitle'] = "CMS - Pages";
+        $this->data['content'] = $this->callModelStaticMethod("OpenSms_Model_Content", "GetAll");
+        $this->data['sn'] = 0;
         $this->renderTemplate();
     }
 
-    public function addPage(){
+    public function addContent(){
+        $this->data['user'] = $this->checkLogin(OpenSms::OPEN_ROLE_ADMIN);
+        $this->data['pageTitle'] = 'CMC - New Content';
+        $this->data['content'] = $this->loadModel('OpenSms_Model_Content');
+
+        OpenSms::registerView('cms_ck_editor_js', 'default/assets/plugins/ckeditor/ckeditor.js', OpenSms::VIEW_TYPE_SCRIPT, OpenSms::VIEW_POSITION_TOP);
+
+        $this->renderTemplate();
 
     }
 
-    public function deletePage($permaLink){
+    public function editContent($key){
+        $this->data['user'] = $this->checkLogin(OpenSms::OPEN_ROLE_ADMIN);
+        $this->data['pageTitle'] = 'CMC - Manage Content';
+        $this->data['content'] = $this->loadModel("OpenSms_Model_Content", [0=>$key]);
+        if($this->data['content']->Id < 1){
+            $this->setError('Content not found', 'cms_manage');
+            $this->redirectToAction('index');
+        }
+        OpenSms::registerView('cms_ck_editor_js', 'default/assets/plugins/ckeditor/ckeditor.js', OpenSms::VIEW_TYPE_SCRIPT, OpenSms::VIEW_POSITION_TOP);
+        $this->renderTemplate();
+
+    }
+
+    public function deleteContent($permaLink){
 
     }
 
@@ -26,12 +48,16 @@ class Cms extends OpenSms_Abstract_Module_Controller{
         if(isset($_POST['key'])){
             $cms = $this->loadModel("OpenSms_Model_Content", [0=>$_POST['key']]);
             if(!$cms->Id > 0){
-                $this->setError("No content found with the key '".$_POST['key']."'", 'cms_save');
-                OpenSms::redirectToAction('index');
+                $cms->Key = $_POST['key'];
+                $cms->Type = $_POST['type'];
+                $cms->Host = $_POST['host'];
+                //$this->setError("No content found with the key '".$_POST['key']."'", 'cms_save');
+                //OpenSms::redirectToAction('index');
             }
             $cms->Body =  urldecode($_POST['body']);
             if($cms->Save()){
                 if(isset($_POST['returnUrl'])) $this->redirect($_POST['returnUrl']);
+                $this->setNotification('Save succeeded', 'cms_save');
                 OpenSms::redirectToAction('index');
             }
             $this->setError('Error in saving changes', 'cms_save');

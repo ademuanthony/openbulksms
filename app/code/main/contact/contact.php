@@ -19,7 +19,7 @@ class Contact extends OpenSms_Abstract_Module_Controller {
         $message = @trim(stripslashes($_POST['message']));
 
         $email_from = $email;
-        $email_to = 'contact@glapnigeria.org';//replace with your email
+        $email_to = 'contact@clapnigeria.org';//replace with your email
 
         $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' . $message;
 

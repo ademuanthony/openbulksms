@@ -12,7 +12,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="keyword" content="<?php $this->printData('pageKeyword');?>">
+    <meta name="description" content="<?php $this->printData('pageDescription');?>">
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
 
@@ -31,6 +32,9 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+
+    <script src="<?php echo OpenSms::getBaseUrl()?>app/design/default/assets/plugins/jQuery/jQuery-2.1.3.min.js"></script>
 
     <?php $this->renderSpecialView(OpenSms::VIEW_POSITION_TOP);?>
 </head>
@@ -60,7 +64,9 @@
                 <div class="row centered">
                     <p>We are available 24/7, so don't hesitate to contact us.</p>
                     <p>
-                        Abuja, Nigeria.<br/>
+                        11, Adebayo Street Agric Bus Stop,<br/>
+                        Ikorodu Lagos,<br/>
+                        Nigeria<br/>
                         +234 803-514-6243<br/>
                         support@openbulksms.com
                     </p>
@@ -89,7 +95,7 @@
             </div>
             <div class="modal-body">
                 <div class="row centered">
-                    <p>Its just 1.5 Naira per unit</p>
+                    <p>Its just 1.5 Naira ($0.00755) per unit</p>
                     <p>
                         No hidden charges<br/>
                         1 SMS = 1 Unit<br/>
@@ -204,8 +210,8 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="<?php echo OpenSms::getBaseUrl()?>app/design/default/assets/plugins/jQuery/jQuery-2.1.3.min.js"></script>
 <script src="<?php echo OpenSms::getBaseUrl()?>app/design/default/assets/frontend/js/bootstrap.min.js"></script>
 <?php $this->renderSpecialView(OpenSms::VIEW_POSITION_FOOTER);?>
 </body>
 </html>
+

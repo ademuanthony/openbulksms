@@ -13,8 +13,8 @@
         <small>Login</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="/admin/install"><i class="fa fa-dashboard"></i> Account</a></li>
-        <li class="active">Login</li>
+        <li><a href="<?php echo OpenSms::getActionUrl('index') ?>"><i class="fa fa-dashboard"></i> Account</a></li>
+        <li class="active">Recharge</li>
     </ol>
 </section>
 

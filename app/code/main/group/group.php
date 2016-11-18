@@ -14,9 +14,11 @@ class Group extends OpenSms_Abstract_Module_Controller{
 
         $this->data['user'] = $user;
         $this->data['groups'] = $user->GetGroups();
+        $this->data['sn'] = 0;
 
         if(isset($_REQUEST['callback'])){
-            echo jsonp(array('error'=>FALSE, 'message'=> 'success', 'groups'=>$this->data['groups'], 'count'=> sizeof($this->data['groups']) ));
+            echo OpenSms::jSonp(array('error'=>FALSE, 'message'=> 'success', 'groups'=>$this->data['groups'],
+                'count'=> sizeof($this->data['groups']) ), $_REQUEST['callback']);
             exit();
         }
 
@@ -39,7 +41,7 @@ class Group extends OpenSms_Abstract_Module_Controller{
         }
 
         if(isset($_REQUEST['callback'])){
-            echo jsonp(array('error'=>$error_code != 0, 'message'=> $notification));
+            echo OpenSms::jSonp(array('error'=>$error_code != 0, 'message'=> $notification), $_REQUEST['callback']);
             exit();
         }
 
@@ -103,10 +105,21 @@ class Group extends OpenSms_Abstract_Module_Controller{
             $this->data['user'] = $user;
             $this->data['group'] = $group;
             $this->data['contacts'] = $contacts;
+            $_page = $_page == 0? 1: $_page;
+            $this->data['sn'] = ($_page - 1) * $rec_limit;
             $this->data['link'] = $link;
+
+            if(isset($_REQUEST['callback'])){
+                OpenSms::jSonp(array('error'=>false, 'group'=>$group, 'contacts' =>$contacts), $_REQUEST['callback']);
+                exit;
+            }
 
         }
         else {
+            if(isset($_REQUEST['callback'])){
+                OpenSms::jSonp(array('error'=>true, 'message'=>'Group not found'), $_REQUEST['callback']);
+                exit;
+            }
             $this->setError('Group not found', 'group_detail');
             OpenSms::redirectToAction('Index');
         }
@@ -138,10 +151,10 @@ class Group extends OpenSms_Abstract_Module_Controller{
         $g = $this->loadModel('OpenSms_Model_Group', [0 => $groupId]);
 
         $g->Delete();
-        $this->setNotification('Delete succeded', 'delete_group');
+        $this->setNotification('Delete succeeded', 'delete_group');
 
         if(isset($_REQUEST['callback'])){
-            echo jsonp(array('error'=>FALSE, 'message'=> 'Group Deleted'));
+            echo OpenSms::jSonp(array('error'=>FALSE, 'message'=> 'Group Deleted'), $_REQUEST['callback']);
         }
 
         OpenSms::redirectToAction('Index');
@@ -187,7 +200,7 @@ class Group extends OpenSms_Abstract_Module_Controller{
 
                     if(in_array($ext,$allowedXls) ) {
                         //excel sheet
-                        require_once('app/opensms/helper/excel_reader2.php');
+                        require_once('app/code/opensms/helper/excel_reader2.php');
                         $data = new Spreadsheet_Excel_Reader($_FILES['uFile']['tmp_name']);
                         for($i=0;$i<count($data->sheets);$i++) // Loop to get all sheets in a file.
                         {
@@ -245,9 +258,10 @@ class Group extends OpenSms_Abstract_Module_Controller{
                     }
                 }
 
+                //var_dump($cons); die();
 
                 //add contact to db
-                if(count(count($cons) > 0)){
+                if(count($cons) > 0){
                     $result = $this->callModelStaticMethod('OpenSms_Model_Contact', 'SaveContacts', [0=>$cons]);
                     if($result)$this->setNotification(count($cons).' numbers Added', 'add_number');
                     else $this->setError('Error in adding contacts', 'add_number');

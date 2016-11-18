@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <name>api</name>
+    <version>1.0.0.0</version>
+    <lincense>Free</lincense>
+    <path>main</path>
+    <enabled>Yes</enabled>
+    <app_cast></app_cast><!-- the app cast is an xml file that shows if an update is available
+                            for the module and give detail of how to get the update-->
+
+    <payments>
+
+    </payments>
+
+    <routes>
+        <route>
+            <uri>*</uri>
+            <filePath>main/api/api.php</filePath>
+            <controller>api</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>*/send</uri>
+            <filePath>main/api/api.php</filePath>
+            <controller>api</controller>
+            <action>send</action>
+        </route>
+        <route>
+            <uri>*/balance</uri>
+            <filePath>main/api/api.php</filePath>
+            <controller>api</controller>
+            <action>balance</action>
+        </route>
+
+        <!--install-->
+
+
+        <!--/install-->
+
+    </routes>
+
+    <fields>
+    </fields>
+
+    <model_register>
+    </model_register>
+</module>

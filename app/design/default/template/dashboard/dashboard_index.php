@@ -6,6 +6,40 @@
  * Time: 3:34 PM
  */
 ?>
+
+<style>
+    .tile{
+        padding: 40px;
+        display: block;
+        text-align: center;
+        border: 1px #ccc solid;
+        border-radius: 10px;
+        margin: 10px;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfe7fa+0,6393c1+100;Grey+Blue+3D */
+        background: #cfe7fa; /* Old browsers */
+        background: -moz-linear-gradient(top,  #cfe7fa 0%, #6393c1 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cfe7fa), color-stop(100%,#6393c1)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #cfe7fa 0%,#6393c1 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #cfe7fa 0%,#6393c1 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #cfe7fa 0%,#6393c1 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #cfe7fa 0%,#6393c1 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=0 ); /* IE6-9 */
+        color: #fff;
+        color: rgba(255, 255, 255, 1);
+    }
+    .tile:hover{
+        color: darkred;
+        color: rgba(255, 40, 40, 1);
+    }
+    .tile i{
+        display: block;
+        font-size: 74px;
+    }
+    .tile span{
+        display: block;
+        font-size: 18px;
+    }
+</style>
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
@@ -19,6 +53,36 @@
 
 <!-- Main content -->
 <section class="content">
+
+<div class="row">
+    <div class="col-md-3 col-sm-4">
+        <a class="tile" href="<?php echo OpenSms::getActionUrl("index", "recharge", "account") ?>">
+            <i class="fa fa-money"></i>
+            <span>Buy Unit</span>
+        </a>
+    </div>
+
+    <div class="col-md-3 col-sm-4">
+        <a class="tile" href="<?php echo OpenSms::getActionUrl("index", "compose", "sms") ?>">
+            <i class="fa fa-edit"></i>
+            <span>Send SMS</span>
+        </a>
+    </div>
+
+    <div class="col-md-3 col-sm-4">
+        <a class="tile" href="<?php echo OpenSms::getActionUrl("index", "sent", "sms") ?>">
+            <i class="fa fa-history"></i>
+            <span>SMS History</span>
+        </a>
+    </div>
+
+    <div class="col-md-3 col-sm-4">
+        <a class="tile" href="<?php echo OpenSms::getActionUrl("index", "group", "group") ?>">
+            <i class="fa fa-users"></i>
+            <span>Groups</span>
+        </a>
+    </div>
+</div>
 
 <div class="row">
     <div class="col-md-12">

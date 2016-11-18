@@ -57,7 +57,12 @@
 					$this->Name = StringMethods::GetRaw($r->name);
 					$this->LoginId = StringMethods::GetRaw($r->loginId);
 					$this->Address = StringMethods::GetRaw($r->address);
-					$this->DateRegistered = $r->dateRegistered;
+					$this->DateRegistered = StringMethods::GetRaw($r->dateRegistered);
+                    $this->BillingAddress1 = StringMethods::GetRaw($r->billing_address1);
+                    $this->BillingAddress2 = StringMethods::GetRaw($r->billing_address2);
+                    $this->BillingCity = StringMethods::GetRaw($r->billing_city);
+                    $this->BillingState = StringMethods::GetRaw($r->billing_state);
+                    $this->BillingCountry = StringMethods::GetRaw($r->billing_country);
 					$this->Balance = $r->balance;
 					$this->EmailId = StringMethods::GetRaw($r->emailId);
 					$this->MobileNo = StringMethods::GetRaw($r->mobileNo);
@@ -92,6 +97,16 @@
 		public $EmailId;
 		
 		public $DateRegistered;
+
+        public $BillingAddress1;
+
+        public $BillingAddress2;
+
+        public $BillingCity;
+
+        public $BillingState;
+
+        public $BillingCountry;
 		
 		public $Balance;
 		
@@ -144,6 +159,16 @@
 			//die($sql);
             return OpenSms_Helper_Db::executeNonQuery($sql);
 		}
+
+        public function UpdateBillingInfo(){
+            $sql = "update ".$this->getTableName()." set billing_address1 = '".StringMethods::MakeSave($this->BillingAddress1)."',
+                    billing_address2 = '".StringMethods::MakeSave($this->BillingAddress2)."',
+                    billing_city = '".StringMethods::MakeSave($this->BillingCity)."',
+                    billing_state = '".StringMethods::MakeSave($this->BillingState)."',
+                    billing_country = '".StringMethods::MakeSave($this->BillingCountry)."'
+                    where loginId = '".StringMethods::MakeSave($this->LoginId)."';";
+            return OpenSms_Helper_Db::executeNonQuery($sql);
+        }
 
         public function Delete(){
 			$sql = "update ".$this->getTableName()." set status = 'deleted' where loginId = '".StringMethods::MakeSave($this->LoginId)."'";
@@ -254,20 +279,29 @@
             $u->Name = $pdoObj->name;
             $u->Role = $pdoObj->role;
             $u->Status = $pdoObj->status;
+            $u->BillingCountry = $pdoObj->billing_country;
+            $u->BillingAddress2 = $pdoObj->billing_address2;
+            $u->BillingAddress1 = $pdoObj->billing_address1;
+            $u->BillingCity = $pdoObj->billing_city;
+            $u->BillingState = $pdoObj->billing_state;
 
             return $u;
         }
 
-        public static function GetAllUsers(){
-				$sql = "select * from ".OpenSms::getTableName('users')." where status = 'active'";
-				
-                $users = array();
-				$result = OpenSms_Helper_Db::executeReader($sql);
-				foreach($result as $u){
-                    $users[] = self::copyFromPDO($u);
-                }
+        public static function GetAllUsers($offset = 0, $limit = 0)
+        {
+            if ($limit == 0) {
+                $sql = "select * from " . OpenSms::getTableName('users') . " where status = 'active'";
+            } else {
+                $sql = "select * from " . OpenSms::getTableName('users') . " where status = 'active' ORDER BY LoginId LIMIT $offset, $limit";
+            }
+            $users = array();
+            $result = OpenSms_Helper_Db::executeReader($sql);
+            foreach ($result as $u) {
+                $users[] = self::copyFromPDO($u);
+            }
 
-                return $users;
+            return $users;
         }
 
         public static function Count(){

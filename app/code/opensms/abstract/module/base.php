@@ -6,6 +6,9 @@ class OpenSms_Abstract_Module_Base extends OpenSms_Helper_Db{
         }
         $this->module = OpenSms::getCurrentModule();
         $this->data['currentTheme'] = OpenSms::getCurrentTheme();
+        $this->date['pageKeyword'] = '';
+        $this->data['pageDescription'] = '';
+
     }
 
     protected $module = NULL;

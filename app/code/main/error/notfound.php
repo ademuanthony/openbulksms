@@ -8,6 +8,6 @@
 
 class NotFound extends OpenSms_Abstract_Module_Controller {
     public function Index(){
-        die(__CLASS__.' '.__FUNCTION__);
+        die('Resource not found');
     }
 } 

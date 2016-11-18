@@ -50,7 +50,20 @@
         <class_name>OpenSms_Model_Page</class_name>
         <file_path>app/code/opensms/model/core/page.php</file_path>
     </model>
-
-
+    <model>
+        <key>OpenSms_Model_ContactMessage</key>
+        <class_name>OpenSms_Model_ContactMessage</class_name>
+        <file_path>app/code/opensms/model/core/contactMessage.php</file_path>
+    </model>
+    <model>
+        <key>OpenSms_Model_Service</key>
+        <class_name>OpenSms_Model_Service</class_name>
+        <file_path>app/code/opensms/model/core/service.php</file_path>
+    </model>
+    <model>
+        <key>OpenSms_Model_ServiceRequest</key>
+        <class_name>OpenSms_Model_ServiceRequest</class_name>
+        <file_path>app/code/opensms/model/core/serviceRequest.php</file_path>
+    </model>
 
 </model_register>

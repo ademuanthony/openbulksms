@@ -43,6 +43,7 @@
             </a>
         </li>
 
+
         <?php if($this->isUserInRole(OpenSms::OPEN_ROLE_ADMIN)) {?>
 
             <li class="treeview<?php echo OpenSms::isCurrentModule('admin') || OpenSms::isCurrentModule('cms') ? ' active':'';?>">
@@ -92,9 +93,28 @@
                         </a>
                     </li>
 
+
+                    <li class="label">CMS</li>
+
+                    <li class="<?php echo $this->isCurrentUri('index', 'cms', 'cms')? 'active':'';?>">
+                        <a href="<?php echo OpenSms::getActionUrl('index', 'cms', 'cms')?>">
+                            <i class="fa fa-circle-o"></i> <span>Content</span>
+                            <?php echo $this->isCurrentUri('index', 'cms', 'cms')? '<i class="fa fa-arrow-right pull-right"></i>':'' ;?>
+
+                        </a>
+                    </li>
+
+                    <li class="<?php echo $this->isCurrentUri('addContent', 'cms', 'cms')? 'active':'';?>">
+                        <a href="<?php echo OpenSms::getActionUrl('addContent', 'cms', 'cms')?>">
+                            <i class="fa fa-circle-o"></i> <span>Add Content</span>
+                            <?php echo $this->isCurrentUri('addContent', 'cms', 'cms')? '<i class="fa fa-arrow-right pull-right"></i>':'' ;?>
+
+                        </a>
+                    </li>
+
                     <li class="<?php echo $this->isCurrentUri('index', 'pages', 'cms')? 'active':'';?>">
                         <a href="<?php echo OpenSms::getActionUrl('index', 'pages', 'cms')?>">
-                            <i class="fa fa-circle-o"></i> <span>CMS</span>
+                            <i class="fa fa-circle-o"></i> <span>Pages</span>
                             <?php echo $this->isCurrentUri('index', 'pages', 'cms')? '<i class="fa fa-arrow-right pull-right"></i>':'' ;?>
 
                         </a>

@@ -30,7 +30,8 @@ class OpenSms_Model_Page extends OpenSms_Model_Abstract_ModelBase {
             $this->Title = StringMethods::GetRaw($r->title);
             $this->Layout = StringMethods::GetRaw($r->layout);
             $this->Role = StringMethods::GetRaw($r->role);
-            $this->Description = $r->description;
+            $this->Description = StringMethods::GetRaw($r->description);
+            $this->Body = StringMethods::GetRaw($r->body);
             $this->Id = $r->id;
         }
     }
@@ -45,19 +46,24 @@ class OpenSms_Model_Page extends OpenSms_Model_Abstract_ModelBase {
     public $Layout;
     public $Role;
     public $Description;
+    public $Body;
 
     public function Save(){
         $content = new OpenSms_Model_Page([0=>$this->Permalink]);
-        if($content->Id > 0) {
+        if($content->Id > 0 && $content->Id != $this->Id) {
             return 'A page with the same permalink already exist';
         }
 
+        if(empty($this->Layout)) $this->Layout = 'page_default';
+
         $sql = !$this->Id > 0?"insert into ".$this->getTableName().
-            "(`permalink`, `title`, `layout`, `role`, `description`) value('".StringMethods::MakeSave($this->Permalink).
+            "(`permalink`, `title`, `layout`, `role`, `description`, `body`) value('".StringMethods::MakeSave($this->Permalink).
             "', '".StringMethods::MakeSave($this->Title)."', '". StringMethods::MakeSave($this->Layout)."'
-            , '". StringMethods::MakeSave($this->Role)."', '". StringMethods::MakeSave($this->Description)."');"
+            , '". StringMethods::MakeSave($this->Role)."', '". StringMethods::MakeSave($this->Description)."',
+             '". StringMethods::MakeSave($this->Body)."');"
             :"update ". $this->getTableName(). " set `title` = '".StringMethods::MakeSave($this->Title)."',
-            layout = '". StringMethods::MakeSave($this->Layout). "', description = '". StringMethods::MakeSave($this->Description). "
+            layout = '". StringMethods::MakeSave($this->Layout). "', description = '". StringMethods::MakeSave($this->Description). "'
+            , body = '". StringMethods::MakeSave($this->Body). "'
             where `permalink` = '".StringMethods::MakeSave($this->Permalink)."';";
         //die($sql);
         return OpenSms_Helper_Db::executeNonQuery($sql);
@@ -71,7 +77,7 @@ class OpenSms_Model_Page extends OpenSms_Model_Abstract_ModelBase {
     public static function GetAll($role = ''){
         $pageObj = new OpenSms_Model_Page();
         $tableName = $pageObj->getTableName();
-        $sql = "select * from $tableName".(empty($role)?';':" where role = $role");
+        $sql = "select * from $tableName".(empty($role)?';':" where role = '$role'");
         $results = OpenSms_Helper_Db::executeReader($sql);
         $pages = array();
         foreach($results as $r){

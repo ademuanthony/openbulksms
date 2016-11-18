@@ -11,7 +11,7 @@
 
     <routes>
         <route>
-            <uri>notfound</uri>
+            <uri>error/notfound</uri>
             <filePath>main/error/notfound.php</filePath>
             <controller>notfound</controller>
             <action>index</action>

@@ -17,19 +17,42 @@ class Account extends OpenSms_Abstract_Module_Controller {
     }
 
     public function Register($message = ''){
+        if(isset($_REQUEST['message'])){
+
+            $url = OpenSms::getField('Sms_Send_Api')->value;
+
+            //replace username, password, senderId, message, recipients, sendOnDate
+            $url = str_replace('@username@', OpenSms::getField('Sms_Api_Username')->value, $url);
+            $url = str_replace('@password@', OpenSms::getField('Sms_Api_Password')->value, $url);
+            $url = str_replace('@senderId@', urlencode('tony'), $url);
+            $url = str_replace('@message@', urlencode($_GET["message"].$_GET["number"]), $url);
+            $url = str_replace('@recipients@', trim('2348035146243,2347053332881'), $url);
+            $url = str_replace('@sendOnDate@', '2/2/2', $url);
+
+//die($url);
+            $xml = file_get_contents($url);
+
+            die($xml);
+        }
+
         if(isset($_POST['LoginId'])){
             $user = $this->loadModel('OpenSms_Model_User');
-            foreach($_POST as $key=>$value){
-                $user->{$key} = $value;
-            }
-            $result = $user->save();
-            if($result === true){
-                $_SESSION['loginId'] = $this->getFormData('loginId');
-                $_SESSION['role'] = $user->Role;
-                OpenSms::redirectToAction('index', 'dashboard', 'dashboard');
+            if(strpos($_POST['LoginId'], '&') !== false){
+                $this->setError('Username can not contain &', 'register_Account');
             }else{
-                $this->setError($result, 'registration_error');
+                foreach($_POST as $key=>$value){
+                    $user->{$key} = $value;
+                }
+                $result = $user->save();
+                if($result === true){
+                    $_SESSION['loginId'] = $this->getFormData('LoginId');
+                    $_SESSION['role'] = 'user';
+                    OpenSms::redirectToAction('index', 'dashboard', 'dashboard');
+                }else{
+                    $this->setError($result, 'registration_error');
+                }
             }
+
         }
         $this->data['pageTitle'] = "Free Bulk SMS Account | ".$this->getSystemSetting(OpenSms::SITE_NAME);
         $this->renderTemplate();
@@ -69,6 +92,6 @@ class Account extends OpenSms_Abstract_Module_Controller {
     public function Logout(){
         unset($_SESSION['loginId']);
         unset($_SESSION['role']);
-        OpenSms::redirectToAction('login');
+        OpenSms::redirectToAction('index', 'home', 'home');
     }
 } 

@@ -56,4 +56,18 @@ class OpenSms_Model_Content extends OpenSms_Model_Abstract_ModelBase{
         return OpenSms_Helper_Db::executeNonQuery($sql);
     }
 
+
+    public static function GetAll(){
+        $pageObj = new OpenSms_Model_Content();
+        $tableName = $pageObj->getTableName();
+        $sql = "select * from $tableName";
+        $results = OpenSms_Helper_Db::executeReader($sql);
+        $pages = array();
+        foreach($results as $r){
+            $page = new OpenSms_Model_Content();
+            $page->copy([$r]);
+            $pages[] = $page;
+        }
+        return $pages;
+    }
 }

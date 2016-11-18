@@ -7,6 +7,6 @@
     <globalNotification template="shared/portal/notification.php"/>
     <header template="admin/install/header.php"/>
     <sidebar template="admin/install/sidebar.php"/>
-    <content template="admin/account/index.php"/>
+    <content template="admin/install/index.php"/>
     <footer template="shared/portal/footer.php"/>
 </window>

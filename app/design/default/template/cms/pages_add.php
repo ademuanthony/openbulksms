@@ -48,8 +48,13 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="message">Description:</label>
+                        <textarea class="form-control" name="description" id="content" style="width:100%" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-group">
                         <label for="message">Content:</label>
-                        <textarea class="form-control ckeditor" name="content" id="content" style="width:100%" rows="5"></textarea>
+                        <textarea class="form-control ckeditor" name="body" id="content" style="width:100%" rows="5"></textarea>
                     </div>
                     <br/>
                     <button class="btn btn-primary" name="saveChange" type="submit" value="Send">Save Changes</button>

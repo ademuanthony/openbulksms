@@ -39,6 +39,9 @@
     <link href="<?php echo OpenSms::getBaseUrl()?>app/design/default/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
 
 
+    <!-- jQuery 2.1.3 -->
+    <script src="<?php echo OpenSms::getBaseUrl()?>app/design/default/assets/plugins/jQuery/jQuery-2.1.3.min.js"></script>
+
     <?php $this->renderSpecialView(OpenSms::VIEW_POSITION_TOP);?>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -70,8 +73,6 @@
 </footer>
 </div><!-- ./wrapper -->
 
-<!-- jQuery 2.1.3 -->
-<script src="<?php echo OpenSms::getBaseUrl()?>app/design/default/assets/plugins/jQuery/jQuery-2.1.3.min.js"></script>
 
 <!-- jQuery UI 1.11.2 -->
 <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>

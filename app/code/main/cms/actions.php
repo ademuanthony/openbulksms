@@ -18,6 +18,7 @@ class Actions extends OpenSms_Abstract_Module_Controller{
     }
 
     public static function TriggerDisplayPage(array $param){
+        //var_dump($param); die();
         $action = new Actions();
         if($action->DisplayPage($param[0])) exit;
     }
@@ -25,7 +26,6 @@ class Actions extends OpenSms_Abstract_Module_Controller{
     private $page = null;
     public function DisplayPage($key){
         $this->page = $this->loadModel('OpenSms_Model_Page', [0 => $key]);
-
 
         if(!isset($this->page->Id)) return false;
 
@@ -35,10 +35,10 @@ class Actions extends OpenSms_Abstract_Module_Controller{
 
 
         $this->data['contentKey'] = 'opensms_page_'.$this->page->Permalink;
-
+        $this->data['page'] = $this->page;
         $this->data['pageTitle'] = $this->page->Title;
         $this->renderTemplate();
-        exit;
+        return true;
     }
 
     protected function getLayoutFileKey(){

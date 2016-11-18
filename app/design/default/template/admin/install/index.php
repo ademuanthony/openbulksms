@@ -37,8 +37,21 @@
                     <input type="text" class="form-control" id="site_name" name="site_name" value="<?php echo $this->getFormData('site_name', OpenSms::FORM_POST_METHOD)?>" placeholder="Display name of this site">
                 </div>
                 <div class="form-group">
+                    <label for="exampleInputEmail1">Home Keywords</label>
+                    <input type="text" class="form-control" id="site_name" name="site_home_keyword"
+                           value="<?php echo OpenSms::getSystemSetting(OpenSms::SITE_HOME_KEYWORD)?>"
+                           placeholder="Meta keyword for SEO">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Home Site Description</label>
+                    <input type="text" class="form-control" id="site_name" name="site_home_description"
+                           value="<?php echo OpenSms::getSystemSetting(OpenSms::SITE_HOME_DESCRIPTION)?>"
+                           placeholder="Meta description for SEO">
+                </div>
+                <div class="form-group">
                     <label for="exampleInputPassword1">URL</label>
-                    <input type="text" class="form-control" id="site_url" name="site_url" value="<?php echo $this->getFormData('site_url', OpenSms::FORM_POST_METHOD)?>" placeholder="Site URL">
+                    <input type="text" class="form-control" id="site_url" name="site_url"
+                           value="<?php echo $this->getFormData('site_url', OpenSms::FORM_POST_METHOD)?>" placeholder="Site URL">
                 </div>
 
                 <!--database-->

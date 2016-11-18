@@ -24,6 +24,18 @@
             <action>save</action>
         </route>
         <route>
+            <uri>cms/addContent</uri>
+            <filePath>main/cms/cms.php</filePath>
+            <controller>cms</controller>
+            <action>addContent</action>
+        </route>
+        <route>
+            <uri>cms/manage</uri>
+            <filePath>main/cms/cms.php</filePath>
+            <controller>cms</controller>
+            <action>editContent</action>
+        </route>
+        <route>
             <uri>cms/images</uri>
             <filePath>main/cms/cms.php</filePath>
             <controller>cms</controller>
@@ -43,8 +55,8 @@
         </route>
         <route>
             <uri>*</uri>
-            <filePath>main/cms/pages.php</filePath>
-            <controller>pages</controller>
+            <filePath>main/cms/cms.php</filePath>
+            <controller>cms</controller>
             <action>index</action>
         </route>
 

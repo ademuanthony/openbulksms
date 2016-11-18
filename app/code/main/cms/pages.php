@@ -25,7 +25,8 @@ class Pages extends OpenSms_Abstract_Module_Controller{
             $page->Permalink = strtolower(str_replace(' ', '-', trim($_POST['permalink'])));
             $page->Layout = $_POST['layout'];
             $page->Description = $_POST['description'];
-            $page->Role = 'page';
+            $page->Body = $_POST['body'];
+            $page->Role = isset($_POST['role'])? $_POST['role']: 'page';
 
             $result = $page->Save();
 
@@ -53,6 +54,7 @@ class Pages extends OpenSms_Abstract_Module_Controller{
     public function Manage($permalink){
         $this->data['user'] = $this->checkLogin(OpenSms::OPEN_ROLE_ADMIN);
 
+        if(isset($_POST['permalink'])) $permalink = $_POST['permalink'];
         $page = $this->loadModel('OpenSms_Model_Page', [0=>$permalink]);
         if($page->Id < 1){
             $this->setError("No page found with the permalink: $permalink", "page_manage");
@@ -62,6 +64,7 @@ class Pages extends OpenSms_Abstract_Module_Controller{
             $page->Title = $_POST['title'];
             $page->Layout = $_POST['layout'];
             $page->Description = $_POST['description'];
+            $page->Body = $_POST['body'];
             $result = $page->Save();
             if($result==true) $this->setNotification('Page saved', 'page_manage');
             else $this->setError('Error in saving page', 'page_manage');

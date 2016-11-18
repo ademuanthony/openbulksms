@@ -23,7 +23,7 @@
             <key>home_header_send_price</key>
             <type>raw</type>
             <host>h2</host>
-            <body>SEND BULK SMS @ 1.50</body>
+            <body>SEND BULK SMS @ 1.50 ($0.00755)</body>
         </content>
         <content>
             <key>home_header_1_unit_1_sms</key>

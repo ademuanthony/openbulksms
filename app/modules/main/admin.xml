@@ -67,10 +67,22 @@
             <action>index</action>
         </route>
         <route>
+            <uri>admin/users/login</uri>
+            <filePath>main/admin/users.php</filePath>
+            <controller>users</controller>
+            <action>login</action>
+        </route>
+        <route>
             <uri>admin/users/manage</uri>
             <filePath>main/admin/users.php</filePath>
             <controller>users</controller>
             <action>manage</action>
+        </route>
+        <route>
+            <uri>admin/users/find</uri>
+            <filePath>main/admin/users.php</filePath>
+            <controller>users</controller>
+            <action>find</action>
         </route>
         <route>
             <uri>admin/users/add</uri>
@@ -83,6 +95,12 @@
             <filePath>main/admin/users.php</filePath>
             <controller>users</controller>
             <action>update</action>
+        </route>
+        <route>
+            <uri>admin/users/delete</uri>
+            <filePath>main/admin/users.php</filePath>
+            <controller>users</controller>
+            <action>delete</action>
         </route>
 
         <!--/user-->
@@ -220,6 +238,39 @@
         </route>
         <!--/theme -->
 
+
+        <!--service-->
+        <route>
+            <uri>admin/service</uri>
+            <filePath>main/admin/service.php</filePath>
+            <controller>service</controller>
+            <action>index</action>
+        </route>
+        <route>
+            <uri>admin/service/add</uri>
+            <filePath>main/admin/service.php</filePath>
+            <controller>service</controller>
+            <action>add</action>
+        </route>
+        <route>
+            <uri>admin/service/manage</uri>
+            <filePath>main/admin/service.php</filePath>
+            <controller>service</controller>
+            <action>manage</action>
+        </route>
+        <route>
+            <uri>admin/service/requests</uri>
+            <filePath>main/admin/service.php</filePath>
+            <controller>service</controller>
+            <action>requests</action>
+        </route>
+        <route>
+            <uri>admin/service/process</uri>
+            <filePath>main/admin/service.php</filePath>
+            <controller>service</controller>
+            <action>process</action>
+        </route>
+        <!--/service-->
 
         <route>
             <uri>admin/uba/finish</uri>

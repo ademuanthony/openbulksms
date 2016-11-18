@@ -7,7 +7,8 @@
  */
 ?>
 <div class="pull-right hidden-xs">
-    <i>Powered by</i> <a href="http://www.theopensms.com"><b>Open</b>SMS</a>
-    <b>Version</b> <?php echo $this->getSystemSetting(OpenSms::VERSION);?>
+    <a href="http://openbulksms.com/">Bulk sms site</a>
+    <i>Powered by</i> <b>Open</b>SMS
 </div>
-<strong>Copyright &copy; 2015 <a href="http://www.theopensms.com"><b>Open</b>SMS</a>.</strong> All rights reserved.
+<strong>Copyright &copy; 2015 <a href="<?php echo OpenSms::getBaseUrl()?>">
+        <?php echo $this->getSystemSetting(OpenSms::SITE_NAME);?></a>.</strong> All rights reserved.

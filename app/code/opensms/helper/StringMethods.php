@@ -12,6 +12,7 @@
 		}
 		
 		public static function MakeSave($string){
+            if(!is_string($string)) return $string;
             if(empty($string)) return $string;
 			return addslashes(htmlentities($string));
 		}

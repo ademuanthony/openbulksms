@@ -23,6 +23,25 @@
     <div class="row">
         <div class="col-md-7">
 
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Find User</h3>
+                    <div class="box-tools pull-right">
+                        <button class="btn btn-box-tool" dat-widget="collapse"><i class="fa fa-minus"></i> </button>
+                    </div>
+                </div>
+
+                <div class="box-body">
+                    <form class="form-inline" action="<?php echo OpenSms::getActionUrl("Find")?>">
+                        <input type="hidden" name="page" value="<?php echo $this->data['page']?>">
+                        <div class="form-group">
+                            <label for="loginId">Username</label>
+                            <input type="text" class="form-control" name="loginId" id="loginId" placeholder="Please enter a Username">
+                        </div>
+                        <button type="submit" class="btn btn-default">Search</button>
+                    </form>
+                </div>
+            </div>
 
             <!-- GROUP LIST -->
             <div class="box box-primary">
@@ -33,6 +52,9 @@
                     </div>
                 </div><!-- /.box-header -->
                 <div class="box-body">
+
+
+
                     <table class="table">
                         <thead>
                             <tr>
@@ -52,13 +74,17 @@
                                     <td><?php echo $u->LoginId; ?></td>
                                     <td><?php echo $u->MobileNo; ?></td>
                                     <td>
-                                        <a href="<?php echo OpenSms::getActionUrl('manage', 'users', 'admin', [0 => $u->LoginId])?>" class="btn btn-info">Manage</a> |
-                                        <a href="<?php echo OpenSms::getActionUrl('delete', 'users', 'admin', [0 => $u->LoginId])?>" class="btn btn-warning">Delete</a>
+                                        <a href="<?php echo OpenSms::getActionUrl('login', 'users', 'admin')."?uid=".urldecode($u->LoginId)?>" class="btn btn-info">Login</a> |
+                                        <a href="<?php echo OpenSms::getActionUrl('manage', 'users', 'admin')."?uid=".urlencode($u->LoginId)?>" class="btn btn-info">Manage</a> |
+                                        <a href="<?php echo OpenSms::getActionUrl('delete', 'users', 'admin')."?uid=".urldecode($u->LoginId)?>" class="btn btn-warning">Delete</a>
                                     </td>
                                 </tr>
                             <?php } ?>
                         </tbody>
 
+                        <tfoot>
+                        <?php echo $this->data['link'] ?>
+                        </tfoot>
                     </table>
                 </div><!-- /.box-body -->
             </div><!-- /.box -->

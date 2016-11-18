@@ -37,7 +37,21 @@
                     <div class="box-body">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Site Name</label>
-                            <input type="text" class="form-control" id="site_name" name="site_name" value="<?php echo OpenSms::getSystemSetting(OpenSms::SITE_NAME)?>" placeholder="Display name of this site">
+                            <input type="text" class="form-control" id="site_name" name="site_name"
+                                   value="<?php echo OpenSms::getSystemSetting(OpenSms::SITE_NAME)?>"
+                                   placeholder="Display name of this site">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Home Keywords</label>
+                            <input type="text" class="form-control" id="site_name" name="site_home_keyword"
+                                   value="<?php echo OpenSms::getSystemSetting(OpenSms::SITE_HOME_KEYWORD)?>"
+                                   placeholder="Meta keyword for SEO">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Home Site Description</label>
+                            <input type="text" class="form-control" id="site_name" name="site_home_description"
+                                   value="<?php echo OpenSms::getSystemSetting(OpenSms::SITE_HOME_DESCRIPTION)?>"
+                                   placeholder="Meta description for SEO">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">URL</label>

@@ -52,13 +52,13 @@
                     <div class="box-body">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Username</label>
-                            <input type="text" class="form-control" id="username" required="required"
-                                   name="username" value="<?php echo $this->getFormData('username', OpenSms::FORM_POST_METHOD)?>"
+                            <input type="text" class="form-control" id="LoginId" required="required"
+                                   name="LoginId" value="<?php echo $this->getFormData('LoginId', OpenSms::FORM_POST_METHOD)?>"
                                    placeholder="Admin Username">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" required="required" class="form-control" id="site_url" name="admin_password" placeholder="Admin Password">
+                            <input type="password" required="required" class="form-control" id="site_url" name="Password" placeholder="Admin Password">
                         </div>
                     </div><!-- /.box-body -->
 

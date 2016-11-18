@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<theme>
+    <name>Gold</name>
+    <key>gold</key>
+    <screen_shot></screen_shot>
+    <version>1.0</version>
+    <author>Ademu Anthony</author>
+    <url>http://www.openbulksms.com</url>
+    <email>blenyo11@gmail.com</email>
+    <app_cast>http://www.openbulksms.com/themes/cast/default.xml</app_cast><!-- the themeName app cast is an xml file that shows if an update is available
+                            for the themeName and give detail of how to get the update-->
+    <fields>
+        <field>
+            <label>About Head</label>
+            <key>about_head</key>
+            <type>text</type>
+            <value>10</value>
+            <readonly>false</readonly>
+        </field>
+    </fields>
+</theme>

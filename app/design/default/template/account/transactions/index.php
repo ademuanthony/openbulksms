@@ -66,6 +66,11 @@
                             <?php } ?>
 
                             </tbody>
+                            <tfoot>
+                            <ul>
+                                <?php echo $this->data['link'] ?>
+                            </ul>
+                            </tfoot>
                         </table>
 
                     <?php } ?>

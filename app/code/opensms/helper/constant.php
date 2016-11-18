@@ -1,4 +1,10 @@
 <?php
+
+function dd($data){
+    var_dump($data);
+    die();
+}
+
 class OpenSms_Helper_Constant{
     const CURRENT_THEME = 'opensms_current_theme';//theme is saved in the option table with this key
 

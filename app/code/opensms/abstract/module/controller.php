@@ -85,7 +85,28 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
         * search the template folder of the current theme for requested template file
         * if not found use the default
         * else return the requested
+        * If the request is mobile then return mobile template
+        * if is mobile
+        * ** if them mobile exists get it
+        * ** else if theme main exists get
+        * ** else if default mobile exists get
+        * ** get desktop main
         */
+
+       /*
+       $detector = new Mobile_Detect();
+       if($detector->isMobile()){
+           $sFileName = OpenSms::DESIGN_PATH.$this->getThemeName().'/template/mobile/'.(string)$this->getLayout()->{$block_name}['template'];
+           if(file_exists($sFileName)) return $sFileName;
+           $sFileName = OpenSms::DESIGN_PATH.$this->getThemeName().'/template/'.(string)$this->getLayout()->{$block_name}['template'];
+           if(file_exists($sFileName)) return $sFileName;
+           $sFileName = OpenSms::DESIGN_PATH.'default'.'/template/mobile/'.(string)$this->getLayout()->{$block_name}['template'];
+           if(file_exists($sFileName)) return $sFileName;
+           $sFileName = OpenSms::DESIGN_PATH.'default'.'/template/'.(string)$this->getLayout()->{$block_name}['template'];
+           if(file_exists($sFileName)) return $sFileName;
+       }
+       */
+
        $sFileName = OpenSms::DESIGN_PATH.$this->getThemeName().'/template/'.(string)$this->getLayout()->{$block_name}['template'];
        if(!file_exists($sFileName))
            $sFileName = OpenSms::DESIGN_PATH.'default'.'/template/'.(string)$this->getLayout()->{$block_name}['template'];
@@ -96,7 +117,6 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
        if($block_name == 'body') OpenSms::runAction(OpenSms::BEFORE_RENDER_ACTION);
 
        $file_name = strtolower($this->getTemplatePath($block_name));
-
        if(!$required && (!file_exists($file_name) || is_dir($file_name))) return;
        require_once $file_name;
    }
@@ -194,7 +214,7 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
         if($content->Key){
             $attributes = "";
             $class_added = false;
-            $content->Host = $content->Type == OpenSms::VIEW_TYPE_HTML? 'div': $content->Host;
+            //$content->Host = $content->Type == OpenSms::VIEW_TYPE_HTML? 'div': $content->Host;
             $edit_class = $content->Type == OpenSms::VIEW_TYPE_HTML? 'editable':'raw_editable';
 
             foreach($htmlAttributes as $att=>$value){
@@ -372,74 +392,221 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
 
 	 }
 
-     //sending sms
-     protected function sendMessage($sender, $message, $recepients, $loginId = ''){
-         if(!class_exists('Message'))
-            $this->loadModel('Message');
-         if(!class_exists('BulkSMS'))
-            $this->loadModel('BulkSMS');
+    protected function sendSmsAlert(OpenSms_Model_Transaction $transaction){
+        $user = $this->loadModel('OpenSms_Model_User', array(0 => $transaction->LoginId));
+
+        if($transaction->Type == OpenSms::OPEN_TRANSACTION_TYPE_DEBIT){
+            $message = "Hello $transaction->LoginId. $transaction->Unit SMS units have been removed from your account for the clearing of your dept. Thanks for your patronage";
+        }else{
+            $message = "Hello $transaction->LoginId. You have correctly bought #$transaction->Amount SMS." .
+                " Your account have been credited with $transaction->Unit SMS units. Your account balance is $user->Balance. Thanks for your patronage";
+        }
+
+        $this->sendMessage("OpenBulkSMS", $message, $user->MobileNo, $user->LoginId);
+        $this->sendEmail('Open Bulk SMS Alert', $user->EmailId, $message, 'invoice@openbulksms.com');
+    }
+
+    //sending sms
+    protected function sendMessage($sender, $message, $recepients, $loginId = '', $sendOnDate = '2/2/2'){
 
          if(empty($loginId)){
             $loginId = $_SESSION['loginId'];
          }
 
-         $user = new User($loginId);
+         $user = $this->loadModel('OpenSms_Model_User', array(0 => $loginId));
 
+         //senitizing number
+         $recepients = str_replace(' ', '', trim($recepients));//take out spcae
+         $recepients = str_replace(PHP_EOL, '', trim($recepients));//take out new lines
+         $recepients = str_replace('+', '', $recepients);
+         if(substr($recepients, 0, 1) == '0')
+             $recepients = '234'.substr($recepients, 1);
+
+        $recepients = str_replace(',0', ',234', $recepients);
+
+        $senNumbers = '';
+        foreach (explode(',', $recepients) as $num) {
+            if(empty($num)) continue;
+            if(substr($num, 0, 1) != '2')
+                $num = '234'.$num;
+            $senNumbers .= $num.',';
+        }
+
+        $recepients = $senNumbers;
+
+        //take away the 1st and last comma
+         if(substr($recepients, 0, 1) == ',')
+             $recepients = ''.substr($recepients, 1);
+
+         if(substr($recepients, strlen($recepients) - 1, 1) == ',')
+             $recepients = ''.substr($recepients, 0, strlen($recepients) - 1);
+
+
+         //balance check
          $len = strlen($message);
-         $msgNo = $len < 160? 1: ($len - $len % 160)/160;
-         $msgNo  = ($len > 160 && $len % 160 != 0)? $msgNo + 1: $msgNo;
+         $lenPerSMS = $len < 160? 160:153;
 
+         $msgNo = $len < $lenPerSMS? 1: ($len - $len % $lenPerSMS)/$lenPerSMS;
+         $msgNo  = ($len > $lenPerSMS && $len % $lenPerSMS != 0)? $msgNo + 1: $msgNo;
+
+
+
+         $notification = '';
+         $hasError = FALSE;
 
          $count = ceil(count(explode(',', $recepients)) * $msgNo);
 
          $avu = ($user->Balance * 1);
-         $uneeded = ($count * UNITS_PER_SMS);
+         $unitsNeeded = ($count * OpenSms::getSystemSetting(OpenSms::OPEN_UNITS_PER_SMS));
 
-         if($user->Balance < $uneeded){
-             return 'Insufficient balance';
+
+         if($avu < $unitsNeeded){
+             $notification = 'Insufficient SMS unit!';
+             $hasError = TRUE;
+         }else{
+             if($count > 0 && !$hasError){
+
+                 $url = OpenSms::getField('Sms_Send_Api')->value;
+
+                 //replace username, password, senderId, message, recipients, sendOnDate
+                 $url = str_replace('@username@', OpenSms::getField('Sms_Api_Username')->value, $url);
+                 $url = str_replace('@password@', OpenSms::getField('Sms_Api_Password')->value, $url);
+                 $url = str_replace('@senderId@', urlencode($sender), $url);
+                 $url = str_replace('@message@', urlencode($message), $url);
+                 $url = str_replace('@recipients@', trim($recepients), $url);
+
+
+
+                 //die($url);
+
+
+                 $url = str_replace('@sendOnDate@', $sendOnDate, $url);
+
+
+                 //die($url.'<br/>');
+                 $xml = file_get_contents($url);
+
+                 //var_dump($xml);//die();
+                 //<result>True</result>
+                 //1701
+                 //check if message sent and deduct
+
+                 //var_dump(OpenSms::getField('Sms_Api_Success_Keyword')->value);
+                 //var_dump(strpos(strtolower($xml), strtolower(OpenSms::getField('Sms_Api_Success_Keyword')->value))  !==  false);die();
+
+                 if(strpos(strtolower($xml), strtolower(OpenSms::getField('Sms_Api_Success_Keyword')->value)) !== false){
+                     $user->Balance -= ($count * OpenSms::getSystemSetting(OpenSms::OPEN_UNITS_PER_SMS));
+                     $user->Save();
+                     if(isset($_REQUEST['returnDetails']) && $_REQUEST['returnDetails'] == '1'){
+                         $notification = $xml;
+                     }else{
+                         $notification = 'Message Sent';
+                     }
+
+                     $hasError = false;
+
+                     $bulksSMS = $this->loadModel('OpenSms_Model_BulkSms');
+                     $bulksSMS->LoginId = $user->LoginId;
+                     $bulksSMS->Message = $message;
+                     $bulksSMS->Sender = $sender;
+                     $bulksSMS->Status = 1701;
+                     $bulksSMS->Count = $count;
+                     $bulksSMS->Save();
+
+                     $messages = array();
+                     $nos = explode(',', $recepients);
+                     foreach($nos  as $no){
+                         if(empty($no)){
+                             continue;
+                         }
+                         $messageObj = $this->loadModel('OpenSms_Model_Message');
+                         $messageObj->BulkSMSId = $bulksSMS->Id;
+                         $messageObj->Number = $no;
+                         $messageObj->Message = $message;
+                         $messageObj->Sender = $sender;
+                         $messageObj->RefId = -1;
+                         $messageObj->Status = 1701;
+
+                         $messages[] = $messageObj;
+                     }
+
+                     $bulksSMS->SaveMessages($messages);
+                 }else{
+                     $notification = "Error! Message not sent";
+                 }
+
+             }else{
+                 if(!$hasError)
+                     $notification = 'Please enter at least one number';
+             }
          }
-         
-         $recepients = str_replace(',0', ',234', $recepients);
-         
-         $url = API_URL.'api/sendMessage?returnDetails=1&loginId='.API_USERNAME.'&password='.API_PASSWORD.'&sender='.
-                           urlencode($sender).'&message='.urlencode($message).'&recipients='
-			                .urlencode(trim($recepients));
 
-        $xml = file_get_contents($url);
-        //check if message sent and deduct
-        if(strpos($xml,'1701') !==  FALSE){
-            $user->Balance -= ($count * UNITS_PER_SMS);
-            $user->Save();
-            $notification = "Messae sent";
-            $bulksSMS = new BulkSMS();
-            $bulksSMS->LoginId = $user->LoginId;
-            $bulksSMS->Message = $message;
-            $bulksSMS->Sender = $sender;
-            $bulksSMS->Status = '1701';
-            $bulksSMS->Count = $count;
-            $bulksSMS->Save();
-            
-            $messages = array();
-            $nos = explode(',', $recepients);
-            foreach($nos  as $no){
-                if(empty($no)){
-                    continue;
-                }
-                $sms = new Message();
-                $sms->BulkSMSId = $bulksSMS->Id;
-                $sms->Number = $no;
-                $sms->Message = $message;
-                $sms->Sender = $sender;
-                $sms->RefId = -1;
-                $sms->Status = '1701';
-                
-                $messages[] = $sms;
-            }
-            $bulksSMS->SaveMessages($messages);	
-
-        }
-        return $xml;
+         return array('message'=>$notification, 'status' => $hasError);
      }
+
+    protected function sendEmail($subject, $email, $body, $from, $isHtml = false)
+    {
+        $email = @trim(stripslashes($email));
+        $subject = @trim(stripslashes($subject));
+
+
+        $email_from = $from;
+
+        $email_to = $email;//replace with your email
+
+
+        if(!class_exists('PHPMailer')){
+            include("app/code/opensms/helper/smtp/class.phpmailer.php"); //you have to upload class files "class.phpmailer.php" and "class.smtp.php"
+        }
+        $mail = new PHPMailer();
+
+        $mail->IsSMTP();
+        $mail->IsHtml($isHtml);
+
+        $mail->SMTPAuth = true;
+
+        $mail->Host = 'mail.openbulksms.com';
+
+        $mail->Username = $from;
+        $mail->Password = '123@qwe';
+
+        $mail->From = $from;
+        $mail->FromName = "Open Bulk SMS";
+
+        $mail->AddAddress($email_to,"Invoice");
+        $mail->Subject = $subject;
+        $mail->Body = $body;
+        $mail->WordWrap = 50;
+        $mail->IsHTML(true);
+        $str1= "gmail.com";
+        $str2=strtolower($from);
+        If(strstr($str2,$str1))
+        {
+            $mail->SMTPSecure = 'tls';
+            $mail->Port = 587;
+            if(!$mail->Send()) {
+                $notMessage = "Mailer Error: " . $mail->ErrorInfo;
+                $success = false;
+            }
+            else {
+                $notMessage = "Message sent";
+                $success = true;
+            }
+        }
+        else{
+            $mail->Port = 25;
+            if(!$mail->Send()) {
+                $notMessage = "Mailer Error: " . $mail->ErrorInfo;
+                $success = false;
+            }
+            else {
+                $notMessage = "Message sent";
+                $success = true;
+            }
+        }
+
+        return array('message' => $notMessage, 'success' => $success);
+    }
 
     public static function echoContent($name, $includeImage = FALSE){
         $con = Content::GetContentByName($name);
@@ -462,3 +629,15 @@ class OpenSms_Abstract_Module_Controller extends OpenSms_Abstract_Module_Base{
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+

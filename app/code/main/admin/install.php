@@ -13,6 +13,7 @@ class Install extends OpenSms_Abstract_Module_Controller {
             OpenSms::redirectToAction('index', 'dashboard');
 
         $this->data['pageTitle'] = 'Install | OpenSMS';
+        $_POST['site_url'] = empty($_POST['site_url'])?OpenSms::getBaseUrl():$_POST['site_url'];
         $this->renderTemplate();
     }
 
@@ -27,6 +28,8 @@ class Install extends OpenSms_Abstract_Module_Controller {
 
         $config->{OpenSms::VERSION} = $this->getSystemSetting(OpenSms::VERSION);
         $config->{OpenSms::SITE_NAME} = $this->getFormData(OpenSms::SITE_NAME);
+        $config->{OpenSms::SITE_HOME_KEYWORD} = $this->getFormData(OpenSms::SITE_HOME_KEYWORD);
+        $config->{OpenSms::SITE_HOME_DESCRIPTION} = $this->getFormData(OpenSms::SITE_HOME_DESCRIPTION);
         $config->{OpenSms::SITE_URL} = $this->getFormData(OpenSms::SITE_URL);
 
 
@@ -93,7 +96,7 @@ class Install extends OpenSms_Abstract_Module_Controller {
 
 
         CREATE TABLE IF NOT EXISTS `". $this->getTableName('content')."` (
-          `id` int(11) NOT NULL,
+          `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
           `key` varchar(265) NOT NULL,
           `type` varchar(128) NOT NULL,
           `host` varchar(128) NOT NULL,
@@ -126,6 +129,15 @@ class Install extends OpenSms_Abstract_Module_Controller {
           `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
         ) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+        CREATE TABLE IF NOT EXISTS `". $this->getTableName('page')."` (
+          `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+          `permalink` varchar(50) NOT NULL,
+          `title` varchar(265) NOT NULL,
+          `layout` varchar(50) NOT NULL,
+          `role` varchar(50) NOT NULL,
+          `description` text NOT NULL,
+          `body` text NOT NULL
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
         CREATE TABLE IF NOT EXISTS `". $this->getTableName('passwordresettoken')."` (
           `id` int(11) NOT NULL,
@@ -177,9 +189,13 @@ class Install extends OpenSms_Abstract_Module_Controller {
           `balance` double NOT NULL,
           `status` varchar(16) NOT NULL DEFAULT 'active',
           `role` varchar(16) NOT NULL DEFAULT 'user',
-          `dateRegistered` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+          `dateRegistered` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+          `billing_address1` VARCHAR(250) NOT NULL,
+          `billing_address2` VARCHAR(250) NOT NULL,
+          `billing_city` VARCHAR(65) NOT NULL,
+          `billing_state` VARCHAR(18) NOT NULL,
+          `billing_country` VARCHAR(100) NOT NULL
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
 
         ALTER TABLE `". $this->getTableName('admins')."`
           ADD PRIMARY KEY (`userName`);
@@ -214,6 +230,9 @@ class Install extends OpenSms_Abstract_Module_Controller {
         ALTER TABLE `". $this->getTableName('passwordresettoken')."`
           ADD PRIMARY KEY (`id`);
 
+        ALTER TABLE `". $this->getTableName('page')."`
+          ADD PRIMARY KEY (`id`);
+
         ALTER TABLE `". $this->getTableName('sms')."`
           ADD PRIMARY KEY (`id`);
 
@@ -241,6 +260,9 @@ class Install extends OpenSms_Abstract_Module_Controller {
         ALTER TABLE `". $this->getTableName('logins')."`
           MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=27;
 
+        ALTER TABLE `". $this->getTableName('page')."`
+          MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
         ALTER TABLE `". $this->getTableName('sms')."`
           MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=26664;
 
@@ -260,4 +282,4 @@ class Install extends OpenSms_Abstract_Module_Controller {
         else $this->setError($this->data['message'], 'complete_install');
         $this->renderTemplate('body');
     }
-} 
+}

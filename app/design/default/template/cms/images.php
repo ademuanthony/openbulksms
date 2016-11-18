@@ -49,7 +49,7 @@
                         <?php foreach($this->data['images'] as $key=>$link){ ?>
                             <tr>
                                 <td><?php echo ++$this->data['sn']; ?></td>
-                                <td><img src="<?php echo $link ?>" class="img-thumbnail img-rounded"/> </td>
+                                <td><img style="max-width: 250px;" src="<?php echo $link ?>" class="img-thumbnail img-rounded"/> </td>
                                 <td><input type="text" value="<?php echo $link ?>"> </td>
                                 <td>
                                     <a href="<?php echo OpenSms::getActionUrl('deleteImage', 'cms', 'cms', [0 => $key])?>"

@@ -77,7 +77,7 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th class="text-left">ID</th>
+                                <th class="text-left">S/No</th>
                                 <th class="text-left">Name</th>
                                 <th class="text-left">Number</th>
                                 <th></th>
@@ -86,7 +86,7 @@
                         <tbody>
                             <?php foreach($this->data['contacts'] as $contact){?>
                                 <tr>
-                                    <td><?php echo $contact->Id;?></td>
+                                    <td><?php echo (++$this->data['sn'])?></td>
                                     <td><?php echo $contact->Name;?></td>
                                     <td><?php echo $contact->Number;?></td>
                                     <td>
@@ -98,6 +98,10 @@
                             <?php } ?>
 
                         </tbody>
+
+                        <tfoot>
+                        <?php echo $this->data['link'] ?>
+                        </tfoot>
                     </table>
 
                     <?php } ?>
@@ -110,7 +114,7 @@
         <div class="col-md-4">
 
             <div class="box box-primary">
-                <form action="<?php echo OpenSms::getActionUrl('addContact', '*', 'group', ['parameter1' => $this->data['group']->Id])?>" method="post">
+                <form enctype="multipart/form-data" action="<?php echo OpenSms::getActionUrl('addContact', '*', 'group', ['parameter1' => $this->data['group']->Id])?>" method="post">
                     <div class="box-header">
                         <i class="fa fa-plus-square"></i>
                         <h3 class="box-title">Add Contacts</h3>

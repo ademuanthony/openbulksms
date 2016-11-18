@@ -31,6 +31,7 @@ class Voucher extends OpenSms_Abstract_Module_Controller{
                     } else {
                         $this->data['transaction']->Status = OpenSms::OPEN_TRANSACTION_STATUS_COMPLETED;
                         $this->data['transaction']->Save();
+                        $this->sendSmsAlert($this->data['transaction']);
                         $this->setNotification("Your account has been credited with $card->Unit units. Thanks for your patronage", 'voucher_index');
                         OpenSms::redirectToAction('index', 'dashboard', 'dashboard');
                     }

@@ -76,7 +76,7 @@
                         <div class="form-group">
                             <label for="message">Message:</label>
                             <textarea class="form-control" name="message" id="message" style="width:100%" rows="5"></textarea>
-                            <p id="messageCount"></p>
+                            <p class="text-danger" id="messageCount"></p>
                             <script>
                                 $("#message").keyup(function () {
                                     var count = $(this).val().length;

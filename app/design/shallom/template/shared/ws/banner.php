@@ -3,7 +3,7 @@
             <div class="row banner">
                 <div class="col-md-7 col-md-offset-1">
                     <div class="banner-caption">
-                        <h1>You are most Welcome to Shallom BulkSMS</h1>
+                        <h1>You are most Welcome to <?php echo OpenSms::getSystemSetting(OpenSms::SITE_NAME);?></h1>
                         <p>Where connecting with your freinds,families and <br/>business associates and loved ones <br/> is 'super-duper' easy!!</p>
                     </div>
                 </div>  
@@ -20,7 +20,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" style="color: rgba(255, 255, 255, 2); font-family:Tahoma, Geneva, sans-serif; text-shadow: 1px 1px 1px #960, 3px 3px 5px cyan;
-                           font-size: 40px; cursor: pointer;">Shallom BulkSMS</a>
+                           font-size: 40px; cursor: pointer;"><?php echo OpenSms::getSystemSetting(OpenSms::SITE_NAME);?></a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right list">

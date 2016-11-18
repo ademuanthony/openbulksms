@@ -32,7 +32,10 @@
                 <form method="post"
                       action="<?php echo OpenSms::getActionUrl('update', 'users', 'admin', [0 => $this->data['curUser']->LoginId])?>">
                     <div class="box-header with-border">
-                        <h3 class="box-title">User Detail</h3>
+                        <h3 class="box-title">User Detail
+                            <small>
+                                <a href="<?php echo OpenSms::getActionUrl('login', 'users', 'admin', [0 => $this->data['curUser']->LoginId])?>" >Login</a>
+                            </small></h3>
                         <div class="box-tools pull-right">
                             <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                         </div>
@@ -199,7 +202,7 @@
 
                     <div class="box-body">
                         <input type="hidden" name="returnUrl"
-                               value="<?php echo OpenSms::getActionUrl('Manage', 'Users', 'Admin', [0 => $this->data['curUser']->LoginId])?>">
+                               value="<?php echo OpenSms::getActionUrl('Manage', 'Users', 'Admin')."?uid=".urldecode($this->data['curUser']->LoginId)?>">
                         <input type="hidden" name="LoginId" value="<?php echo $this->data['curUser']->LoginId; ?>">
 
                         <div class="form-group">

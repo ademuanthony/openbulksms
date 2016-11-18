@@ -20,7 +20,7 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">HOME</a></li>
+                <li class="active"><a href="<?php echo OpenSms::getSystemSetting(OpenSms::getActionUrl('index', 'home', 'home'))?>">HOME</a></li>
                 <li><a data-toggle="modal" data-target="#priceModal" href="#priceModal">PRICING</a></li>
                 <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
             </ul>

@@ -39,11 +39,13 @@
                         <?php foreach ($this->data['groups'] as $group) {?>
                             <li class="item">
                                 <div class="product-img">
-                                    <?php echo $group->Id?>
+                                    <?php echo (++$this->date['sn'])?>
                                 </div>
                                 <div class="product-info">
-                                    <a href="<?php echo OpenSms::getActionUrl('detail', '*', 'group', ['parameter1'=>$group->Id])?>" class="product-title"><?php echo $group->Name?></a>
-                                    <a href="<?php echo OpenSms::getActionUrl('delete', '*', 'group', ['parameter1'=>$group->Id])?>" class="btn btn-danger btn-xs pull-right"><i class="fa fa-times"></i></a>
+                                    <a href="<?php echo OpenSms::getActionUrl('detail', '*', 'group', ['parameter1'=>$group->Id])?>"
+                                       class="ui-shadow ui-btn ui-corner-all"><?php echo $group->Name?></a>
+                                    <a href="<?php echo OpenSms::getActionUrl('delete', '*', 'group', ['parameter1'=>$group->Id])?>"
+                                       class="ui-shadow ui-btn ui-corner-all"><i class="fa fa-times"></i></a>
                         <span class="product-description">
                           <?php echo $group->Description?>
                         </span>
